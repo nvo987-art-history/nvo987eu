@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page non trouvée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .box {
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 72px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    a:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>404</h1>
+    <p>Page non trouvée.</p>
+    <p id="subdomain"></p>
+    <a href="https://www.nvo987.fr">Retour à l’accueil</a>
+  </div>
+
+  <script>
+    const host = window.location.hostname;
+    const parts = host.split('.');
+    const domain = "nvo987.fr";
+
+    let sub = "";
+
+    if (host.endsWith(domain) && parts.length > 2) {
+      sub = parts[0];
+    }
+
+    const el = document.getElementById("subdomain");
+
+    if (sub) {
+      el.innerText = "Sous-domaine : " + sub;
+    } else {
+      el.style.display = "none";
+    }
+
+    // redirection automatique après 5 secondes
+    setTimeout(() => {
+      window.location.href = "https://www.nvo987.fr";
+    }, 5000);
+  </script>
+</body>
+</html>
