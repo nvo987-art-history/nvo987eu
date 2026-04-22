@@ -28,7 +28,10 @@ This website is designed to minimize GDPR and privacy risks:
 - No user accounts
 - No user database
 - No forms collecting personal information
-- No IP logging is intentionally performed by the website itself (hosting provider may log technical access data).
+- No personal data is intentionally collected or processed by the website
+
+No IP logging or tracking is intentionally performed by the website itself  
+(**the hosting provider may automatically log technical access data such as IP address, user agent, or timestamps for security and operational purposes**).
 
 The site only fetches a local JSON file (`events.json`) generated from public Open Data sources.
 
@@ -118,7 +121,7 @@ The publisher declines all responsibility for direct or indirect damages resulti
 
 Official legal notices of the association are available at:
 
-https://nvo987.fr
+https://www.nvo987.fr
 
 ---
 
@@ -172,4 +175,4 @@ Website: **https://nvo987.eu**
 
 ---
 
-© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine 
+© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine
