@@ -1,26 +1,20 @@
-/* =====================================================
-   NVO987.eu – Agenda Culturel (French Dark Blue + Red)
-   Glass UI - Clean, Stable, Mobile-proof
-   ===================================================== */
+/* ==========================================================
+   NVO987.eu – Agenda Culturel (PRO Glass Centered Navbar)
+   Dark Navy + French Red Accent
+   ========================================================== */
 
 :root {
-  --bg: #f4f6fb;
+  --bg: #f5f7fb;
   --card: #ffffff;
   --text: #0f172a;
   --muted: #64748b;
 
-  --primary: #0b1d3a;   /* dark french navy */
-  --primary2: #112b52;  /* secondary navy */
-  --accent: #c1121f;    /* french red */
-  --accent2: #ff4d5a;
-
-  --border: rgba(15, 23, 42, 0.12);
+  --navy: #07162f;
+  --navy2: #0b2347;
+  --red: #c1121f;
 
   --radius: 18px;
-  --shadow: 0 10px 28px rgba(2, 6, 23, 0.10);
-
-  --glass: rgba(255, 255, 255, 0.14);
-  --glass-border: rgba(255, 255, 255, 0.22);
+  --shadow: 0 12px 35px rgba(2, 6, 23, 0.18);
 
   --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
@@ -41,7 +35,7 @@ body {
   line-height: 1.6;
 }
 
-/* Container */
+/* Layout */
 .container {
   width: 100%;
   max-width: 1120px;
@@ -49,35 +43,35 @@ body {
   padding: 0 18px;
 }
 
-/* =====================================================
-   HERO (Banner)
-   ===================================================== */
+/* ==========================================================
+   HERO / BANNER
+   ========================================================== */
 
 .hero {
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
-  color: #fff;
-  padding: 130px 0 85px 0;
+  background: linear-gradient(135deg, var(--navy), var(--navy2));
+  color: white;
+  padding: 140px 0 90px 0;
   position: relative;
   overflow: hidden;
 }
 
-/* subtle red glow */
+/* Red glow */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(255, 77, 90, 0.20), transparent 55%),
-    radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.08), transparent 60%);
+    radial-gradient(circle at 70% 30%, rgba(193, 18, 31, 0.30), transparent 60%),
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.08), transparent 55%);
   pointer-events: none;
 }
 
-/* vignette */
+/* Dark overlay */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.20), rgba(0,0,0,0.35));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.35));
   pointer-events: none;
 }
 
@@ -85,22 +79,21 @@ body {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
 
 .hero h1 {
   font-size: 52px;
   font-weight: 950;
-  line-height: 1.1;
+  line-height: 1.05;
   letter-spacing: -1px;
+  margin-bottom: 18px;
 }
 
+/* subtitle */
 .hero p {
   font-size: 16px;
-  opacity: 0.93;
-  max-width: 780px;
+  opacity: 0.92;
+  max-width: 750px;
 }
 
 /* Badges */
@@ -108,46 +101,51 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 6px;
+  margin-top: 22px;
 }
 
 .badge {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.10);
   border: 1px solid rgba(255, 255, 255, 0.20);
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 850;
   color: rgba(255,255,255,0.95);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
 }
 
-/* =====================================================
-   GLASS TOPBAR INSIDE HERO
-   ===================================================== */
+/* ==========================================================
+   GLASS NAVBAR (CENTERED)
+   ========================================================== */
 
 .topbar {
   position: absolute;
-  top: 18px;
+  top: 22px;
   left: 0;
   right: 0;
   z-index: 10;
 }
 
+/* IMPORTANT: navbar box is centered */
 .topbar-inner {
+  width: 100%;
+  max-width: 900px;      /* fixed professional width */
+  margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
 
-  padding: 14px 18px;
+  padding: 16px 22px;
   border-radius: 22px;
 
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.18);
-  backdrop-filter: blur(16px);
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.20);
+  backdrop-filter: blur(18px);
 
-  box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.22);
 }
 
 /* Brand */
@@ -160,21 +158,20 @@ body {
 .brand-name {
   font-weight: 950;
   font-size: 18px;
-  color: #fff;
-  letter-spacing: 0.4px;
+  color: white;
 }
 
 .brand-tag {
   font-size: 12px;
   margin-top: 4px;
-  color: rgba(255,255,255,0.78);
+  color: rgba(255,255,255,0.72);
 }
 
-/* Nav */
+/* Navigation */
 .nav {
   display: flex;
+  gap: 10px;
   align-items: center;
-  gap: 12px;
   flex-wrap: nowrap;
 }
 
@@ -182,39 +179,41 @@ body {
   text-decoration: none;
   font-weight: 900;
   font-size: 14px;
+
   color: rgba(255,255,255,0.95);
-
-  padding: 8px 14px;
+  padding: 9px 14px;
   border-radius: 999px;
-  transition: 0.2s ease;
+
+  transition: 0.18s ease;
 }
 
+/* Hover = red accent */
 .nav a:hover {
-  background: rgba(255,255,255,0.14);
-  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(193, 18, 31, 0.25);
+  border: 1px solid rgba(193, 18, 31, 0.45);
 }
 
-/* =====================================================
+/* ==========================================================
    MAIN
-   ===================================================== */
+   ========================================================== */
 
 .main {
-  padding: 55px 0;
+  padding: 60px 0;
 }
 
 .section {
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 
 .section-header {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .section-header h2 {
   font-size: 34px;
   font-weight: 950;
-  color: var(--primary);
   letter-spacing: -0.6px;
+  color: var(--navy);
 }
 
 .section-header p {
@@ -224,9 +223,9 @@ body {
   max-width: 720px;
 }
 
-/* =====================================================
+/* ==========================================================
    CONTROLS
-   ===================================================== */
+   ========================================================== */
 
 .controls {
   display: flex;
@@ -238,9 +237,9 @@ body {
 .controls input,
 .controls select {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(15, 23, 42, 0.14);
   border-radius: 14px;
-  padding: 12px 14px;
+  padding: 13px 14px;
   font-size: 14px;
   outline: none;
   transition: 0.15s ease;
@@ -248,7 +247,7 @@ body {
 
 .controls input {
   flex: 1;
-  min-width: 220px;
+  min-width: 240px;
 }
 
 .controls select {
@@ -259,16 +258,16 @@ body {
 .controls input:focus,
 .controls select:focus {
   border-color: rgba(193, 18, 31, 0.45);
-  box-shadow: 0 0 0 4px rgba(193, 18, 31, 0.12);
+  box-shadow: 0 0 0 4px rgba(193, 18, 31, 0.10);
 }
 
-/* =====================================================
+/* ==========================================================
    STATUS BOX
-   ===================================================== */
+   ========================================================== */
 
 .status {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(15, 23, 42, 0.14);
   border-radius: 14px;
   padding: 14px 16px;
   font-weight: 900;
@@ -281,9 +280,9 @@ body {
 .status.warn { border-left: 6px solid #f59e0b; }
 .status.error { border-left: 6px solid #dc2626; }
 
-/* =====================================================
+/* ==========================================================
    GRID
-   ===================================================== */
+   ========================================================== */
 
 .grid {
   display: grid;
@@ -291,16 +290,16 @@ body {
   gap: 18px;
 }
 
-/* =====================================================
+/* ==========================================================
    EVENT CARD
-   ===================================================== */
+   ========================================================== */
 
 .event-card {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 18px;
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.08);
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
@@ -312,9 +311,9 @@ body {
 }
 
 .event-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 44px rgba(2, 6, 23, 0.18);
+  transform: translateY(-4px);
   border-color: rgba(193, 18, 31, 0.30);
+  box-shadow: 0 18px 45px rgba(2, 6, 23, 0.16);
 }
 
 .event-card h3 {
@@ -340,7 +339,7 @@ body {
 .event-location {
   font-size: 13px;
   font-weight: 950;
-  color: var(--primary);
+  color: var(--navy);
   margin-bottom: 10px;
 }
 
@@ -349,18 +348,18 @@ body {
   color: rgba(15, 23, 42, 0.92);
 }
 
-/* =====================================================
+/* ==========================================================
    BUTTON
-   ===================================================== */
+   ========================================================== */
 
 .btn {
   display: inline-block;
   text-decoration: none;
 
-  background: var(--primary);
-  color: #fff;
+  background: var(--navy);
+  color: white;
 
-  padding: 11px 16px;
+  padding: 12px 16px;
   border-radius: 14px;
 
   font-size: 13px;
@@ -370,34 +369,34 @@ body {
 }
 
 .btn:hover {
-  background: var(--accent);
+  background: var(--red);
 }
 
-/* =====================================================
-   LEGAL + SOURCES CARDS
-   ===================================================== */
+/* ==========================================================
+   LEGAL / SOURCES
+   ========================================================== */
 
 .legal-card,
 .sources-card {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 26px;
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.08);
+  padding: 28px;
 }
 
 .legal-card h3 {
   font-size: 20px;
   font-weight: 950;
   margin-bottom: 12px;
-  color: var(--primary);
+  color: var(--navy);
 }
 
 .legal-card h4 {
   margin-top: 18px;
   font-size: 14px;
   font-weight: 950;
-  color: var(--accent);
+  color: var(--red);
 }
 
 .legal-card p {
@@ -416,41 +415,29 @@ body {
   font-size: 14px;
 }
 
-.sources-card a {
-  color: var(--primary);
-  font-weight: 950;
-  text-decoration: none;
-}
-
-.sources-card a:hover {
-  text-decoration: underline;
-}
-
 .small-note {
   margin-top: 14px;
   font-size: 13px;
   color: var(--muted);
 }
 
-.muted {
-  color: var(--muted);
-}
+.muted { color: var(--muted); }
 
-/* =====================================================
+/* ==========================================================
    FOOTER
-   ===================================================== */
+   ========================================================== */
 
 .footer {
   background: #ffffff;
-  border-top: 1px solid var(--border);
-  padding: 35px 0;
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+  padding: 40px 0;
   margin-top: 40px;
 }
 
 .footer-inner {
   text-align: center;
   font-size: 14px;
-  color: var(--text);
+  color: rgba(15, 23, 42, 0.92);
 }
 
 .footer-inner p {
@@ -458,7 +445,7 @@ body {
 }
 
 .footer-inner a {
-  color: var(--accent);
+  color: var(--red);
   font-weight: 950;
   text-decoration: none;
 }
@@ -467,9 +454,9 @@ body {
   text-decoration: underline;
 }
 
-/* =====================================================
-   RESPONSIVE FIXES
-   ===================================================== */
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
 
 @media (max-width: 980px) {
   .grid {
@@ -485,7 +472,7 @@ body {
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    max-width: 95%;
   }
 
   .nav {
@@ -494,18 +481,14 @@ body {
     gap: 10px;
   }
 
-  .nav a {
-    padding: 8px 12px;
+  .hero {
+    padding: 160px 0 70px 0;
   }
 }
 
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 140px 0 65px 0;
   }
 
   .hero h1 {
@@ -519,4 +502,4 @@ body {
   .section-header h2 {
     font-size: 26px;
   }
-   }
+     }
