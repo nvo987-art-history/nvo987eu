@@ -2,7 +2,7 @@ name: Update Events JSON (Paris Open Data)
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # every day at 06:00 UTC
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,10 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download Paris Open Data events
+      - name: Download events JSON (stable endpoint)
         run: |
-          curl -L "https://opendata.paris.fr/explore/dataset/que-faire-a-paris-/api/records/1.0/search/?rows=30&sort=-date_start" \
-          -o events.json
+          curl -L "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" -o events.json
+
+      - name: Validate JSON
+        run: |
+          python3 -m json.tool events.json > /dev/null
 
       - name: Commit and push if changed
         run: |
