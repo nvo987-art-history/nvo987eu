@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Agenda Culturel – Paris (Open Data)</title>
+
+  <meta name="description" content="Agenda culturel à Paris basé sur des données publiques Open Data (Ville de Paris). Aucun cookie, aucun tracking, aucune collecte." />
+  <meta name="robots" content="index, follow" />
+  <meta name="referrer" content="no-referrer" />
+
+  <!-- IMPORTANT: cache busting -->
+  <link rel="stylesheet" href="style.css?v=999" />
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <!-- GLASS TOPBAR -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-inner">
+          <div class="brand">
+            <span class="brand-name">NVO987.eu</span>
+            <span class="brand-tag">Agenda Culturel</span>
+          </div>
+
+          <nav class="nav">
+            <a href="#events">Événements</a>
+            <a href="#legal">Mentions</a>
+            <a href="#sources">Sources</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO TEXT -->
+    <div class="container">
+      <div class="hero-inner">
+        <h1>Agenda Culturel – Paris</h1>
+
+        <p>
+          Sélection automatisée d’événements culturels à Paris, construite exclusivement à partir de données publiques officielles (Open Data).
+          Ce site ne stocke aucun contenu tiers et ne remplace pas les plateformes officielles.
+        </p>
+
+        <div class="hero-badges">
+          <span class="badge">Open Data</span>
+          <span class="badge">Ville de Paris</span>
+          <span class="badge">Aucun cookie</span>
+          <span class="badge">Aucune collecte</span>
+          <span class="badge">Aucun tracking</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="container">
+
+      <!-- EVENTS -->
+      <section id="events" class="section">
+        <div class="section-header">
+          <h2>Événements récents</h2>
+          <p>Données mises à jour automatiquement depuis la plateforme officielle Paris Open Data.</p>
+        </div>
+
+        <div class="controls">
+          <input id="searchInput" type="text" placeholder="Rechercher (ex: exposition, musée, concert)..." />
+          <select id="limitSelect">
+            <option value="10">10 résultats</option>
+            <option value="20" selected>20 résultats</option>
+            <option value="30">30 résultats</option>
+            <option value="50">50 résultats</option>
+          </select>
+        </div>
+
+        <div id="statusBox" class="status info">
+          Chargement des événements…
+        </div>
+
+        <div id="eventsGrid" class="grid"></div>
+      </section>
+
+
+      <!-- LEGAL -->
+      <section id="legal" class="section">
+        <div class="section-header">
+          <h2>Mentions légales / conformité</h2>
+          <p>Informations juridiques, RGPD, licences Open Data, limitation de responsabilité.</p>
+        </div>
+
+        <div class="legal-card">
+
+          <h3>1. Identification / éditeur</h3>
+          <p>
+            Le présent site (<strong>NVO987.eu</strong>) est une interface technique de consultation et de présentation
+            d’informations publiques issues de bases Open Data.
+          </p>
+          <p>
+            Les informations légales officielles de l’association NVO987 (France), incluant les éléments obligatoires
+            (identité, statut, publication, mentions légales complètes, engagements, coordonnées administratives),
+            sont disponibles sur le site principal :
+            <strong>
+              <a href="https://www.nvo987.fr" target="_blank" rel="noopener noreferrer nofollow">
+                www.nvo987.fr
+              </a>
+            </strong>.
+          </p>
+
+          <h3>2. Objet du site</h3>
+          <p>
+            Ce site fournit une <strong>consultation automatisée</strong> d’événements publics à Paris à partir de sources officielles.
+            Il s’agit d’un outil de lecture et de tri, sans garantie d’exhaustivité.
+          </p>
+
+          <h3>3. Absence d’hébergement de contenu tiers</h3>
+          <p>
+            Le site ne télécharge pas, n’héberge pas et n’archive pas de contenus tiers complets (images, médias, documents,
+            textes longs, affiches ou fichiers). Les informations affichées sont limitées à des métadonnées publiques
+            (titre, date, lieu, résumé, lien officiel).
+          </p>
+
+          <h3>4. Exactitude / caractère indicatif</h3>
+          <p>
+            Les données sont issues de plateformes Open Data publiques. Malgré les efforts de présentation correcte,
+            aucune garantie n’est donnée sur l’exactitude, la complétude, la mise à jour, ou la disponibilité des informations.
+            <strong>Seule la source officielle fait foi</strong>.
+          </p>
+
+          <h3>5. Limitation de responsabilité (protection maximale)</h3>
+          <p>
+            L’éditeur ne pourra en aucun cas être tenu responsable de tout dommage direct ou indirect,
+            perte financière, perte de données, annulation, modification d’événement, erreur de lieu, erreur de date,
+            ou indisponibilité des liens externes.
+          </p>
+          <p>
+            L’utilisateur reconnaît utiliser le site <strong>sous sa seule responsabilité</strong>.
+          </p>
+
+          <h3>6. RGPD / données personnelles (aucune collecte volontaire)</h3>
+          <p>
+            Le site est conçu selon un principe de minimisation :
+            <strong>aucune donnée personnelle n’est collectée, stockée, analysée, vendue ou exploitée</strong>.
+          </p>
+          <p>
+            Aucun compte, aucune authentification, aucune base utilisateur, aucun identifiant publicitaire et aucun
+            profilage ne sont utilisés.
+          </p>
+
+          <h3>7. Cookies / tracking</h3>
+          <p>
+            Aucun cookie marketing, aucun cookie publicitaire, aucun outil de suivi, aucun pixel tiers
+            et aucun système de mesure d’audience (Google Analytics, Meta Pixel, etc.) ne sont intégrés sur ce site.
+          </p>
+
+          <h3>8. Logs techniques (hébergement)</h3>
+          <p>
+            L’hébergeur technique peut générer automatiquement des journaux de connexion (logs serveur)
+            à des fins de sécurité et de fonctionnement (ex: protection contre abus, erreurs réseau, trafic anormal).
+            Ces données sont gérées par l’infrastructure d’hébergement et ne sont pas utilisées à des fins marketing.
+          </p>
+
+          <h3>9. Données sensibles présentes dans la source</h3>
+          <p>
+            Si une source Open Data contenait accidentellement des données personnelles (ex: email, téléphone, contact nominatif),
+            celles-ci ne sont pas recherchées volontairement et peuvent être filtrées ou supprimées de l’affichage.
+          </p>
+          <p>
+            Toute personne peut demander un retrait d’affichage en écrivant à :
+            <strong id="contact">contact@nvo987.eu</strong>.
+          </p>
+
+          <h3>10. Propriété intellectuelle</h3>
+          <p>
+            Les noms, marques, logos et contenus présents sur les plateformes officielles demeurent la propriété
+            de leurs auteurs respectifs.
+          </p>
+          <p>
+            Le code source, la mise en page, la structure et la présentation de ce site constituent une œuvre technique
+            protégée par le droit applicable.
+          </p>
+
+          <h3>11. Liens externes</h3>
+          <p>
+            Ce site contient des liens vers des sites tiers. L’éditeur n’exerce aucun contrôle sur leur contenu,
+            leur disponibilité ou leur politique de confidentialité. L’accès à ces sites externes relève
+            de la responsabilité exclusive de l’utilisateur.
+          </p>
+
+          <h3>12. Licence / réutilisation des données</h3>
+          <p>
+            Les données affichées proviennent de Paris Open Data (Ville de Paris) et sont réutilisées conformément
+            à la licence indiquée par la source (ODbL). L’attribution est respectée dans la section « Sources & licences ».
+          </p>
+
+          <h3>13. Droit applicable</h3>
+          <p>
+            L’utilisation du site implique l’acceptation pleine et entière des présentes mentions.
+            Toute contestation devra être interprétée selon les règles juridiques applicables.
+          </p>
+
+          <p class="small-note">
+            Dernière mise à jour : 2026.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- SOURCES -->
+      <section id="sources" class="section">
+        <div class="section-header">
+          <h2>Sources & licences</h2>
+          <p>Attribution obligatoire conformément aux licences Open Data.</p>
+        </div>
+
+        <div class="sources-card">
+          <ul>
+            <li>
+              <strong>Source officielle :</strong>
+              <a href="https://opendata.paris.fr/" target="_blank" rel="noopener noreferrer">
+                Paris Open Data (Ville de Paris)
+              </a>
+            </li>
+
+            <li>
+              <strong>Dataset :</strong>
+              <span class="muted">Que faire à Paris ? – Événements et activités</span>
+            </li>
+
+            <li>
+              <strong>Licence :</strong>
+              <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener noreferrer">
+                Open Database License (ODbL)
+              </a>
+            </li>
+
+            <li>
+              <strong>Attribution :</strong>
+              <span class="muted">
+                Données issues de la plateforme officielle Paris Open Data, réutilisées conformément à la licence ODbL.
+              </span>
+            </li>
+
+            <li>
+              <strong>Mentions légales officielles de l’association :</strong>
+              <a href="https://www.nvo987.fr" target="_blank" rel="noopener noreferrer nofollow">
+                www.nvo987.fr
+              </a>
+            </li>
+          </ul>
+
+          <p class="small-note">
+            Ce site affiche uniquement une présentation simplifiée. Les contenus complets, conditions officielles,
+            horaires exacts et mises à jour doivent être consultés directement sur la plateforme source.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine</p>
+
+      <p class="muted">
+        Aucun cookie • Aucun suivi • Données publiques uniquement
+      </p>
+
+      <p class="muted">
+        Contact : <strong>contact@nvo987.eu</strong>
+      </p>
+
+      <p class="muted">
+        Mentions légales officielles :
+        <a href="https://www.nvo987.fr" target="_blank" rel="noopener noreferrer nofollow">
+          www.nvo987.fr
+        </a>
+      </p>
+
+      <p class="muted">
+        Identité :
+        <a href="did:web:identity.nvo987.us">did:web:identity.nvo987.us</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- SCRIPT -->
+  <script>
+    const statusBox = document.getElementById("statusBox");
+    const eventsGrid = document.getElementById("eventsGrid");
+    const searchInput = document.getElementById("searchInput");
+    const limitSelect = document.getElementById("limitSelect");
+
+    let allEvents = [];
+
+    function safeText(v) {
+      if (!v) return "";
+      return String(v);
+    }
+
+    function escapeHTML(str) {
+      return str.replace(/[&<>"']/g, function (m) {
+        return ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#039;"
+        })[m];
+      });
+    }
+
+    function formatDate(dateStr) {
+      if (!dateStr) return "";
+      const d = new Date(dateStr);
+      if (isNaN(d.getTime())) return dateStr;
+      return d.toLocaleDateString("fr-FR", { year: "numeric", month: "long", day: "numeric" });
+    }
+
+    function buildCard(event) {
+      const f = event.fields || {};
+
+      const title = escapeHTML(safeText(f.title || f.nom || "Événement"));
+      const start = formatDate(f.date_start || f.date_debut || f.date);
+      const end = formatDate(f.date_end || f.date_fin);
+
+      const city = escapeHTML(safeText(f.address_city || f.ville || "Paris"));
+      const url = safeText(f.url || f.link || f.access_link || "");
+      const location = escapeHTML(safeText(f.address_name || f.lieu || f.location_name || ""));
+
+      let description = escapeHTML(safeText(f.lead_text || f.description || ""));
+      if (description.length > 240) description = description.slice(0, 240) + "...";
+
+      const dateLine = (start && end && end !== start) ? `${start} → ${end}` : (start || "Date inconnue");
+
+      const card = document.createElement("article");
+      card.className = "event-card";
+
+      card.innerHTML = `
+        <div class="event-head">
+          <h3>${title}</h3>
+          <div class="event-meta">
+            <span>${dateLine}</span>
+            <span>•</span>
+            <span>${city}</span>
+          </div>
+        </div>
+
+        <div class="event-body">
+          ${location ? `<p class="event-location"><strong>Lieu :</strong> ${location}</p>` : ""}
+          ${description ? `<p class="event-desc">${description}</p>` : `<p class="event-desc muted">Aucune description disponible.</p>`}
+        </div>
+
+        <div class="event-footer">
+          ${
+            url
+              ? `<a class="btn" href="${url}" target="_blank" rel="noopener noreferrer nofollow">Voir la source officielle</a>`
+              : `<span class="muted small-note">Lien officiel indisponible</span>`
+          }
+        </div>
+      `;
+
+      return card;
+    }
+
+    function renderEvents() {
+      const query = searchInput.value.trim().toLowerCase();
+      const limit = parseInt(limitSelect.value, 10);
+
+      eventsGrid.innerHTML = "";
+
+      let filtered = allEvents;
+
+      if (query.length > 0) {
+        filtered = allEvents.filter(ev => {
+          const f = ev.fields || {};
+          const blob = JSON.stringify(f).toLowerCase();
+          return blob.includes(query);
+        });
+      }
+
+      filtered = filtered.slice(0, limit);
+
+      if (filtered.length === 0) {
+        statusBox.className = "status warn";
+        statusBox.textContent = "Aucun événement disponible.";
+        return;
+      }
+
+      statusBox.className = "status success";
+      statusBox.textContent = `${filtered.length} événement(s) affiché(s).`;
+
+      filtered.forEach(ev => {
+        eventsGrid.appendChild(buildCard(ev));
+      });
+    }
+
+    async function loadEvents() {
+      try {
+        statusBox.className = "status info";
+        statusBox.textContent = "Chargement des événements…";
+
+        const res = await fetch("events.json?v=" + Date.now(), { cache: "no-store" });
+
+        if (!res.ok) {
+          throw new Error("HTTP error " + res.status);
+        }
+
+        const data = await res.json();
+
+        if (!data.records || !Array.isArray(data.records)) {
+          throw new Error("Invalid JSON structure: records missing");
+        }
+
+        allEvents = data.records;
+        renderEvents();
+
+      } catch (err) {
+        statusBox.className = "status error";
+        statusBox.textContent = "Erreur : impossible de charger events.json.";
+        console.error(err);
+      }
+    }
+
+    searchInput.addEventListener("input", renderEvents);
+    limitSelect.addEventListener("change", renderEvents);
+
+    loadEvents();
+  </script>
+
+</body>
+            </html>
