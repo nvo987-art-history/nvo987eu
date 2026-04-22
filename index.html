@@ -2,13 +2,11 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Agenda Culturel – Paris (Open Data) | NVO987.eu</title>
 <meta name="description" content="Agenda culturel automatisé basé sur des données publiques ouvertes (Ville de Paris). Aucune donnée personnelle n’est stockée ni traitée.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://nvo987.eu/">
 
 <style>
 :root{
@@ -33,7 +31,6 @@ body{
   line-height:1.65;
 }
 
-/* NAV */
 nav{
   background:#fff;
   border-bottom:1px solid var(--border);
@@ -71,11 +68,9 @@ nav{
   text-decoration:underline;
 }
 
-/* HERO */
 header.hero{
   background: linear-gradient(120deg, rgba(10,61,145,0.92), rgba(107,63,42,0.92));
   padding: 75px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .hero-inner{
@@ -87,7 +82,6 @@ header.hero{
 .hero-title{
   font-size: 3rem;
   margin: 0 0 10px 0;
-  letter-spacing: 0.5px;
 }
 
 .hero-subtitle{
@@ -108,7 +102,6 @@ header.hero{
   backdrop-filter: blur(6px);
 }
 
-/* MAIN */
 main{
   max-width:1100px;
   margin:0 auto;
@@ -127,12 +120,11 @@ main{
   max-width:950px;
 }
 
-/* LEGAL BOX */
 .legal-box{
   background:#fff;
   border:1px solid var(--border);
   border-left:6px solid var(--accent2);
-  padding:18px 18px;
+  padding:18px;
   border-radius:14px;
   box-shadow:0 2px 10px rgba(0,0,0,0.03);
   margin-bottom:22px;
@@ -146,15 +138,6 @@ main{
   font-size:1.1rem;
 }
 
-.legal-box p{
-  margin:10px 0;
-}
-
-.legal-box strong{
-  color:var(--text);
-}
-
-/* STATUS */
 .status{
   background:#fff;
   border:1px solid var(--border);
@@ -165,7 +148,6 @@ main{
   box-shadow:0 2px 10px rgba(0,0,0,0.03);
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(310px, 1fr));
@@ -197,12 +179,6 @@ main{
   font-size:0.93rem;
   color:var(--muted);
   margin:0 0 6px 0;
-}
-
-.card-body{
-  padding:0 16px 12px;
-  color:var(--text);
-  font-size:0.95rem;
 }
 
 .card-footer{
@@ -239,7 +215,6 @@ main{
   background:rgba(10,61,145,0.15);
 }
 
-/* FOOTER */
 footer{
   border-top:1px solid var(--border);
   padding:30px 20px;
@@ -253,10 +228,6 @@ footer{
   font-size:0.92rem;
 }
 
-.footer-inner strong{
-  color:var(--text);
-}
-
 .small-note{
   margin-top:12px;
   font-size:0.88rem;
@@ -267,15 +238,12 @@ footer{
   color:var(--accent);
   text-decoration:none;
 }
-
 .small-note a:hover{
   text-decoration:underline;
 }
 
-/* RESPONSIVE */
 @media (max-width:600px){
   .hero-title{font-size:2.2rem;}
-  .nav-links a{margin-left:0;margin-right:12px;}
 }
 </style>
 </head>
@@ -289,6 +257,7 @@ footer{
       <a href="https://nvo987.fr" target="_blank" rel="noopener noreferrer">Association</a>
       <a href="https://nvo987.us" target="_blank" rel="noopener noreferrer">Infrastructure</a>
       <a href="https://identity.nvo987.us" target="_blank" rel="noopener noreferrer">Identity</a>
+      <a href="https://images.nvo987.fr" target="_blank" rel="noopener noreferrer">Images</a>
     </div>
   </div>
 </nav>
@@ -297,72 +266,59 @@ footer{
   <div class="hero-inner">
     <h1 class="hero-title">Agenda Culturel – Paris</h1>
     <p class="hero-subtitle">
-      Présentation automatisée d’événements culturels à Paris, générée à partir de données publiques ouvertes.
-      Cette page ne constitue pas un service officiel de réservation ou d’organisation.
+      Page automatisée de consultation d’événements publics à Paris, générée à partir de données ouvertes.
+      Aucun contenu n’est hébergé ni archivé manuellement sur ce site.
     </p>
-    <div class="hero-tag">Ville de Paris · Open Data · Événements culturels</div>
+    <div class="hero-tag">Open Data · Ville de Paris · ODbL</div>
   </div>
 </header>
 
 <main>
 
-  <h2 class="section-title">Événements publics (Ville de Paris)</h2>
+  <h2 class="section-title">Événements publics (Paris)</h2>
   <p class="section-intro">
-    Les événements affichés ci-dessous proviennent d’une base publique officielle de la Ville de Paris.
-    Les données sont récupérées en temps réel via une interface API et présentées sous forme de synthèse.
+    Les événements ci-dessous sont récupérés automatiquement à partir d’une extraction Open Data officielle.
   </p>
 
   <div class="legal-box">
-    <h3>Informations juridiques et conditions d’utilisation</h3>
+    <h3>Informations juridiques (conformité & licence)</h3>
 
     <p>
-      <strong>1. Nature du service</strong><br>
-      Le site <strong>nvo987.eu</strong> agit exclusivement comme une interface de consultation automatisée
-      et ne constitue pas une base de données autonome ni une publication institutionnelle officielle.
-      Aucune garantie n’est donnée concernant l’exactitude, l’exhaustivité ou la mise à jour des informations affichées.
+      <strong>Nature du service :</strong> ce site (<strong>nvo987.eu</strong>) fournit une interface automatisée de consultation.
+      Il ne constitue pas une publication officielle de la Ville de Paris et ne garantit pas l’exactitude ou l’actualité
+      des informations affichées.
     </p>
 
     <p>
-      <strong>2. Données publiques et sources officielles</strong><br>
-      Les contenus affichés sont extraits automatiquement depuis la plateforme officielle
-      <strong>Paris Open Data</strong> (Ville de Paris), dataset :
-      <strong>« Que faire à Paris ? – Évènements et activités »</strong>.
-      Les détails complets, horaires, conditions d’accès et éventuelles restrictions doivent être consultés directement
-      sur les pages officielles de la Ville de Paris ou sur les sites des organisateurs.
+      <strong>Source des données :</strong> Ville de Paris – plateforme officielle <strong>Paris Open Data</strong>,
+      dataset <strong>« Que faire à Paris ? – Évènements et activités »</strong>.
+      Les informations officielles et complètes doivent être consultées sur les sites sources.
     </p>
 
     <p>
-      <strong>3. Licence des données (ODbL)</strong><br>
-      Les données utilisées sont mises à disposition sous licence
-      <strong>Open Database License (ODbL)</strong>.
-      Conformément à cette licence, la réutilisation est autorisée sous réserve de respecter l’attribution de la source.
-      La source officielle est :
-      <strong>opendata.paris.fr</strong>.
+      <strong>Licence :</strong> les données sont réutilisées conformément à la
+      <strong>Open Database License (ODbL)</strong>. La réutilisation est autorisée sous réserve de mentionner la source.
+      Ce site respecte l’obligation d’attribution.
     </p>
 
     <p>
-      <strong>4. Données personnelles et RGPD</strong><br>
-      Cette page a été conçue pour minimiser tout risque lié au RGPD :
-      <strong>aucune donnée personnelle n’est volontairement collectée, stockée ou traitée</strong>.
-      Les champs susceptibles de contenir des coordonnées privées (email, téléphone, nom de contact) ne sont pas affichés.
-      Aucune inscription, aucun compte utilisateur et aucune collecte d’identifiant n’est mis en place.
+      <strong>RGPD / données personnelles :</strong> ce site ne collecte aucune donnée utilisateur, ne crée aucun compte,
+      ne conserve aucun identifiant et ne stocke aucune donnée personnelle. Les données affichées sont limitées à des
+      métadonnées publiques (titre, date, localisation générale, lien officiel). Les contenus susceptibles de contenir
+      des coordonnées privées (emails, téléphones) sont filtrés ou non affichés.
     </p>
 
     <p>
-      <strong>5. Cookies et suivi</strong><br>
-      Ce site ne dépose aucun cookie publicitaire et n’utilise aucun système de suivi comportemental.
-      Aucune analyse marketing n’est réalisée.
+      <strong>Cookies :</strong> aucun cookie publicitaire ou traceur de comportement n’est utilisé.
     </p>
 
     <p>
-      <strong>6. Responsabilité</strong><br>
-      Les informations sont fournies à titre indicatif. L’utilisateur est invité à vérifier l’information auprès de la source officielle.
-      En cas de suppression, correction ou mise à jour, seule la source publique fait foi.
+      <strong>Responsabilité :</strong> les informations sont fournies à titre indicatif.
+      Seule la source officielle fait foi.
     </p>
   </div>
 
-  <div class="status" id="statusBox">Chargement des événements…</div>
-
+  <div class="status" id="statusBox">Chargement…</div>
   <div class="grid" id="eventsGrid"></div>
 
 </main>
@@ -372,46 +328,24 @@ footer{
     <div><strong>© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine</strong></div>
 
     <div class="small-note">
-      Ce site ne place aucun cookie, ne réalise aucun suivi publicitaire et ne conserve aucune donnée utilisateur.
-      Les requêtes sont effectuées directement depuis le navigateur vers les plateformes officielles.
+      Ce site est une interface de consultation. Aucun cookie, aucun suivi publicitaire, aucun stockage d’identifiant.
     </div>
 
     <div class="small-note">
-      <strong>Source officielle des données :</strong>
-      <a href="https://opendata.paris.fr" target="_blank" rel="noopener noreferrer">opendata.paris.fr</a>
-      (Ville de Paris – Paris Open Data)
-      <br>
-      Dataset : <em>Que faire à Paris ? – Évènements et activités</em>
-      <br>
-      <strong>Licence :</strong> Open Database License (ODbL)
+      <strong>Attribution obligatoire (ODbL) :</strong><br>
+      Source : <a href="https://opendata.paris.fr" target="_blank" rel="noopener noreferrer">opendata.paris.fr</a> (Ville de Paris – Paris Open Data)<br>
+      Dataset : <em>Que faire à Paris ? – Évènements et activités</em><br>
+      Licence : <strong>Open Database License (ODbL)</strong>
     </div>
 
     <div class="small-note">
-      Avertissement : cette page fournit une présentation simplifiée d’informations publiques.
-      Pour les détails complets, horaires exacts et conditions d’accès, veuillez consulter la source officielle.
+      Pour les horaires exacts, réservations, conditions d’accès et informations officielles,
+      veuillez consulter la source publique.
     </div>
   </div>
 </footer>
 
 <script>
-/* -------------------------------------------------
-   NVO987.eu – Agenda Culturel (Paris Open Data)
-   LEGAL-FIRST DESIGN (99% safety approach)
-
-   - No cookies
-   - No tracking
-   - No analytics
-   - No storage / no database
-   - No user accounts
-   - Only safe metadata displayed
-   - Strict filtering
-   - Attribution included (ODbL)
-
-   API source:
-   https://opendata.paris.fr
-   Dataset: que-faire-a-paris-
--------------------------------------------------- */
-
 const grid = document.getElementById("eventsGrid");
 const statusBox = document.getElementById("statusBox");
 
@@ -451,92 +385,66 @@ function safeUrl(url) {
   }
 }
 
-/*
-  EXTRA SAFETY FILTER:
-  We remove typical personal data patterns from text fields.
-  (rare, but ensures better GDPR protection)
-*/
 function removeSensitivePatterns(text) {
   if (!text) return "";
   let t = String(text);
 
-  // Remove email patterns
-  t = t.replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "[coordonnée supprimée]");
+  // Emails
+  t = t.replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "");
 
-  // Remove phone-like patterns (very approximate but helpful)
-  t = t.replace(/(\+33|0)\s?[1-9](?:[\s\.\-]?\d{2}){4}/g, "[coordonnée supprimée]");
+  // French phone-like patterns
+  t = t.replace(/(\+33|0)\s?[1-9](?:[\s\.\-]?\d{2}){4}/g, "");
 
-  return t;
+  return t.trim();
 }
 
-function truncateText(text, maxLen = 200) {
+function truncateText(text, maxLen = 110) {
   if (!text) return "";
   const clean = text.replace(/\s+/g, " ").trim();
   if (clean.length <= maxLen) return clean;
   return clean.substring(0, maxLen) + "…";
 }
 
-function buildCard({ title, date, location, sourceName, url }) {
-  const safeTitle = escapeHTML(title || "Sans titre");
-  const safeLocation = escapeHTML(location || "Paris");
-  const safeSource = escapeHTML(sourceName || "Ville de Paris");
-
+function buildCard({ title, date, location, url }) {
   const checkedUrl = safeUrl(url);
-
-  const linkButton = checkedUrl
-    ? `<a class="btn" href="${escapeHTML(checkedUrl)}" target="_blank" rel="noopener noreferrer">Voir la source</a>`
-    : `<span class="btn" style="opacity:0.55; pointer-events:none;">Lien indisponible</span>`;
 
   return `
     <article class="card">
       <div class="card-header">
-        <h3 class="card-title">${safeTitle}</h3>
-        <p class="card-meta">📍 ${safeLocation}</p>
+        <h3 class="card-title">${escapeHTML(title)}</h3>
+        <p class="card-meta">📍 ${escapeHTML(location)}</p>
         <p class="card-meta">🗓 ${escapeHTML(date)}</p>
       </div>
-      <div class="card-body">
-        <p style="color:#666;margin:0;">
-          Données publiques : ${safeSource}
-        </p>
-      </div>
       <div class="card-footer">
-        <span class="badge">ODbL</span>
-        ${linkButton}
+        <span class="badge">Paris Open Data</span>
+        ${
+          checkedUrl
+            ? `<a class="btn" href="${escapeHTML(checkedUrl)}" target="_blank" rel="noopener noreferrer">Source officielle</a>`
+            : `<span class="btn" style="opacity:0.55; pointer-events:none;">Lien indisponible</span>`
+        }
       </div>
     </article>
   `;
 }
 
-/* -------------------------------------------------
-   PARIS OPEN DATA API
--------------------------------------------------- */
-
-function getParisUrl(rows = 12) {
-  // No search query here (to avoid edge-case errors).
-  // Always stable.
-  return "https://opendata.paris.fr/explore/dataset/que-faire-a-paris-/api/records/1.0/search/"
-       + "?rows=" + encodeURIComponent(rows)
-       + "&sort=-date_start";
-}
-
 async function loadEvents() {
   grid.innerHTML = "";
-  statusBox.textContent = "Chargement des données publiques (Ville de Paris)…";
-
-  const apiUrl = getParisUrl(15);
+  statusBox.textContent = "Chargement des événements…";
 
   try {
-    const res = await fetch(apiUrl, { method: "GET" });
+    // This file must be generated by GitHub Actions daily.
+    // It avoids CORS issues and keeps the site static.
+    const res = await fetch("/events.json", { cache: "no-store" });
 
     if (!res.ok) {
-      statusBox.textContent = "Erreur : accès impossible aux données (HTTP " + res.status + ").";
+      statusBox.textContent = "Erreur : fichier events.json introuvable (HTTP " + res.status + ").";
       return;
     }
 
     const data = await res.json();
 
-    if (!data.records || data.records.length === 0) {
-      statusBox.textContent = "Aucun événement trouvé.";
+    if (!data || !data.records || data.records.length === 0) {
+      statusBox.textContent = "Aucun événement disponible.";
       return;
     }
 
@@ -545,13 +453,8 @@ async function loadEvents() {
     data.records.forEach(record => {
       const f = record.fields || {};
 
-      // Minimal fields only (99% legal safety)
-      const titleRaw = f.title || "Événement";
-      const cityRaw = f.address_city || "Paris";
-
-      // No description displayed (ultra safe)
-      const title = truncateText(removeSensitivePatterns(titleRaw), 110);
-      const location = truncateText(removeSensitivePatterns(cityRaw), 60);
+      const title = truncateText(removeSensitivePatterns(f.title || "Événement"));
+      const location = truncateText(removeSensitivePatterns(f.address_city || "Paris"), 60);
 
       const dateStart = f.date_start || "";
       const dateEnd = f.date_end || "";
@@ -561,30 +464,26 @@ async function loadEvents() {
         date += " – " + formatDate(dateEnd);
       }
 
-      // Only official URL if present
       const url = safeUrl(f.url);
 
       html += buildCard({
         title,
         date,
         location,
-        sourceName: "Paris Open Data (Ville de Paris)",
         url
       });
     });
 
     grid.innerHTML = html;
-    statusBox.textContent = "Résultats affichés : " + data.records.length + " événements (Ville de Paris).";
+    statusBox.textContent = "Événements affichés : " + data.records.length;
 
-  } catch (err) {
-    statusBox.textContent = "Erreur technique : API indisponible ou accès bloqué (CORS).";
-    grid.innerHTML = "";
+  } catch (e) {
+    statusBox.textContent = "Erreur : impossible de charger events.json.";
   }
 }
 
-/* INITIAL LOAD */
 loadEvents();
 </script>
 
 </body>
-  </html>
+</html>
