@@ -149,7 +149,7 @@ This repository uses a custom domain configured via the `CNAME` file.
 
 The `CNAME` file must contain exactly:
 
-www.nvo987.eu
+nvo987.eu
 
 ⚠️ Do not include `https://` and do not include `/`.
 
