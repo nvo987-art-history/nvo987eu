@@ -118,7 +118,7 @@ The publisher declines all responsibility for direct or indirect damages resulti
 
 Official legal notices of the association are available at:
 
-https://www.nvo987.fr
+https://nvo987.fr
 
 ---
 
