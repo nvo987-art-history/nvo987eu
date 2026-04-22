@@ -28,7 +28,7 @@ This website is designed to minimize GDPR and privacy risks:
 - No user accounts
 - No user database
 - No forms collecting personal information
-- No IP logging or tracking is intentionally performed
+- No IP logging is intentionally performed by the website itself (hosting provider may log technical access data).
 
 The site only fetches a local JSON file (`events.json`) generated from public Open Data sources.
 
