@@ -1,0 +1,505 @@
+/* =========================
+RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* =========================
+BODY
+========================= */
+
+body{
+
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+
+background:linear-gradient(
+180deg,
+#efe3d6 0%,
+#e4d4c2 50%,
+#efe3d6 100%
+);
+
+color:#ffffff;
+line-height:1.65;
+
+min-height:100vh;
+
+display:flex;
+flex-direction:column;
+
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+nav{
+
+display:flex;
+flex-wrap:wrap;
+
+justify-content:center;
+align-items:center;
+
+gap:12px 28px;
+
+padding:16px 18px;
+
+background:#efe3d6;
+
+font-size:0.95rem;
+font-weight:900;
+
+letter-spacing:0.04em;
+
+border-bottom:1px solid rgba(0,0,0,0.08);
+
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+nav a{
+
+color:#6b1f28;
+text-decoration:none;
+transition:0.25s;
+
+font-weight:900;
+
+}
+
+nav a:hover{
+
+color:#000;
+
+}
+
+/* =========================
+HERO BANNER
+========================= */
+
+.hero{
+
+min-height:40vh;
+max-height:520px;
+
+padding:60px 20px;
+
+margin:30px 22px;
+
+border-radius:20px;
+
+background-image:url("banner.jpg");
+background-size:cover;
+background-position:center 35%;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+/* GLASS PANEL */
+
+.hero-text{
+
+text-align:center;
+
+max-width:760px;
+
+padding:30px 38px;
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(10px);
+
+border-radius:16px;
+
+border:1px solid rgba(255,255,255,0.35);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+/* TITLE */
+
+.hero h1{
+
+font-size:3rem;
+font-weight:700;
+
+margin-bottom:12px;
+
+letter-spacing:0.05em;
+
+text-shadow:0 4px 10px rgba(0,0,0,0.8);
+
+}
+
+/* SUBTITLE */
+
+.hero-subtitle{
+
+font-size:1.35rem;
+
+margin-bottom:8px;
+
+text-shadow:0 3px 8px rgba(0,0,0,0.75);
+
+}
+
+/* TAGLINE */
+
+.hero-tagline{
+
+font-size:1rem;
+
+text-shadow:0 3px 8px rgba(0,0,0,0.75);
+
+}
+
+/* =========================
+MAIN
+========================= */
+
+main{
+
+max-width:920px;
+margin:auto;
+
+padding:20px 22px 36px 22px;
+
+flex:1;
+
+}
+
+/* =========================
+CARD SECTIONS
+========================= */
+
+section{
+
+margin-bottom:36px;
+
+padding:28px;
+
+background:#7a1f2b;
+
+border-radius:18px;
+
+border-left:5px solid #d4af37;
+
+box-shadow:0 14px 35px rgba(0,0,0,0.25);
+
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+
+overflow:hidden;
+
+}
+
+section:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 45px rgba(0,0,0,0.35);
+
+}
+
+/* =========================
+PAYPAL SECTION (same style)
+========================= */
+
+.paypal-box{
+
+display:flex;
+align-items:center;
+gap:22px;
+
+}
+
+.paypal-logo{
+
+width:90px;
+max-width:90px;
+
+}
+
+.paypal-text{
+
+flex:1;
+
+}
+
+/* =========================
+TEXT
+========================= */
+
+p{
+margin-bottom:1.1em;
+}
+
+section p:last-child{
+margin-bottom:0;
+}
+
+/* =========================
+HEADINGS
+========================= */
+
+h1,h2,h3{
+letter-spacing:0.02em;
+}
+
+h2{
+
+font-size:1.7rem;
+
+margin-bottom:16px;
+
+border-bottom:1px solid rgba(255,255,255,0.25);
+
+padding-bottom:8px;
+
+}
+
+/* =========================
+LIST
+========================= */
+
+ul{
+list-style:none;
+}
+
+li{
+margin:10px 0;
+}
+
+/* =========================
+LINKS
+========================= */
+
+a{
+
+color:#ffd166;
+text-decoration:none;
+font-weight:600;
+
+}
+
+a:hover{
+
+color:#ffffff;
+text-decoration:underline;
+
+}
+
+/* =========================
+BUTTON LINKS
+========================= */
+
+.button-link{
+
+display:inline-block;
+
+background:#d4af37;
+color:#7a1f2b;
+
+padding:10px 16px;
+
+border-radius:8px;
+
+font-weight:700;
+
+text-decoration:none;
+
+margin-top:10px;
+
+transition:0.25s;
+
+}
+
+.button-link:hover{
+
+background:#ffd166;
+color:#7a1f2b;
+
+}
+
+/* =========================
+OFFICIAL LOGO
+========================= */
+
+.logo-caption{
+
+text-align:center;
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.official-logo{
+
+display:block;
+
+margin:12px auto;
+
+max-width:120px;
+max-height:120px;
+
+width:auto;
+height:auto;
+
+object-fit:contain;
+
+border-radius:10px;
+
+box-shadow:0 6px 18px rgba(0,0,0,0.25);
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+text-align:center;
+
+padding:18px 16px;
+
+color:#6b1f28;
+
+font-size:0.9rem;
+
+line-height:1.5;
+
+margin-top:40px;
+
+border-top:1px solid rgba(0,0,0,0.12);
+
+}
+
+footer a{
+
+color:#7a1f2b;
+font-weight:600;
+
+}
+
+footer a:hover{
+
+color:#000;
+
+}
+
+/* =========================
+FOUNDER PROFILE
+========================= */
+
+.founder-box{
+
+display:flex;
+gap:22px;
+align-items:flex-start;
+flex-wrap:wrap;
+
+}
+
+.founder-photo{
+
+width:160px;
+border-radius:12px;
+
+}
+
+.founder-text{
+
+flex:1;
+min-width:240px;
+
+}
+
+/* =========================
+SECTION IMAGE
+========================= */
+
+.section-image{
+
+width:100%;
+display:block;
+
+margin:18px 0 22px 0;
+
+border-radius:14px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:600px){
+
+.hero{
+
+min-height:260px;
+
+padding:40px 16px;
+
+margin:20px 14px;
+
+background-position:center 30%;
+
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero-subtitle{
+font-size:1.1rem;
+}
+
+.hero-tagline{
+font-size:0.9rem;
+}
+
+.hero-text{
+padding:22px;
+}
+
+main{
+padding:18px 16px 30px 16px;
+}
+
+section{
+padding:22px;
+}
+
+nav{
+gap:10px 16px;
+font-size:0.9rem;
+}
+
+/* mobile paypal */
+
+.paypal-box{
+flex-direction:column;
+text-align:center;
+}
+
+.paypal-logo{
+width:110px;
+}
+
+                            }
