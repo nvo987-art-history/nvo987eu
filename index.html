@@ -5,8 +5,8 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Agenda Culturel – France (Open Data) | NVO987.eu</title>
-<meta name="description" content="Agenda culturel automatisé basé sur des données publiques ouvertes en France. Aucune donnée personnelle n’est stockée ni traitée.">
+<title>Agenda Culturel – Paris (Open Data) | NVO987.eu</title>
+<meta name="description" content="Agenda culturel automatisé basé sur des données publiques ouvertes (Ville de Paris). Aucune donnée personnelle n’est stockée ni traitée.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://nvo987.eu/">
 
@@ -15,66 +15,29 @@
   --bg:#ffffff;
   --text:#111;
   --muted:#555;
-  --border:#e5e5e5;
-  --card:#fafafa;
+  --border:#e6e6e6;
+  --card:#fbfbfb;
   --accent:#0a3d91;
   --accent2:#6b3f2a;
-  --shadow:0 10px 30px rgba(0,0,0,0.06);
-  --radius:14px;
+  --shadow:0 12px 30px rgba(0,0,0,0.06);
+  --radius:16px;
 }
 
 *{box-sizing:border-box;}
 
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
-}
-
-/* HERO */
-header.hero{
-  background: linear-gradient(120deg, rgba(10,61,145,0.92), rgba(107,63,42,0.92));
-  padding: 75px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.25);
-}
-
-.hero-inner{
-  max-width: 1100px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-.hero-title{
-  font-size: 3rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 1px;
-}
-
-.hero-subtitle{
-  font-size: 1.15rem;
-  margin: 0;
-  opacity: 0.96;
-  max-width: 900px;
-}
-
-.hero-tag{
-  margin-top: 18px;
-  display: inline-block;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.18);
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  backdrop-filter: blur(6px);
+  line-height:1.65;
 }
 
 /* NAV */
 nav{
   background:#fff;
   border-bottom:1px solid var(--border);
-  padding:12px 18px;
+  padding:14px 18px;
   position:sticky;
   top:0;
   z-index:999;
@@ -91,7 +54,7 @@ nav{
 }
 
 .nav-left{
-  font-weight:bold;
+  font-weight:800;
   letter-spacing:0.5px;
   color:var(--accent2);
 }
@@ -101,80 +64,94 @@ nav{
   color:var(--text);
   font-size:0.95rem;
   margin-left:14px;
+  opacity:0.95;
 }
 
 .nav-links a:hover{
   text-decoration:underline;
 }
 
+/* HERO */
+header.hero{
+  background: linear-gradient(120deg, rgba(10,61,145,0.92), rgba(107,63,42,0.92));
+  padding: 75px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.hero-title{
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.hero-subtitle{
+  font-size: 1.15rem;
+  margin: 0;
+  opacity: 0.96;
+  max-width: 920px;
+}
+
+.hero-tag{
+  margin-top: 18px;
+  display: inline-block;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  backdrop-filter: blur(6px);
+}
+
 /* MAIN */
 main{
   max-width:1100px;
   margin:0 auto;
-  padding:35px 20px 60px;
+  padding:40px 20px 70px;
 }
 
 .section-title{
-  font-size:1.8rem;
+  font-size:1.9rem;
   margin-bottom:10px;
 }
 
 .section-intro{
   color:var(--muted);
   margin-top:0;
-  margin-bottom:25px;
-  max-width:900px;
+  margin-bottom:22px;
+  max-width:950px;
 }
 
 /* LEGAL BOX */
 .legal-box{
   background:#fff;
   border:1px solid var(--border);
-  border-left:5px solid var(--accent2);
-  padding:16px 16px;
-  border-radius:12px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.03);
-  margin-bottom:25px;
+  border-left:6px solid var(--accent2);
+  padding:18px 18px;
+  border-radius:14px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.03);
+  margin-bottom:22px;
   color:var(--muted);
   font-size:0.95rem;
+}
+
+.legal-box h3{
+  margin:0 0 12px 0;
+  color:var(--text);
+  font-size:1.1rem;
+}
+
+.legal-box p{
+  margin:10px 0;
 }
 
 .legal-box strong{
   color:var(--text);
-}
-
-/* CONTROLS */
-.controls{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-bottom:25px;
-  align-items:center;
-}
-
-.control{
-  background:#fff;
-  border:1px solid var(--border);
-  padding:10px 12px;
-  border-radius:10px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.03);
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.control label{
-  font-size:0.9rem;
-  color:var(--muted);
-}
-
-.control input,
-.control select{
-  border:none;
-  outline:none;
-  font-size:0.95rem;
-  background:transparent;
-  min-width:180px;
 }
 
 /* STATUS */
@@ -185,7 +162,7 @@ main{
   border-radius:12px;
   margin-bottom:18px;
   color:var(--muted);
-  box-shadow:0 2px 8px rgba(0,0,0,0.03);
+  box-shadow:0 2px 10px rgba(0,0,0,0.03);
 }
 
 /* GRID */
@@ -203,7 +180,7 @@ main{
   overflow:hidden;
   display:flex;
   flex-direction:column;
-  min-height:210px;
+  min-height:220px;
 }
 
 .card-header{
@@ -213,10 +190,11 @@ main{
 .card-title{
   font-size:1.15rem;
   margin:0 0 8px 0;
+  font-weight:700;
 }
 
 .card-meta{
-  font-size:0.95rem;
+  font-size:0.93rem;
   color:var(--muted);
   margin:0 0 6px 0;
 }
@@ -249,11 +227,12 @@ main{
   display:inline-block;
   text-decoration:none;
   padding:8px 12px;
-  border-radius:10px;
+  border-radius:12px;
   font-size:0.9rem;
   border:1px solid rgba(10,61,145,0.25);
-  background:rgba(10,61,145,0.08);
+  background:rgba(10,61,145,0.09);
   color:var(--accent);
+  font-weight:600;
 }
 
 .btn:hover{
@@ -263,7 +242,7 @@ main{
 /* FOOTER */
 footer{
   border-top:1px solid var(--border);
-  padding:25px 20px;
+  padding:30px 20px;
   background:#fff;
 }
 
@@ -272,6 +251,10 @@ footer{
   margin:0 auto;
   color:var(--muted);
   font-size:0.92rem;
+}
+
+.footer-inner strong{
+  color:var(--text);
 }
 
 .small-note{
@@ -293,7 +276,6 @@ footer{
 @media (max-width:600px){
   .hero-title{font-size:2.2rem;}
   .nav-links a{margin-left:0;margin-right:12px;}
-  .control input,.control select{min-width:140px;}
 }
 </style>
 </head>
@@ -307,76 +289,79 @@ footer{
       <a href="https://nvo987.fr" target="_blank" rel="noopener noreferrer">Association</a>
       <a href="https://nvo987.us" target="_blank" rel="noopener noreferrer">Infrastructure</a>
       <a href="https://identity.nvo987.us" target="_blank" rel="noopener noreferrer">Identity</a>
-      <a href="https://images.nvo987.fr" target="_blank" rel="noopener noreferrer">Images</a>
     </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-inner">
-    <h1 class="hero-title">Agenda Culturel</h1>
+    <h1 class="hero-title">Agenda Culturel – Paris</h1>
     <p class="hero-subtitle">
-      Sélection automatisée d’informations culturelles en France, construite exclusivement à partir de sources publiques
-      (Open Data). Aucun contenu n’est hébergé ni archivé sur ce site.
+      Présentation automatisée d’événements culturels à Paris, générée à partir de données publiques ouvertes.
+      Cette page ne constitue pas un service officiel de réservation ou d’organisation.
     </p>
-    <div class="hero-tag">Open Data · France · Événements · Institutions culturelles</div>
+    <div class="hero-tag">Ville de Paris · Open Data · Événements culturels</div>
   </div>
 </header>
 
 <main>
 
-  <h2 class="section-title">Événements publics (France)</h2>
+  <h2 class="section-title">Événements publics (Ville de Paris)</h2>
   <p class="section-intro">
-    Cette page affiche des informations issues de bases publiques officielles. Les données sont récupérées en temps réel
-    et présentées sous forme de synthèse.
+    Les événements affichés ci-dessous proviennent d’une base publique officielle de la Ville de Paris.
+    Les données sont récupérées en temps réel via une interface API et présentées sous forme de synthèse.
   </p>
 
   <div class="legal-box">
-    <p><strong>Information juridique importante :</strong></p>
+    <h3>Informations juridiques et conditions d’utilisation</h3>
 
     <p>
-      Ce site agit uniquement comme une interface de consultation et ne constitue pas une base de données autonome.
-      Les informations affichées sont extraites en temps réel de sources publiques accessibles librement.
+      <strong>1. Nature du service</strong><br>
+      Le site <strong>nvo987.eu</strong> agit exclusivement comme une interface de consultation automatisée
+      et ne constitue pas une base de données autonome ni une publication institutionnelle officielle.
+      Aucune garantie n’est donnée concernant l’exactitude, l’exhaustivité ou la mise à jour des informations affichées.
     </p>
 
     <p>
-      <strong>Aucune donnée personnelle n’est stockée, collectée ou traitée</strong> par ce site.
+      <strong>2. Données publiques et sources officielles</strong><br>
+      Les contenus affichés sont extraits automatiquement depuis la plateforme officielle
+      <strong>Paris Open Data</strong> (Ville de Paris), dataset :
+      <strong>« Que faire à Paris ? – Évènements et activités »</strong>.
+      Les détails complets, horaires, conditions d’accès et éventuelles restrictions doivent être consultés directement
+      sur les pages officielles de la Ville de Paris ou sur les sites des organisateurs.
+    </p>
+
+    <p>
+      <strong>3. Licence des données (ODbL)</strong><br>
+      Les données utilisées sont mises à disposition sous licence
+      <strong>Open Database License (ODbL)</strong>.
+      Conformément à cette licence, la réutilisation est autorisée sous réserve de respecter l’attribution de la source.
+      La source officielle est :
+      <strong>opendata.paris.fr</strong>.
+    </p>
+
+    <p>
+      <strong>4. Données personnelles et RGPD</strong><br>
+      Cette page a été conçue pour minimiser tout risque lié au RGPD :
+      <strong>aucune donnée personnelle n’est volontairement collectée, stockée ou traitée</strong>.
       Les champs susceptibles de contenir des coordonnées privées (email, téléphone, nom de contact) ne sont pas affichés.
+      Aucune inscription, aucun compte utilisateur et aucune collecte d’identifiant n’est mis en place.
     </p>
 
     <p>
-      Les contenus officiels et les détails complets doivent être consultés directement auprès des sites sources.
-      En cas d’erreur ou de mise à jour, seule la source officielle fait foi.
+      <strong>5. Cookies et suivi</strong><br>
+      Ce site ne dépose aucun cookie publicitaire et n’utilise aucun système de suivi comportemental.
+      Aucune analyse marketing n’est réalisée.
+    </p>
+
+    <p>
+      <strong>6. Responsabilité</strong><br>
+      Les informations sont fournies à titre indicatif. L’utilisateur est invité à vérifier l’information auprès de la source officielle.
+      En cas de suppression, correction ou mise à jour, seule la source publique fait foi.
     </p>
   </div>
 
-  <div class="status" id="statusBox">
-    Chargement des événements…
-  </div>
-
-  <div class="controls">
-    <div class="control">
-      <label for="sourceSelect">Source</label>
-      <select id="sourceSelect">
-        <option value="idf">Île-de-France (OpenAgenda / Open Data)</option>
-        <option value="festivals">Festivals (Ministère de la Culture)</option>
-      </select>
-    </div>
-
-    <div class="control">
-      <label for="searchInput">Recherche</label>
-      <input type="text" id="searchInput" placeholder="Mot-clé (festival, exposition, musée...)">
-    </div>
-
-    <div class="control">
-      <label for="limitSelect">Résultats</label>
-      <select id="limitSelect">
-        <option value="6">6</option>
-        <option value="12" selected>12</option>
-        <option value="24">24</option>
-      </select>
-    </div>
-  </div>
+  <div class="status" id="statusBox">Chargement des événements…</div>
 
   <div class="grid" id="eventsGrid"></div>
 
@@ -384,7 +369,7 @@ footer{
 
 <footer>
   <div class="footer-inner">
-    <div>© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine</div>
+    <div><strong>© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine</strong></div>
 
     <div class="small-note">
       Ce site ne place aucun cookie, ne réalise aucun suivi publicitaire et ne conserve aucune donnée utilisateur.
@@ -392,38 +377,43 @@ footer{
     </div>
 
     <div class="small-note">
-      <strong>Sources et licences des données publiques :</strong><br>
-      – Données issues du portail <a href="https://data.culture.gouv.fr" target="_blank" rel="noopener noreferrer">data.culture.gouv.fr</a>
-      (Ministère de la Culture) – <strong>Licence Ouverte / Open Licence v2.0</strong>.<br>
-      – Données issues du portail <a href="https://opendata.iledefrance.fr" target="_blank" rel="noopener noreferrer">opendata.iledefrance.fr</a>
-      (Région Île-de-France) – données publiées sous <strong>licence ouverte</strong> conformément à la politique Open Data régionale.
+      <strong>Source officielle des données :</strong>
+      <a href="https://opendata.paris.fr" target="_blank" rel="noopener noreferrer">opendata.paris.fr</a>
+      (Ville de Paris – Paris Open Data)
+      <br>
+      Dataset : <em>Que faire à Paris ? – Évènements et activités</em>
+      <br>
+      <strong>Licence :</strong> Open Database License (ODbL)
     </div>
 
     <div class="small-note">
       Avertissement : cette page fournit une présentation simplifiée d’informations publiques.
-      Pour les détails, conditions d’accès, horaires exacts et éventuelles restrictions, veuillez consulter les pages officielles.
+      Pour les détails complets, horaires exacts et conditions d’accès, veuillez consulter la source officielle.
     </div>
   </div>
 </footer>
 
 <script>
 /* -------------------------------------------------
-   NVO987.eu – Agenda Culturel (Open Data)
+   NVO987.eu – Agenda Culturel (Paris Open Data)
    LEGAL-FIRST DESIGN (99% safety approach)
-   - No tracking
+
    - No cookies
-   - No storage
-   - No personal contact fields displayed
-   - Only safe metadata: title, date, general location, official URL
-   - Live fetch from official open data platforms
+   - No tracking
+   - No analytics
+   - No storage / no database
+   - No user accounts
+   - Only safe metadata displayed
+   - Strict filtering
+   - Attribution included (ODbL)
+
+   API source:
+   https://opendata.paris.fr
+   Dataset: que-faire-a-paris-
 -------------------------------------------------- */
 
 const grid = document.getElementById("eventsGrid");
 const statusBox = document.getElementById("statusBox");
-
-const sourceSelect = document.getElementById("sourceSelect");
-const searchInput = document.getElementById("searchInput");
-const limitSelect = document.getElementById("limitSelect");
 
 function escapeHTML(str) {
   if (!str) return "";
@@ -435,34 +425,19 @@ function escapeHTML(str) {
     .replaceAll("'", "&#039;");
 }
 
-function truncateText(text, maxLen = 240) {
-  if (!text) return "";
-  const clean = text.replace(/\s+/g, " ").trim();
-  if (clean.length <= maxLen) return clean;
-  return clean.substring(0, maxLen) + "…";
-}
-
 function formatDate(dateStr) {
   if (!dateStr) return "Date non précisée";
   try {
     const d = new Date(dateStr);
-    if (isNaN(d.getTime())) return dateStr;
+    if (isNaN(d.getTime())) return "Date non précisée";
     return d.toLocaleDateString("fr-FR", {
       year: "numeric",
       month: "long",
       day: "numeric"
     });
   } catch {
-    return dateStr;
+    return "Date non précisée";
   }
-}
-
-function clearGrid() {
-  grid.innerHTML = "";
-}
-
-function setStatus(message) {
-  statusBox.textContent = message;
 }
 
 function safeUrl(url) {
@@ -476,17 +451,41 @@ function safeUrl(url) {
   }
 }
 
-function buildCard({ title, date, location, description, sourceName, url }) {
+/*
+  EXTRA SAFETY FILTER:
+  We remove typical personal data patterns from text fields.
+  (rare, but ensures better GDPR protection)
+*/
+function removeSensitivePatterns(text) {
+  if (!text) return "";
+  let t = String(text);
+
+  // Remove email patterns
+  t = t.replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "[coordonnée supprimée]");
+
+  // Remove phone-like patterns (very approximate but helpful)
+  t = t.replace(/(\+33|0)\s?[1-9](?:[\s\.\-]?\d{2}){4}/g, "[coordonnée supprimée]");
+
+  return t;
+}
+
+function truncateText(text, maxLen = 200) {
+  if (!text) return "";
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= maxLen) return clean;
+  return clean.substring(0, maxLen) + "…";
+}
+
+function buildCard({ title, date, location, sourceName, url }) {
   const safeTitle = escapeHTML(title || "Sans titre");
-  const safeLocation = escapeHTML(location || "Lieu non précisé");
-  const safeDesc = escapeHTML(description || "");
-  const safeSource = escapeHTML(sourceName || "Source publique");
+  const safeLocation = escapeHTML(location || "Paris");
+  const safeSource = escapeHTML(sourceName || "Ville de Paris");
 
   const checkedUrl = safeUrl(url);
 
   const linkButton = checkedUrl
-    ? `<a class="btn" href="${escapeHTML(checkedUrl)}" target="_blank" rel="noopener noreferrer">Source officielle</a>`
-    : `<span class="btn" style="opacity:0.5; pointer-events:none;">Lien indisponible</span>`;
+    ? `<a class="btn" href="${escapeHTML(checkedUrl)}" target="_blank" rel="noopener noreferrer">Voir la source</a>`
+    : `<span class="btn" style="opacity:0.55; pointer-events:none;">Lien indisponible</span>`;
 
   return `
     <article class="card">
@@ -496,10 +495,12 @@ function buildCard({ title, date, location, description, sourceName, url }) {
         <p class="card-meta">🗓 ${escapeHTML(date)}</p>
       </div>
       <div class="card-body">
-        <p>${safeDesc}</p>
+        <p style="color:#666;margin:0;">
+          Données publiques : ${safeSource}
+        </p>
       </div>
       <div class="card-footer">
-        <span class="badge">${safeSource}</span>
+        <span class="badge">ODbL</span>
         ${linkButton}
       </div>
     </article>
@@ -507,167 +508,79 @@ function buildCard({ title, date, location, description, sourceName, url }) {
 }
 
 /* -------------------------------------------------
-   SAFE API SOURCES
+   PARIS OPEN DATA API
 -------------------------------------------------- */
 
-function getIDFUrl(rows, query) {
-  let url = "https://opendata.iledefrance.fr/api/records/1.0/search/?dataset=evenements-publics-cibul";
-  url += "&rows=" + encodeURIComponent(rows);
-  url += "&sort=-date_start";
-  if (query && query.trim().length > 0) {
-    url += "&q=" + encodeURIComponent(query.trim());
-  }
-  return url;
+function getParisUrl(rows = 12) {
+  // No search query here (to avoid edge-case errors).
+  // Always stable.
+  return "https://opendata.paris.fr/explore/dataset/que-faire-a-paris-/api/records/1.0/search/"
+       + "?rows=" + encodeURIComponent(rows)
+       + "&sort=-date_start";
 }
-
-function getFestivalsUrl(rows, query) {
-  let url = "https://data.culture.gouv.fr/api/records/1.0/search/?dataset=festivals-global-festivals-_-pl";
-  url += "&rows=" + encodeURIComponent(rows);
-  url += "&sort=-annee_creation";
-  if (query && query.trim().length > 0) {
-    url += "&q=" + encodeURIComponent(query.trim());
-  }
-  return url;
-}
-
-/* -------------------------------------------------
-   NORMALIZATION WITH STRICT FILTERING
--------------------------------------------------- */
-
-function normalizeIDF(record) {
-  const f = record.fields || {};
-
-  const title = f.title || f.name || "Événement public";
-  const dateStart = f.date_start || f.firstdate_begin || f.date || "";
-  const dateEnd = f.date_end || f.lastdate_end || "";
-
-  let date = formatDate(dateStart);
-  if (dateEnd && dateEnd !== dateStart) {
-    date += " – " + formatDate(dateEnd);
-  }
-
-  const location =
-    f.address_locality ||
-    f.city ||
-    f.location_city ||
-    "Île-de-France";
-
-  const description = truncateText(
-    f.lead_text || f.description || "",
-    220
-  );
-
-  const url = safeUrl(f.link || f.url || f.website || f.canonical_url);
-
-  return {
-    title,
-    date,
-    location,
-    description,
-    sourceName: "Île-de-France Open Data",
-    url
-  };
-}
-
-function normalizeFestival(record) {
-  const f = record.fields || {};
-
-  const title = f.nom_du_festival || f.nom || "Festival";
-  const location =
-    f.commune_principale ||
-    f.region_principale ||
-    "France";
-
-  let date = "Informations générales";
-  if (f.annee_creation) {
-    date = "Création : " + f.annee_creation;
-  }
-
-  const descriptionParts = [];
-
-  if (f.discipline_dominante) descriptionParts.push("Discipline : " + f.discipline_dominante);
-  if (f.periode_principale_de_deroulement) descriptionParts.push("Période : " + f.periode_principale_de_deroulement);
-
-  const description = truncateText(descriptionParts.join(" · "), 220);
-
-  const url = safeUrl(f.site_internet);
-
-  return {
-    title,
-    date,
-    location,
-    description,
-    sourceName: "Ministère de la Culture",
-    url
-  };
-}
-
-/* -------------------------------------------------
-   LOAD EVENTS
--------------------------------------------------- */
 
 async function loadEvents() {
-  clearGrid();
-  setStatus("Chargement des données publiques…");
+  grid.innerHTML = "";
+  statusBox.textContent = "Chargement des données publiques (Ville de Paris)…";
 
-  const source = sourceSelect.value;
-  const rows = parseInt(limitSelect.value, 10) || 12;
-  const query = searchInput.value || "";
-
-  let apiUrl = "";
-
-  if (source === "idf") apiUrl = getIDFUrl(rows, query);
-  if (source === "festivals") apiUrl = getFestivalsUrl(rows, query);
+  const apiUrl = getParisUrl(15);
 
   try {
     const res = await fetch(apiUrl, { method: "GET" });
 
     if (!res.ok) {
-      setStatus("Erreur : accès impossible aux données (HTTP " + res.status + ").");
+      statusBox.textContent = "Erreur : accès impossible aux données (HTTP " + res.status + ").";
       return;
     }
 
     const data = await res.json();
 
     if (!data.records || data.records.length === 0) {
-      setStatus("Aucun résultat trouvé.");
+      statusBox.textContent = "Aucun événement trouvé.";
       return;
     }
 
     let html = "";
 
     data.records.forEach(record => {
-      let normalized;
+      const f = record.fields || {};
 
-      if (source === "idf") normalized = normalizeIDF(record);
-      if (source === "festivals") normalized = normalizeFestival(record);
+      // Minimal fields only (99% legal safety)
+      const titleRaw = f.title || "Événement";
+      const cityRaw = f.address_city || "Paris";
 
-      if (!normalized.title) return;
+      // No description displayed (ultra safe)
+      const title = truncateText(removeSensitivePatterns(titleRaw), 110);
+      const location = truncateText(removeSensitivePatterns(cityRaw), 60);
 
-      html += buildCard(normalized);
+      const dateStart = f.date_start || "";
+      const dateEnd = f.date_end || "";
+
+      let date = formatDate(dateStart);
+      if (dateEnd && dateEnd !== dateStart) {
+        date += " – " + formatDate(dateEnd);
+      }
+
+      // Only official URL if present
+      const url = safeUrl(f.url);
+
+      html += buildCard({
+        title,
+        date,
+        location,
+        sourceName: "Paris Open Data (Ville de Paris)",
+        url
+      });
     });
 
     grid.innerHTML = html;
-    setStatus("Résultats affichés : " + data.records.length);
+    statusBox.textContent = "Résultats affichés : " + data.records.length + " événements (Ville de Paris).";
 
   } catch (err) {
-    setStatus("Erreur technique : API indisponible ou accès bloqué (CORS).");
+    statusBox.textContent = "Erreur technique : API indisponible ou accès bloqué (CORS).";
     grid.innerHTML = "";
   }
 }
-
-/* -------------------------------------------------
-   EVENTS
--------------------------------------------------- */
-
-sourceSelect.addEventListener("change", loadEvents);
-limitSelect.addEventListener("change", loadEvents);
-
-let searchTimeout = null;
-searchInput.addEventListener("input", () => {
-  clearTimeout(searchTimeout);
-  searchTimeout = setTimeout(loadEvents, 700);
-});
 
 /* INITIAL LOAD */
 loadEvents();
