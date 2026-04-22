@@ -1,0 +1,36 @@
+name: Update Events JSON (Paris Open Data)
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Paris Open Data events
+        run: |
+          curl -L "https://opendata.paris.fr/explore/dataset/que-faire-a-paris-/api/records/1.0/search/?rows=30&sort=-date_start" \
+          -o events.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add events.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update events.json (Paris Open Data)"
+            git push
+          fi
