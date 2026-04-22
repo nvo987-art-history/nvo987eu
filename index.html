@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Agenda Culturel – France (Open Data) | NVO987.eu</title>
+<meta name="description" content="Agenda culturel automatisé basé sur des données publiques ouvertes en France. Aucune donnée personnelle n’est stockée ni traitée.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://nvo987.eu/">
+
+<style>
+:root{
+  --bg:#ffffff;
+  --text:#111;
+  --muted:#555;
+  --border:#e5e5e5;
+  --card:#fafafa;
+  --accent:#0a3d91;
+  --accent2:#6b3f2a;
+  --shadow:0 10px 30px rgba(0,0,0,0.06);
+  --radius:14px;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* HERO */
+header.hero{
+  background: linear-gradient(120deg, rgba(10,61,145,0.92), rgba(107,63,42,0.92));
+  padding: 75px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.hero-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.hero-title{
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle{
+  font-size: 1.15rem;
+  margin: 0;
+  opacity: 0.96;
+  max-width: 900px;
+}
+
+.hero-tag{
+  margin-top: 18px;
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  backdrop-filter: blur(6px);
+}
+
+/* NAV */
+nav{
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  padding:12px 18px;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.nav-inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 18px;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.nav-left{
+  font-weight:bold;
+  letter-spacing:0.5px;
+  color:var(--accent2);
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:var(--text);
+  font-size:0.95rem;
+  margin-left:14px;
+}
+
+.nav-links a:hover{
+  text-decoration:underline;
+}
+
+/* MAIN */
+main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:35px 20px 60px;
+}
+
+.section-title{
+  font-size:1.8rem;
+  margin-bottom:10px;
+}
+
+.section-intro{
+  color:var(--muted);
+  margin-top:0;
+  margin-bottom:25px;
+  max-width:900px;
+}
+
+/* LEGAL BOX */
+.legal-box{
+  background:#fff;
+  border:1px solid var(--border);
+  border-left:5px solid var(--accent2);
+  padding:16px 16px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom:25px;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+.legal-box strong{
+  color:var(--text);
+}
+
+/* CONTROLS */
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:25px;
+  align-items:center;
+}
+
+.control{
+  background:#fff;
+  border:1px solid var(--border);
+  padding:10px 12px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.03);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.control label{
+  font-size:0.9rem;
+  color:var(--muted);
+}
+
+.control input,
+.control select{
+  border:none;
+  outline:none;
+  font-size:0.95rem;
+  background:transparent;
+  min-width:180px;
+}
+
+/* STATUS */
+.status{
+  background:#fff;
+  border:1px solid var(--border);
+  padding:12px 14px;
+  border-radius:12px;
+  margin-bottom:18px;
+  color:var(--muted);
+  box-shadow:0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(310px, 1fr));
+  gap:18px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height:210px;
+}
+
+.card-header{
+  padding:16px 16px 0;
+}
+
+.card-title{
+  font-size:1.15rem;
+  margin:0 0 8px 0;
+}
+
+.card-meta{
+  font-size:0.95rem;
+  color:var(--muted);
+  margin:0 0 6px 0;
+}
+
+.card-body{
+  padding:0 16px 12px;
+  color:var(--text);
+  font-size:0.95rem;
+}
+
+.card-footer{
+  margin-top:auto;
+  padding:14px 16px 16px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.badge{
+  font-size:0.85rem;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--muted);
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:10px;
+  font-size:0.9rem;
+  border:1px solid rgba(10,61,145,0.25);
+  background:rgba(10,61,145,0.08);
+  color:var(--accent);
+}
+
+.btn:hover{
+  background:rgba(10,61,145,0.15);
+}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--border);
+  padding:25px 20px;
+  background:#fff;
+}
+
+.footer-inner{
+  max-width:1100px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:0.92rem;
+}
+
+.small-note{
+  margin-top:12px;
+  font-size:0.88rem;
+  color:#666;
+}
+
+.small-note a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.small-note a:hover{
+  text-decoration:underline;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px){
+  .hero-title{font-size:2.2rem;}
+  .nav-links a{margin-left:0;margin-right:12px;}
+  .control input,.control select{min-width:140px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">NVO987.eu</div>
+    <div class="nav-links">
+      <a href="https://nvo987.fr" target="_blank" rel="noopener noreferrer">Association</a>
+      <a href="https://nvo987.us" target="_blank" rel="noopener noreferrer">Infrastructure</a>
+      <a href="https://identity.nvo987.us" target="_blank" rel="noopener noreferrer">Identity</a>
+      <a href="https://images.nvo987.fr" target="_blank" rel="noopener noreferrer">Images</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">Agenda Culturel</h1>
+    <p class="hero-subtitle">
+      Sélection automatisée d’informations culturelles en France, construite exclusivement à partir de sources publiques
+      (Open Data). Aucun contenu n’est hébergé ni archivé sur ce site.
+    </p>
+    <div class="hero-tag">Open Data · France · Événements · Institutions culturelles</div>
+  </div>
+</header>
+
+<main>
+
+  <h2 class="section-title">Événements publics (France)</h2>
+  <p class="section-intro">
+    Cette page affiche des informations issues de bases publiques officielles. Les données sont récupérées en temps réel
+    et présentées sous forme de synthèse.
+  </p>
+
+  <div class="legal-box">
+    <p><strong>Information juridique importante :</strong></p>
+
+    <p>
+      Ce site agit uniquement comme une interface de consultation et ne constitue pas une base de données autonome.
+      Les informations affichées sont extraites en temps réel de sources publiques accessibles librement.
+    </p>
+
+    <p>
+      <strong>Aucune donnée personnelle n’est stockée, collectée ou traitée</strong> par ce site.
+      Les champs susceptibles de contenir des coordonnées privées (email, téléphone, nom de contact) ne sont pas affichés.
+    </p>
+
+    <p>
+      Les contenus officiels et les détails complets doivent être consultés directement auprès des sites sources.
+      En cas d’erreur ou de mise à jour, seule la source officielle fait foi.
+    </p>
+  </div>
+
+  <div class="status" id="statusBox">
+    Chargement des événements…
+  </div>
+
+  <div class="controls">
+    <div class="control">
+      <label for="sourceSelect">Source</label>
+      <select id="sourceSelect">
+        <option value="idf">Île-de-France (OpenAgenda / Open Data)</option>
+        <option value="festivals">Festivals (Ministère de la Culture)</option>
+      </select>
+    </div>
+
+    <div class="control">
+      <label for="searchInput">Recherche</label>
+      <input type="text" id="searchInput" placeholder="Mot-clé (festival, exposition, musée...)">
+    </div>
+
+    <div class="control">
+      <label for="limitSelect">Résultats</label>
+      <select id="limitSelect">
+        <option value="6">6</option>
+        <option value="12" selected>12</option>
+        <option value="24">24</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid" id="eventsGrid"></div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine</div>
+
+    <div class="small-note">
+      Ce site ne place aucun cookie, ne réalise aucun suivi publicitaire et ne conserve aucune donnée utilisateur.
+      Les requêtes sont effectuées directement depuis le navigateur vers les plateformes officielles.
+    </div>
+
+    <div class="small-note">
+      <strong>Sources et licences des données publiques :</strong><br>
+      – Données issues du portail <a href="https://data.culture.gouv.fr" target="_blank" rel="noopener noreferrer">data.culture.gouv.fr</a>
+      (Ministère de la Culture) – <strong>Licence Ouverte / Open Licence v2.0</strong>.<br>
+      – Données issues du portail <a href="https://opendata.iledefrance.fr" target="_blank" rel="noopener noreferrer">opendata.iledefrance.fr</a>
+      (Région Île-de-France) – données publiées sous <strong>licence ouverte</strong> conformément à la politique Open Data régionale.
+    </div>
+
+    <div class="small-note">
+      Avertissement : cette page fournit une présentation simplifiée d’informations publiques.
+      Pour les détails, conditions d’accès, horaires exacts et éventuelles restrictions, veuillez consulter les pages officielles.
+    </div>
+  </div>
+</footer>
+
+<script>
+/* -------------------------------------------------
+   NVO987.eu – Agenda Culturel (Open Data)
+   LEGAL-FIRST DESIGN (99% safety approach)
+   - No tracking
+   - No cookies
+   - No storage
+   - No personal contact fields displayed
+   - Only safe metadata: title, date, general location, official URL
+   - Live fetch from official open data platforms
+-------------------------------------------------- */
+
+const grid = document.getElementById("eventsGrid");
+const statusBox = document.getElementById("statusBox");
+
+const sourceSelect = document.getElementById("sourceSelect");
+const searchInput = document.getElementById("searchInput");
+const limitSelect = document.getElementById("limitSelect");
+
+function escapeHTML(str) {
+  if (!str) return "";
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function truncateText(text, maxLen = 240) {
+  if (!text) return "";
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= maxLen) return clean;
+  return clean.substring(0, maxLen) + "…";
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return "Date non précisée";
+  try {
+    const d = new Date(dateStr);
+    if (isNaN(d.getTime())) return dateStr;
+    return d.toLocaleDateString("fr-FR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  } catch {
+    return dateStr;
+  }
+}
+
+function clearGrid() {
+  grid.innerHTML = "";
+}
+
+function setStatus(message) {
+  statusBox.textContent = message;
+}
+
+function safeUrl(url) {
+  if (!url) return null;
+  try {
+    const u = new URL(url);
+    if (u.protocol !== "http:" && u.protocol !== "https:") return null;
+    return u.toString();
+  } catch {
+    return null;
+  }
+}
+
+function buildCard({ title, date, location, description, sourceName, url }) {
+  const safeTitle = escapeHTML(title || "Sans titre");
+  const safeLocation = escapeHTML(location || "Lieu non précisé");
+  const safeDesc = escapeHTML(description || "");
+  const safeSource = escapeHTML(sourceName || "Source publique");
+
+  const checkedUrl = safeUrl(url);
+
+  const linkButton = checkedUrl
+    ? `<a class="btn" href="${escapeHTML(checkedUrl)}" target="_blank" rel="noopener noreferrer">Source officielle</a>`
+    : `<span class="btn" style="opacity:0.5; pointer-events:none;">Lien indisponible</span>`;
+
+  return `
+    <article class="card">
+      <div class="card-header">
+        <h3 class="card-title">${safeTitle}</h3>
+        <p class="card-meta">📍 ${safeLocation}</p>
+        <p class="card-meta">🗓 ${escapeHTML(date)}</p>
+      </div>
+      <div class="card-body">
+        <p>${safeDesc}</p>
+      </div>
+      <div class="card-footer">
+        <span class="badge">${safeSource}</span>
+        ${linkButton}
+      </div>
+    </article>
+  `;
+}
+
+/* -------------------------------------------------
+   SAFE API SOURCES
+-------------------------------------------------- */
+
+function getIDFUrl(rows, query) {
+  let url = "https://opendata.iledefrance.fr/api/records/1.0/search/?dataset=evenements-publics-cibul";
+  url += "&rows=" + encodeURIComponent(rows);
+  url += "&sort=-date_start";
+  if (query && query.trim().length > 0) {
+    url += "&q=" + encodeURIComponent(query.trim());
+  }
+  return url;
+}
+
+function getFestivalsUrl(rows, query) {
+  let url = "https://data.culture.gouv.fr/api/records/1.0/search/?dataset=festivals-global-festivals-_-pl";
+  url += "&rows=" + encodeURIComponent(rows);
+  url += "&sort=-annee_creation";
+  if (query && query.trim().length > 0) {
+    url += "&q=" + encodeURIComponent(query.trim());
+  }
+  return url;
+}
+
+/* -------------------------------------------------
+   NORMALIZATION WITH STRICT FILTERING
+-------------------------------------------------- */
+
+function normalizeIDF(record) {
+  const f = record.fields || {};
+
+  const title = f.title || f.name || "Événement public";
+  const dateStart = f.date_start || f.firstdate_begin || f.date || "";
+  const dateEnd = f.date_end || f.lastdate_end || "";
+
+  let date = formatDate(dateStart);
+  if (dateEnd && dateEnd !== dateStart) {
+    date += " – " + formatDate(dateEnd);
+  }
+
+  const location =
+    f.address_locality ||
+    f.city ||
+    f.location_city ||
+    "Île-de-France";
+
+  const description = truncateText(
+    f.lead_text || f.description || "",
+    220
+  );
+
+  const url = safeUrl(f.link || f.url || f.website || f.canonical_url);
+
+  return {
+    title,
+    date,
+    location,
+    description,
+    sourceName: "Île-de-France Open Data",
+    url
+  };
+}
+
+function normalizeFestival(record) {
+  const f = record.fields || {};
+
+  const title = f.nom_du_festival || f.nom || "Festival";
+  const location =
+    f.commune_principale ||
+    f.region_principale ||
+    "France";
+
+  let date = "Informations générales";
+  if (f.annee_creation) {
+    date = "Création : " + f.annee_creation;
+  }
+
+  const descriptionParts = [];
+
+  if (f.discipline_dominante) descriptionParts.push("Discipline : " + f.discipline_dominante);
+  if (f.periode_principale_de_deroulement) descriptionParts.push("Période : " + f.periode_principale_de_deroulement);
+
+  const description = truncateText(descriptionParts.join(" · "), 220);
+
+  const url = safeUrl(f.site_internet);
+
+  return {
+    title,
+    date,
+    location,
+    description,
+    sourceName: "Ministère de la Culture",
+    url
+  };
+}
+
+/* -------------------------------------------------
+   LOAD EVENTS
+-------------------------------------------------- */
+
+async function loadEvents() {
+  clearGrid();
+  setStatus("Chargement des données publiques…");
+
+  const source = sourceSelect.value;
+  const rows = parseInt(limitSelect.value, 10) || 12;
+  const query = searchInput.value || "";
+
+  let apiUrl = "";
+
+  if (source === "idf") apiUrl = getIDFUrl(rows, query);
+  if (source === "festivals") apiUrl = getFestivalsUrl(rows, query);
+
+  try {
+    const res = await fetch(apiUrl, { method: "GET" });
+
+    if (!res.ok) {
+      setStatus("Erreur : accès impossible aux données (HTTP " + res.status + ").");
+      return;
+    }
+
+    const data = await res.json();
+
+    if (!data.records || data.records.length === 0) {
+      setStatus("Aucun résultat trouvé.");
+      return;
+    }
+
+    let html = "";
+
+    data.records.forEach(record => {
+      let normalized;
+
+      if (source === "idf") normalized = normalizeIDF(record);
+      if (source === "festivals") normalized = normalizeFestival(record);
+
+      if (!normalized.title) return;
+
+      html += buildCard(normalized);
+    });
+
+    grid.innerHTML = html;
+    setStatus("Résultats affichés : " + data.records.length);
+
+  } catch (err) {
+    setStatus("Erreur technique : API indisponible ou accès bloqué (CORS).");
+    grid.innerHTML = "";
+  }
+}
+
+/* -------------------------------------------------
+   EVENTS
+-------------------------------------------------- */
+
+sourceSelect.addEventListener("change", loadEvents);
+limitSelect.addEventListener("change", loadEvents);
+
+let searchTimeout = null;
+searchInput.addEventListener("input", () => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(loadEvents, 700);
+});
+
+/* INITIAL LOAD */
+loadEvents();
+</script>
+
+</body>
+  </html>
