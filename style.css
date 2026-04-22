@@ -595,12 +595,15 @@ body {
   transform: translateY(-1px);
 }
 
-/* Small note */
+/* Small note (FIXED: not tiny anymore) */
 .small-note {
-  margin-top: 12px;
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(12,30,59,0.60);
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 650;
+  color: rgba(20,20,20,0.84);
+  padding-left: 12px;
+  border-left: 3px solid rgba(212,175,55,0.55);
 }
 
 .muted {
