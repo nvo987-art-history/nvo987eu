@@ -1,62 +1,39 @@
-name: Test Île-de-France Events
+name: Update Events JSON (Paris Open Data)
 
 on:
+  schedule:
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  test-idf:
+  update-events:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download Île-de-France Events
+      - name: Download events JSON (stable endpoint)
         run: |
-          curl -fL \
-            "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/mon-ete-ma-region/records?limit=100&where=past%3Dfalse" \
-            -o iledefrance.json
+          curl -L "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" -o events.json
 
       - name: Validate JSON
         run: |
-          python3 -m json.tool iledefrance.json > /dev/null
+          python3 -m json.tool events.json > /dev/null
 
-      - name: Check data
-        run: |
-          python3 - <<'PY'
-          import json
-
-          with open("iledefrance.json", encoding="utf-8") as f:
-              data = json.load(f)
-
-          results = data.get("results", [])
-
-          print("Rekordok száma:", len(results))
-
-          if not results:
-              raise SystemExit("NINCS ESEMÉNY!")
-
-          print("\nElső esemény:")
-          print(json.dumps(
-              results[0],
-              ensure_ascii=False,
-              indent=2
-          ))
-          PY
-
-      - name: Save test data
+      - name: Commit and push if changed
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add iledefrance.json
+          git add events.json
 
           if git diff --cached --quiet; then
-            echo "No changes."
+            echo "No changes to commit."
           else
-            git commit -m "Test Île-de-France events source"
+            git commit -m "Auto-update events.json (Paris Open Data)"
             git push
           fi
