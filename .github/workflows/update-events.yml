@@ -1,4 +1,4 @@
-name: Update Events JSON (Paris Open Data)
+name: Update Events JSON
 
 on:
   schedule:
@@ -16,11 +16,61 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download events JSON (stable endpoint)
+      - name: Download Paris Open Data
         run: |
-          curl -L "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" -o events.json
+          curl -fL \
+            "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" \
+            -o paris.json
 
-      - name: Validate JSON
+      - name: Find and download DATAtourisme FMA CSV
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.request
+
+          api_url = (
+              "https://www.data.gouv.fr/api/1/datasets/"
+              "datatourisme-la-base-nationale-des-donnees-publiques-dinformation-touristique-en-open-data"
+          )
+
+          with urllib.request.urlopen(api_url, timeout=60) as response:
+              data = json.load(response)
+
+          resources = data.get("resources", [])
+
+          candidates = []
+          for resource in resources:
+              title = (resource.get("title") or "").lower()
+              url = resource.get("url") or ""
+              fmt = (resource.get("format") or "").lower()
+
+              if "datatourisme-fma" in title and fmt == "csv":
+                  candidates.append(resource)
+
+          if not candidates:
+              raise RuntimeError("DATAtourisme FMA CSV resource not found.")
+
+          resource = candidates[0]
+
+          print("DATAtourisme resource:")
+          print(resource.get("title"))
+          print(resource.get("url"))
+
+          urllib.request.urlretrieve(
+              resource["url"],
+              "datatourisme-fma.csv"
+          )
+          PY
+
+      - name: Validate Paris JSON
+        run: |
+          python3 -m json.tool paris.json > /dev/null
+
+      - name: Merge event sources
+        run: |
+          python3 scripts/merge_events.py
+
+      - name: Validate final JSON
         run: |
           python3 -m json.tool events.json > /dev/null
 
@@ -34,6 +84,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Auto-update events.json (Paris Open Data)"
+            git commit -m "Auto-update events.json"
             git push
           fi
