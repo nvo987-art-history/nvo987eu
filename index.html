@@ -738,146 +738,347 @@
     </div>
   </footer>
 
-  <!-- SCRIPT -->
   <script>
-    const statusBox = document.getElementById("statusBox");
-    const eventsGrid = document.getElementById("eventsGrid");
-    const searchInput = document.getElementById("searchInput");
-    const limitSelect = document.getElementById("limitSelect");
+  const statusBox = document.getElementById("statusBox");
+  const eventsGrid = document.getElementById("eventsGrid");
+  const searchInput = document.getElementById("searchInput");
+  const limitSelect = document.getElementById("limitSelect");
 
-    let allEvents = [];
+  let allEvents = [];
 
-    function escapeHTML(str) {
-      if (!str) return "";
-      return String(str)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+  function escapeHTML(value) {
+    if (value === null || value === undefined) return "";
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function formatDate(dateValue) {
+    if (!dateValue) return "";
+
+    const date = new Date(dateValue);
+
+    if (Number.isNaN(date.getTime())) {
+      return escapeHTML(dateValue);
     }
 
-    function formatDate(dateStr) {
-      if (!dateStr) return "";
-      const d = new Date(dateStr);
-      if (isNaN(d.getTime())) return escapeHTML(dateStr);
-      return d.toLocaleDateString("fr-FR", {
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-      });
+    return date.toLocaleDateString("fr-FR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  }
+
+  function getFields(event) {
+    /*
+     * Support both:
+     *
+     * 1. New Paris Open Data v2.1:
+     *    event.title
+     *
+     * 2. Old structure:
+     *    event.fields.title
+     *
+     * This keeps the frontend compatible.
+     */
+    return event?.fields || event || {};
+  }
+
+  function getValue(object, keys) {
+    for (const key of keys) {
+      const value = object?.[key];
+
+      if (
+        value !== undefined &&
+        value !== null &&
+        String(value).trim() !== ""
+      ) {
+        return value;
+      }
     }
 
-    function buildCard(event) {
-      const f = event.fields || {};
+    return "";
+  }
 
-      const title = escapeHTML(f.title || f.nom || "Événement");
-      const start = formatDate(f.date_start || f.date_debut || f.date);
-      const end = formatDate(f.date_end || f.date_fin);
+  function buildCard(event) {
+    const f = getFields(event);
 
-      const city = escapeHTML(f.address_city || f.ville || "Paris");
-      const url = escapeHTML(f.url || f.link || f.access_link || "");
-      const location = escapeHTML(f.address_name || f.lieu || f.location_name || "");
+    const title = escapeHTML(
+      getValue(f, [
+        "title",
+        "nom",
+        "name"
+      ]) || "Événement"
+    );
 
-      let description = escapeHTML(f.lead_text || f.description || "");
-      if (description.length > 240) description = description.slice(0, 240) + "...";
+    const start = formatDate(
+      getValue(f, [
+        "date_start",
+        "date_debut",
+        "date"
+      ])
+    );
 
-      const dateLine =
-        (start && end && end !== start) ? `${start} → ${end}` :
-        (start || "Date inconnue");
+    const end = formatDate(
+      getValue(f, [
+        "date_end",
+        "date_fin"
+      ])
+    );
 
-      const card = document.createElement("article");
-      card.className = "event-card";
+    const city = escapeHTML(
+      getValue(f, [
+        "address_city",
+        "ville",
+        "city"
+      ]) || "Paris"
+    );
 
-      card.innerHTML = `
-        <h3>${title}</h3>
+    const location = escapeHTML(
+      getValue(f, [
+        "address_name",
+        "lieu",
+        "location_name",
+        "name"
+      ])
+    );
 
-        <div class="event-meta">
-          <span>${dateLine}</span>
-          <span>•</span>
-          <span>${city}</span>
-        </div>
+    const url = escapeHTML(
+      getValue(f, [
+        "url",
+        "link",
+        "access_link"
+      ])
+    );
 
-        ${location ? `<div class="event-location">Lieu : ${location}</div>` : ""}
+    let description = escapeHTML(
+      getValue(f, [
+        "lead_text",
+        "description",
+        "description_short",
+        "excerpt"
+      ])
+    );
 
-        <div class="event-desc">
-          ${description ? description : `<span class="muted">Aucune description disponible.</span>`}
-        </div>
-
-        <div>
-          ${
-            url
-              ? `<a class="btn" href="${url}" target="_blank" rel="noopener noreferrer nofollow">Voir la source officielle</a>`
-              : `<span class="muted">Lien officiel indisponible</span>`
-          }
-        </div>
-      `;
-
-      return card;
+    if (description.length > 240) {
+      description =
+        description.substring(0, 240) + "...";
     }
 
-    function renderEvents() {
-      const query = searchInput.value.trim().toLowerCase();
-      const limit = parseInt(limitSelect.value, 10);
+    const dateLine =
+      start && end && end !== start
+        ? `${start} → ${end}`
+        : start || "Date inconnue";
 
-      eventsGrid.innerHTML = "";
+    const card = document.createElement("article");
 
-      let filtered = allEvents;
+    card.className = "event-card";
 
-      if (query.length > 0) {
-        filtered = allEvents.filter(ev => {
-          const f = ev.fields || {};
-          const blob = JSON.stringify(f).toLowerCase();
-          return blob.includes(query);
-        });
+    card.innerHTML = `
+      <h3>${title}</h3>
+
+      <div class="event-meta">
+        <span>${dateLine}</span>
+        <span>•</span>
+        <span>${city}</span>
+      </div>
+
+      ${
+        location
+          ? `
+            <div class="event-location">
+              Lieu : ${location}
+            </div>
+          `
+          : ""
       }
 
-      filtered = filtered.slice(0, limit);
-
-      if (filtered.length === 0) {
-        statusBox.className = "status warn";
-        statusBox.textContent = "Aucun événement disponible.";
-        return;
-      }
-
-      statusBox.className = "status success";
-      statusBox.textContent = `${filtered.length} événement(s) affiché(s).`;
-
-      filtered.forEach(ev => {
-        eventsGrid.appendChild(buildCard(ev));
-      });
-    }
-
-    async function loadEvents() {
-      try {
-        statusBox.className = "status info";
-        statusBox.textContent = "Chargement des événements…";
-
-        const res = await fetch("events.json?v=" + Date.now(), { cache: "no-store" });
-
-        if (!res.ok) throw new Error("HTTP error " + res.status);
-
-        const data = await res.json();
-
-        if (!data.records || !Array.isArray(data.records)) {
-          throw new Error("Invalid JSON structure: records missing");
+      <div class="event-desc">
+        ${
+          description
+            ? description
+            : `
+              <span class="muted">
+                Aucune description disponible.
+              </span>
+            `
         }
+      </div>
 
-        allEvents = data.records;
-        renderEvents();
+      <div>
+        ${
+          url
+            ? `
+              <a
+                class="btn"
+                href="${url}"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Voir la source officielle
+              </a>
+            `
+            : `
+              <span class="muted">
+                Lien officiel indisponible
+              </span>
+            `
+        }
+      </div>
+    `;
 
-      } catch (err) {
-        console.error(err);
-        statusBox.className = "status error";
-        statusBox.textContent = "Erreur : impossible de charger events.json.";
-      }
+    return card;
+  }
+
+  function renderEvents() {
+    const query =
+      searchInput.value
+        .trim()
+        .toLowerCase();
+
+    const limit =
+      parseInt(
+        limitSelect.value,
+        10
+      );
+
+    eventsGrid.innerHTML = "";
+
+    let filtered = allEvents;
+
+    /*
+     * Search through the complete record.
+     */
+    if (query.length > 0) {
+      filtered = allEvents.filter(event => {
+
+        const f = getFields(event);
+
+        const searchableText =
+          JSON.stringify(f)
+            .toLowerCase();
+
+        return searchableText.includes(query);
+      });
     }
 
-    searchInput.addEventListener("input", renderEvents);
-    limitSelect.addEventListener("change", renderEvents);
+    filtered =
+      filtered.slice(0, limit);
 
-    loadEvents();
-  </script>
+    if (filtered.length === 0) {
 
-</body>
+      statusBox.className =
+        "status warn";
+
+      statusBox.textContent =
+        "Aucun événement disponible.";
+
+      return;
+    }
+
+    statusBox.className =
+      "status success";
+
+    statusBox.textContent =
+      `${filtered.length} événement(s) affiché(s).`;
+
+    filtered.forEach(event => {
+      eventsGrid.appendChild(
+        buildCard(event)
+      );
+    });
+  }
+
+  async function loadEvents() {
+
+    try {
+
+      statusBox.className =
+        "status info";
+
+      statusBox.textContent =
+        "Chargement des événements…";
+
+      /*
+       * Cache-busting:
+       * always request the newest events.json.
+       */
+      const response =
+        await fetch(
+          "events.json?v=" +
+          Date.now(),
+          {
+            cache: "no-store"
+          }
+        );
+
+      if (!response.ok) {
+        throw new Error(
+          "HTTP error " +
+          response.status
+        );
+      }
+
+      const data =
+        await response.json();
+
+      /*
+       * Expected structure:
+       *
+       * {
+       *   "records": [...]
+       * }
+       */
+      if (
+        !data ||
+        !Array.isArray(
+          data.records
+        )
+      ) {
+        throw new Error(
+          "Invalid JSON structure: records missing"
+        );
+      }
+
+      allEvents =
+        data.records;
+
+      console.log(
+        "Events loaded:",
+        allEvents.length
+      );
+
+      renderEvents();
+
+    } catch (error) {
+
+      console.error(
+        "Unable to load events:",
+        error
+      );
+
+      statusBox.className =
+        "status error";
+
+      statusBox.textContent =
+        "Erreur : impossible de charger events.json.";
+    }
+  }
+
+  searchInput.addEventListener(
+    "input",
+    renderEvents
+  );
+
+  limitSelect.addEventListener(
+    "change",
+    renderEvents
+  );
+
+  loadEvents();
+		  </script>
 </html>
