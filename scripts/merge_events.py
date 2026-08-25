@@ -32,44 +32,44 @@ def is_paris(city="", postalcode=""):
 
 
 def find_column(fieldnames, names):
+    if not fieldnames:
+        return None
+
     normalized = {
         normalize(name): name
-        for name in (fieldnames or [])
+        for name in fieldnames
         if name
     }
 
     for name in names:
-        if normalize(name) in normalized:
-            return normalized[normalize(name)]
+        key = normalize(name)
+
+        if key in normalized:
+            return normalized[key]
 
     return None
 
 
-def get(row, column):
-    return clean(row.get(column)) if column else ""
+def get_value(row, column):
+    if not column:
+        return ""
+
+    return clean(row.get(column))
 
 
 def event_key(fields):
     return (
-        normalize(
-            fields.get("title")
-            or fields.get("label")
-            or ""
-        ),
-        normalize(
-            fields.get("date_start")
-            or ""
-        ),
-        normalize(
-            fields.get("address_city")
-            or "Paris"
-        )
+        normalize(fields.get("title")),
+        normalize(fields.get("date_start")),
+        normalize(fields.get("address_city"))
     )
 
 
 def load_paris():
+
     with open(
         "paris.json",
+        "r",
         encoding="utf-8"
     ) as f:
         data = json.load(f)
@@ -77,6 +77,7 @@ def load_paris():
     result = []
 
     for record in data.get("records", []):
+
         fields = record.get("fields", {})
 
         city = (
@@ -111,10 +112,12 @@ def load_paris():
 
 
 def load_datatourisme():
+
     result = []
 
     with open(
         "datatourisme-fma.csv",
+        "r",
         encoding="utf-8-sig",
         newline=""
     ) as f:
@@ -122,17 +125,32 @@ def load_datatourisme():
         reader = csv.DictReader(f)
         columns = reader.fieldnames or []
 
-        title = find_column(
-            columns,
-            ["label", "title", "nom", "name"]
+        print(
+            "DATAtourisme columns:",
+            columns
         )
 
-        identifier = find_column(
+        id_col = find_column(
             columns,
             ["id", "identifier"]
         )
 
-        start = find_column(
+        label_col = find_column(
+            columns,
+            ["label", "title", "nom", "name"]
+        )
+
+        type_col = find_column(
+            columns,
+            ["type"]
+        )
+
+        theme_col = find_column(
+            columns,
+            ["theme"]
+        )
+
+        start_col = find_column(
             columns,
             [
                 "startdate",
@@ -142,7 +160,7 @@ def load_datatourisme():
             ]
         )
 
-        end = find_column(
+        end_col = find_column(
             columns,
             [
                 "enddate",
@@ -152,12 +170,16 @@ def load_datatourisme():
             ]
         )
 
-        city = find_column(
+        street_col = find_column(
             columns,
-            ["city", "ville", "commune"]
+            [
+                "street",
+                "adresse",
+                "address"
+            ]
         )
 
-        postalcode = find_column(
+        postal_col = find_column(
             columns,
             [
                 "postalcode",
@@ -167,22 +189,31 @@ def load_datatourisme():
             ]
         )
 
-        street = find_column(
+        city_col = find_column(
             columns,
-            ["street", "adresse", "address"]
+            [
+                "city",
+                "ville",
+                "commune"
+            ]
         )
 
-        latitude = find_column(
+        insee_col = find_column(
+            columns,
+            ["insee"]
+        )
+
+        latitude_col = find_column(
             columns,
             ["latitude", "lat"]
         )
 
-        longitude = find_column(
+        longitude_col = find_column(
             columns,
             ["longitude", "lon", "lng"]
         )
 
-        website = find_column(
+        website_col = find_column(
             columns,
             [
                 "site web",
@@ -193,7 +224,15 @@ def load_datatourisme():
             ]
         )
 
-        description = find_column(
+        lastupdate_col = find_column(
+            columns,
+            [
+                "lastupdate",
+                "last_update"
+            ]
+        )
+
+        comment_col = find_column(
             columns,
             [
                 "comment",
@@ -202,81 +241,133 @@ def load_datatourisme():
             ]
         )
 
-        theme = find_column(
-            columns,
-            ["theme"]
-        )
-
-        dtype = find_column(
-            columns,
-            ["type"]
-        )
-
-        last_update = find_column(
-            columns,
-            [
-                "lastupdate",
-                "last_update"
-            ]
-        )
-
-        if not title:
+        if not label_col:
             raise RuntimeError(
-                "DATAtourisme: title/label column missing"
+                "DATAtourisme: label column not found. "
+                f"Columns found: {columns}"
             )
 
         for row in reader:
 
-            row_title = get(row, title)
+            title = get_value(
+                row,
+                label_col
+            )
 
-            if not row_title:
+            if not title:
                 continue
 
-            row_city = get(row, city)
-            row_postalcode = get(row, postalcode)
+            city = get_value(
+                row,
+                city_col
+            )
+
+            postalcode = get_value(
+                row,
+                postal_col
+            )
 
             if not is_paris(
-                row_city,
-                row_postalcode
+                city,
+                postalcode
             ):
                 continue
 
-            row_id = get(row, identifier)
-
             fields = {
-                "title": row_title,
-                "date_start": get(row, start),
-                "date_end": get(row, end),
-                "address_city": (
-                    row_city or "Paris"
+                "title": title,
+
+                "date_start": get_value(
+                    row,
+                    start_col
                 ),
-                "postalcode": row_postalcode,
-                "address_name": get(row, street),
-                "latitude": get(row, latitude),
-                "longitude": get(row, longitude),
-                "url": get(row, website),
-                "description": get(row, description),
-                "datatourisme_id": row_id,
-                "datatourisme_type": get(row, dtype),
-                "datatourisme_theme": get(row, theme),
-                "last_update": get(row, last_update),
+
+                "date_end": get_value(
+                    row,
+                    end_col
+                ),
+
+                "address_city": city or "Paris",
+
+                "postalcode": postalcode,
+
+                "address_name": get_value(
+                    row,
+                    street_col
+                ),
+
+                "latitude": get_value(
+                    row,
+                    latitude_col
+                ),
+
+                "longitude": get_value(
+                    row,
+                    longitude_col
+                ),
+
+                "url": get_value(
+                    row,
+                    website_col
+                ),
+
+                "description": get_value(
+                    row,
+                    comment_col
+                ),
+
+                "datatourisme_id": get_value(
+                    row,
+                    id_col
+                ),
+
+                "datatourisme_type": get_value(
+                    row,
+                    type_col
+                ),
+
+                "datatourisme_theme": get_value(
+                    row,
+                    theme_col
+                ),
+
+                "insee": get_value(
+                    row,
+                    insee_col
+                ),
+
+                "last_update": get_value(
+                    row,
+                    lastupdate_col
+                ),
+
                 "source": "datatourisme",
+
                 "source_name": "DATAtourisme",
+
                 "source_url": (
                     "https://www.datatourisme.fr/"
                 )
             }
 
-            record_id = (
-                "datatourisme-" + row_id
-                if row_id
-                else "datatourisme-"
-                + normalize(row_title)
-                + "-"
-                + normalize(
-                    get(row, start)
-                )
+            record_id = get_value(
+                row,
+                id_col
             )
+
+            if record_id:
+                record_id = (
+                    "datatourisme-"
+                    + record_id
+                )
+            else:
+                record_id = (
+                    "datatourisme-"
+                    + normalize(title)
+                    + "-"
+                    + normalize(
+                        fields["date_start"]
+                    )
+                )
 
             result.append({
                 "recordid": record_id,
@@ -286,14 +377,24 @@ def load_datatourisme():
     return result
 
 
-def merge(paris, datatourisme):
+def merge_events(
+    paris_events,
+    datatourisme_events
+):
 
     result = []
     seen = set()
 
-    for record in paris + datatourisme:
+    for record in (
+        paris_events
+        + datatourisme_events
+    ):
 
-        fields = record.get("fields", {})
+        fields = record.get(
+            "fields",
+            {}
+        )
+
         key = event_key(fields)
 
         if key in seen:
@@ -306,7 +407,11 @@ def merge(paris, datatourisme):
 
 
 def sort_key(record):
-    fields = record.get("fields", {})
+
+    fields = record.get(
+        "fields",
+        {}
+    )
 
     return (
         fields.get("date_start")
@@ -316,12 +421,33 @@ def sort_key(record):
 
 def main():
 
-    paris = load_paris()
-    datatourisme = load_datatourisme()
+    print(
+        "Loading Paris Open Data..."
+    )
 
-    events = merge(
-        paris,
-        datatourisme
+    paris_events = load_paris()
+
+    print(
+        f"Paris Open Data: "
+        f"{len(paris_events)}"
+    )
+
+    print(
+        "Loading DATAtourisme FMA..."
+    )
+
+    datatourisme_events = (
+        load_datatourisme()
+    )
+
+    print(
+        f"DATAtourisme Paris: "
+        f"{len(datatourisme_events)}"
+    )
+
+    events = merge_events(
+        paris_events,
+        datatourisme_events
     )
 
     events.sort(
@@ -330,10 +456,12 @@ def main():
 
     output = {
         "records": events,
+
         "meta": {
             "generated": datetime.now(
                 timezone.utc
             ).isoformat(),
+
             "sources": [
                 {
                     "name": (
@@ -351,6 +479,7 @@ def main():
                     )
                 }
             ],
+
             "event_count": len(events)
         }
     }
@@ -360,6 +489,7 @@ def main():
         "w",
         encoding="utf-8"
     ) as f:
+
         json.dump(
             output,
             f,
@@ -368,15 +498,7 @@ def main():
         )
 
     print(
-        f"Paris Open Data: {len(paris)}"
-    )
-
-    print(
-        f"DATAtourisme: {len(datatourisme)}"
-    )
-
-    print(
-        f"Total: {len(events)}"
+        f"TOTAL EVENTS: {len(events)}"
     )
 
 
