@@ -2,7 +2,8 @@ name: Update Events JSON (Paris Open Data)
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -16,13 +17,144 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download events JSON (stable endpoint)
+      - name: Download ALL Paris Open Data records
         run: |
-          curl -L "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" -o events.json
+          python3 <<'PY'
+          import json
+          import time
+          import urllib.parse
+          import urllib.request
+          import urllib.error
+
+          API_URL = (
+              "https://opendata.paris.fr/api/explore/v2.1/"
+              "catalog/datasets/que-faire-a-paris-/records"
+          )
+
+          LIMIT = 100
+          DELAY = 3
+          RETRY_DELAY = 10
+          MAX_RETRIES = 5
+
+          all_records = []
+          offset = 0
+
+          while True:
+              params = {
+                  "limit": LIMIT,
+                  "offset": offset
+              }
+
+              url = API_URL + "?" + urllib.parse.urlencode(params)
+
+              print(
+                  f"Downloading records "
+                  f"offset={offset}, limit={LIMIT}"
+              )
+
+              for attempt in range(MAX_RETRIES):
+                  try:
+                      request = urllib.request.Request(
+                          url,
+                          headers={
+                              "Accept": "application/json",
+                              "User-Agent": "NVO987-events-updater/1.0"
+                          }
+                      )
+
+                      with urllib.request.urlopen(
+                          request,
+                          timeout=60
+                      ) as response:
+                          data = json.load(response)
+
+                      break
+
+                  except urllib.error.HTTPError as error:
+                      if error.code == 429:
+                          print(
+                              f"HTTP 429 received. "
+                              f"Waiting {RETRY_DELAY} seconds..."
+                          )
+
+                          time.sleep(RETRY_DELAY)
+                      else:
+                          raise
+
+              else:
+                  raise RuntimeError(
+                      f"Too many retries at offset {offset}"
+                  )
+
+              records = data.get("results", [])
+
+              if not records:
+                  print("No more records.")
+                  break
+
+              all_records.extend(records)
+
+              print(
+                  f"Received {len(records)} records. "
+                  f"Total: {len(all_records)}"
+              )
+
+              if len(records) < LIMIT:
+                  print("Last page reached.")
+                  break
+
+              offset += LIMIT
+
+              print(
+                  f"Waiting {DELAY} seconds "
+                  f"before next request..."
+              )
+
+              time.sleep(DELAY)
+
+          output = {
+              "records": all_records
+          }
+
+          with open(
+              "events.json",
+              "w",
+              encoding="utf-8"
+          ) as file:
+              json.dump(
+                  output,
+                  file,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print(
+              f"Finished. "
+              f"Total records downloaded: {len(all_records)}"
+          )
+          PY
 
       - name: Validate JSON
         run: |
           python3 -m json.tool events.json > /dev/null
+          echo "events.json is valid JSON."
+
+      - name: Show record count
+        run: |
+          python3 <<'PY'
+          import json
+
+          with open(
+              "events.json",
+              encoding="utf-8"
+          ) as file:
+              data = json.load(file)
+
+          print(
+              f"Total records: "
+              f"{len(data.get('records', []))}"
+          )
+          PY
 
       - name: Commit and push if changed
         run: |
