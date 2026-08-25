@@ -1,56 +1,62 @@
-name: Update Events JSON
+name: Test Île-de-France Events
 
 on:
-  schedule:
-    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-events:
+  test-idf:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download Paris Open Data
-        run: |
-          curl -fL \
-            "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" \
-            -o paris.json
-
-      - name: Download Île-de-France Open Data
+      - name: Download Île-de-France Events
         run: |
           curl -fL \
             "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/mon-ete-ma-region/records?limit=100&where=past%3Dfalse" \
             -o iledefrance.json
 
-      - name: Validate source files
+      - name: Validate JSON
         run: |
-          python3 -m json.tool paris.json > /dev/null
           python3 -m json.tool iledefrance.json > /dev/null
 
-      - name: Merge event sources
+      - name: Check data
         run: |
-          python3 scripts/merge_events.py
+          python3 - <<'PY'
+          import json
 
-      - name: Validate final events JSON
-        run: |
-          python3 -m json.tool events.json > /dev/null
+          with open("iledefrance.json", encoding="utf-8") as f:
+              data = json.load(f)
 
-      - name: Commit and push if changed
+          results = data.get("results", [])
+
+          print("Rekordok száma:", len(results))
+
+          if not results:
+              raise SystemExit("NINCS ESEMÉNY!")
+
+          print("\nElső esemény:")
+          print(json.dumps(
+              results[0],
+              ensure_ascii=False,
+              indent=2
+          ))
+          PY
+
+      - name: Save test data
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add events.json
+          git add iledefrance.json
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes."
           else
-            git commit -m "Auto-update events.json"
+            git commit -m "Test Île-de-France events source"
             git push
           fi
