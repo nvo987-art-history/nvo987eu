@@ -1,243 +1,204 @@
 #!/usr/bin/env python3
 
 import json
-from datetime import datetime
 from pathlib import Path
-from urllib.request import Request, urlopen
 
 
 PARIS_FILE = Path("paris.json")
+IDF_FILE = Path("iledefrance.json")
 OUTPUT_FILE = Path("events.json")
-
-IDF_API = (
-    "https://opendata.iledefrance.fr/api/explore/v2.1/"
-    "catalog/datasets/mon-ete-ma-region/records"
-)
-
-IDF_LIMIT = 100
 
 
 def clean(value):
     if value is None:
         return ""
+
     return str(value).strip()
 
 
-def first_value(record, names):
-    for name in names:
-        value = record.get(name)
-
-        if value not in (None, ""):
-            return value
-
-    return ""
-
-
-def load_json(path):
-    with path.open(
+def get_paris_events():
+    with PARIS_FILE.open(
         "r",
         encoding="utf-8"
-    ) as f:
-        return json.load(f)
-
-
-def load_paris_events():
-    print("Loading Paris Open Data...")
-
-    data = load_json(PARIS_FILE)
+    ) as file:
+        data = json.load(file)
 
     records = data.get("records", [])
 
     if not isinstance(records, list):
         raise RuntimeError(
-            "Paris Open Data: invalid records structure"
+            "Paris Open Data: invalid records"
         )
-
-    print(
-        "Paris Open Data:",
-        len(records)
-    )
 
     return records
 
 
-def load_idf_events():
-    print(
-        "Loading Région Île-de-France..."
-    )
-
-    params = (
-        "?limit="
-        + str(IDF_LIMIT)
-        + "&where=past%3Dfalse"
-    )
-
-    url = IDF_API + params
-
-    request = Request(
-        url,
-        headers={
-            "User-Agent": "NVO987.eu/1.0"
-        }
-    )
-
-    with urlopen(
-        request,
-        timeout=60
-    ) as response:
-
-        data = json.load(response)
+def get_idf_events():
+    with IDF_FILE.open(
+        "r",
+        encoding="utf-8"
+    ) as file:
+        data = json.load(file)
 
     records = data.get("results", [])
 
     if not isinstance(records, list):
         raise RuntimeError(
-            "Île-de-France API: invalid results structure"
+            "Île-de-France: invalid results"
         )
-
-    print(
-        "Île-de-France events:",
-        len(records)
-    )
 
     return records
 
 
+def get_first_timing(record):
+    timings = record.get("timings")
+
+    if not isinstance(timings, list):
+        return None
+
+    if not timings:
+        return None
+
+    timing = timings[0]
+
+    if not isinstance(timing, dict):
+        return None
+
+    return timing
+
+
 def convert_idf_event(record):
     title = clean(
-        first_value(
-            record,
-            [
-                "title",
-                "titre",
-                "name",
-                "nom"
-            ]
-        )
+        record.get("title")
     )
 
     if not title:
         return None
 
-    description = clean(
-        first_value(
-            record,
-            [
-                "description",
-                "descriptif",
-                "description_evenement"
-            ]
-        )
-    )
+    timing = get_first_timing(record)
 
-    start = clean(
-        first_value(
-            record,
-            [
-                "date_start",
-                "date_debut",
-                "start_date",
-                "date"
-            ]
-        )
-    )
+    date_start = ""
+    date_end = ""
 
-    end = clean(
-        first_value(
-            record,
-            [
-                "date_end",
-                "date_fin",
-                "end_date"
-            ]
+    if timing:
+        date_start = clean(
+            timing.get("begin")
         )
-    )
 
-    city = clean(
-        first_value(
-            record,
-            [
-                "city",
-                "ville",
-                "commune",
-                "nom_commune"
-            ]
+        date_end = clean(
+            timing.get("end")
         )
-    )
 
-    address = clean(
-        first_value(
-            record,
-            [
-                "address",
-                "adresse",
-                "adresse_postale"
-            ]
-        )
-    )
+    geo = record.get("geo")
 
-    url = clean(
-        first_value(
-            record,
-            [
-                "url",
-                "website",
-                "site_web",
-                "lien"
-            ]
-        )
-    )
+    if not isinstance(geo, dict):
+        geo = {}
 
-    event_id = clean(
-        first_value(
-            record,
-            [
-                "id",
-                "recordid",
-                "identifiant"
-            ]
-        )
-    )
+    links = record.get("links")
 
-    if not event_id:
-        event_id = (
-            title
-            + "|"
-            + start
-            + "|"
-            + city
+    url = ""
+
+    if isinstance(links, list):
+        for link in links:
+            if isinstance(link, dict):
+                candidate = clean(
+                    link.get("url")
+                    or link.get("href")
+                )
+
+                if candidate:
+                    url = candidate
+                    break
+
+    elif isinstance(links, dict):
+        url = clean(
+            links.get("url")
+            or links.get("href")
         )
 
     return {
         "recordid": (
             "idf:"
-            + event_id
+            + clean(record.get("uid"))
         ),
+
         "fields": {
             "title": title,
-            "date_start": start,
-            "date_end": end,
-            "address_city": city,
-            "address_name": address,
-            "description": description,
-            "lead_text": description,
+
+            "date_start": date_start,
+
+            "date_end": date_end,
+
+            "address_city": clean(
+                record.get("location_city")
+            ),
+
+            "address_postal_code": clean(
+                record.get("location_postalcode")
+            ),
+
+            "address_name": clean(
+                record.get("location_name")
+            ),
+
+            "address": clean(
+                record.get("location_address")
+            ),
+
+            "description": clean(
+                record.get("description")
+            ),
+
+            "lead_text": clean(
+                record.get("description")
+            ),
+
             "url": url,
 
-            "source": (
-                "region-ile-de-france"
-            ),
+            "latitude": geo.get("lat"),
+
+            "longitude": geo.get("lon"),
+
+            "source": "iledefrance",
 
             "source_name": (
                 "Région Île-de-France"
+            ),
+
+            "source_dataset": (
+                "Mon été, ma région"
             ),
 
             "source_url": (
                 "https://opendata.iledefrance.fr/"
             ),
 
-            "license": (
-                "Licence Ouverte / "
-                "Open Licence 2.0"
+            "source_id": clean(
+                record.get("uid")
+            ),
+
+            "slug": clean(
+                record.get("slug")
+            ),
+
+            "category": record.get(
+                "thematique_de_votre_evenement_label"
+            ),
+
+            "event_type": record.get(
+                "nature_de_votre_evenements_label"
+            ),
+
+            "conditions": clean(
+                record.get("conditions")
+            ),
+
+            "registration": record.get(
+                "registration"
+            ),
+
+            "image": clean(
+                record.get("image_full_url")
             )
         }
     }
@@ -249,11 +210,25 @@ def event_key(event):
         {}
     )
 
+    source = clean(
+        fields.get("source")
+    )
+
+    source_id = clean(
+        fields.get("source_id")
+    )
+
+    if source_id:
+        return (
+            source,
+            source_id
+        )
+
     title = clean(
         fields.get("title")
     ).lower()
 
-    start = clean(
+    date_start = clean(
         fields.get("date_start")
     )
 
@@ -263,7 +238,7 @@ def event_key(event):
 
     return (
         title,
-        start,
+        date_start,
         city
     )
 
@@ -272,7 +247,8 @@ def merge_events(
     paris_events,
     idf_events
 ):
-    result = []
+    merged = []
+
     seen = set()
 
     for event in (
@@ -285,27 +261,22 @@ def merge_events(
             continue
 
         seen.add(key)
-        result.append(event)
 
-    return result
+        merged.append(event)
+
+    return merged
 
 
 def sort_events(events):
-
     def sort_key(event):
         fields = event.get(
             "fields",
             {}
         )
 
-        date = clean(
+        return clean(
             fields.get("date_start")
-        )
-
-        if not date:
-            return "9999-12-31"
-
-        return date[:10]
+        ) or "9999-12-31"
 
     return sorted(
         events,
@@ -316,11 +287,11 @@ def sort_events(events):
 def main():
 
     paris_events = (
-        load_paris_events()
+        get_paris_events()
     )
 
     idf_records = (
-        load_idf_events()
+        get_idf_events()
     )
 
     idf_events = []
@@ -332,14 +303,7 @@ def main():
         )
 
         if event is not None:
-            idf_events.append(
-                event
-            )
-
-    print(
-        "Converted Île-de-France:",
-        len(idf_events)
-    )
+            idf_events.append(event)
 
     merged = merge_events(
         paris_events,
@@ -351,72 +315,35 @@ def main():
     )
 
     output = {
-        "records": merged,
-
-        "meta": {
-            "generated": (
-                datetime.utcnow()
-                .isoformat()
-                + "Z"
-            ),
-
-            "sources": [
-                {
-                    "name": (
-                        "Paris Open Data / "
-                        "Ville de Paris"
-                    ),
-                    "url": (
-                        "https://opendata.paris.fr/"
-                    )
-                },
-                {
-                    "name": (
-                        "Région Île-de-France"
-                    ),
-                    "url": (
-                        "https://opendata.iledefrance.fr/"
-                    ),
-                    "dataset": (
-                        "Mon été, ma région"
-                    )
-                }
-            ],
-
-            "event_count": len(merged)
-        }
+        "records": merged
     }
 
     with OUTPUT_FILE.open(
         "w",
         encoding="utf-8"
-    ) as f:
+    ) as file:
 
         json.dump(
             output,
-            f,
+            file,
             ensure_ascii=False,
             indent=2
         )
 
-        f.write("\n")
+        file.write("\n")
 
     print(
-        "=============================="
-    )
-
-    print(
-        "Paris:",
+        "Paris Open Data:",
         len(paris_events)
     )
 
     print(
-        "Île-de-France:",
+        "Région Île-de-France:",
         len(idf_events)
     )
 
     print(
-        "TOTAL:",
+        "Total:",
         len(merged)
     )
 
