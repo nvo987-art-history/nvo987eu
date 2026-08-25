@@ -22,74 +22,22 @@ jobs:
             "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" \
             -o paris.json
 
-      - name: Download DATAtourisme
+      - name: Download Île-de-France events
         run: |
-          python3 - <<'PY'
-          import json
-          import urllib.request
-          import sys
+          curl -fL \
+            "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/mon-ete-ma-region/records?limit=100" \
+            -o iledefrance.json
 
-          api_url = (
-              "https://www.data.gouv.fr/api/1/datasets/"
-              "datatourisme-la-base-nationale-des-donnees-publiques-dinformation-touristique-en-open-data"
-          )
-
-          with urllib.request.urlopen(api_url, timeout=60) as response:
-              data = json.load(response)
-
-          resources = data.get("resources", [])
-
-          selected = None
-
-          for resource in resources:
-              title = (resource.get("title") or "").lower()
-              url = (resource.get("url") or "").lower()
-              fmt = (resource.get("format") or "").lower()
-
-              text = title + " " + url
-
-              if fmt == "csv" and "fma" in text:
-                  selected = resource
-                  break
-
-          if selected is None:
-              print("DATAtourisme FMA CSV not found.")
-              print("Available resources:")
-
-              for resource in resources:
-                  print(
-                      resource.get("title"),
-                      "|",
-                      resource.get("format"),
-                      "|",
-                      resource.get("url")
-                  )
-
-              sys.exit(1)
-
-          print("DATAtourisme:")
-          print(selected.get("title"))
-          print(selected.get("url"))
-
-          urllib.request.urlretrieve(
-              selected["url"],
-              "datatourisme-fma.csv"
-          )
-          PY
-
-      - name: Validate Paris JSON
+      - name: Validate source JSON files
         run: |
           python3 -m json.tool paris.json > /dev/null
+          python3 -m json.tool iledefrance.json > /dev/null
 
-      - name: Validate DATAtourisme CSV
-        run: |
-          test -s datatourisme-fma.csv
-
-      - name: Merge events
+      - name: Merge event sources
         run: |
           python3 scripts/merge_events.py
 
-      - name: Validate events JSON
+      - name: Validate final JSON
         run: |
           python3 -m json.tool events.json > /dev/null
 
