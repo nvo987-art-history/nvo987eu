@@ -1,184 +1,111 @@
-#!/usr/bin/env python3
-
 import csv
 import json
 import re
 import unicodedata
-from datetime import datetime
+from datetime import datetime, timezone
 
-
-PARIS_POSTCODE_RE = re.compile(r"^750\d{2}$")
-
-
-def normalize(value):
-    if value is None:
-        return ""
-
-    value = str(value).strip().lower()
-
-    value = unicodedata.normalize("NFKD", value)
-    value = "".join(
-        c for c in value
-        if not unicodedata.combining(c)
-    )
-
-    value = re.sub(r"\s+", " ", value)
-
-    return value
+PARIS_POSTCODES = {f"750{i:02d}" for i in range(1, 21)}
 
 
 def clean(value):
-    if value is None:
-        return ""
-
-    return str(value).strip()
+    return "" if value is None else str(value).strip()
 
 
-def parse_date(value):
-    value = clean(value)
-
-    if not value:
-        return ""
-
-    # DATAtourisme dátumformátumok kezelése
-    formats = [
-        "%Y-%m-%d",
-        "%Y-%m-%d %H:%M:%S",
-        "%Y-%m-%dT%H:%M:%S",
-        "%Y-%m-%dT%H:%M:%S%z",
-    ]
-
-    for fmt in formats:
-        try:
-            return datetime.strptime(value, fmt).isoformat()
-        except ValueError:
-            pass
-
-    return value
+def normalize(value):
+    value = clean(value).lower()
+    value = unicodedata.normalize("NFD", value)
+    value = "".join(
+        c for c in value
+        if unicodedata.category(c) != "Mn"
+    )
+    return re.sub(r"\s+", " ", value)
 
 
-def paris_event(record):
-    fields = record.get("fields", {})
+def is_paris(city="", postalcode=""):
+    city = normalize(city)
+    postalcode = clean(postalcode)
 
-    city = normalize(
-        fields.get("address_city")
-        or fields.get("ville")
-        or ""
+    return (
+        city == "paris"
+        or postalcode in PARIS_POSTCODES
     )
 
-    postcode = clean(
-        fields.get("postalcode")
-        or fields.get("postcode")
-        or ""
-    )
 
-    if city == "paris":
-        return True
-
-    if PARIS_POSTCODE_RE.match(postcode):
-        return True
-
-    return False
-
-
-def paris_key(record):
-    fields = record.get("fields", {})
-
-    title = normalize(
-        fields.get("title")
-        or fields.get("label")
-        or ""
-    )
-
-    start = normalize(
-        fields.get("date_start")
-        or fields.get("startdate")
-        or ""
-    )
-
-    city = normalize(
-        fields.get("address_city")
-        or fields.get("city")
-        or ""
-    )
-
-    return (title, start, city)
-
-
-def convert_paris_record(record):
-    fields = record.get("fields", {})
-
-    fields["source"] = "paris-open-data"
-    fields["source_name"] = "Paris Open Data / Ville de Paris"
-    fields["source_url"] = "https://opendata.paris.fr/"
-
-    return {
-        "recordid": record.get("recordid"),
-        "fields": fields
+def find_column(fieldnames, names):
+    normalized = {
+        normalize(name): name
+        for name in (fieldnames or [])
+        if name
     }
 
+    for name in names:
+        if normalize(name) in normalized:
+            return normalized[normalize(name)]
 
-def convert_datatourisme_row(row):
-    title = clean(row.get("label"))
-    start = parse_date(row.get("startdate"))
-    end = parse_date(row.get("enddate"))
+    return None
 
-    city = clean(row.get("city"))
-    postalcode = clean(row.get("postalcode"))
 
-    website = clean(
-        row.get("web")
-        or row.get("site web")
-        or row.get("website")
+def get(row, column):
+    return clean(row.get(column)) if column else ""
+
+
+def event_key(fields):
+    return (
+        normalize(
+            fields.get("title")
+            or fields.get("label")
+            or ""
+        ),
+        normalize(
+            fields.get("date_start")
+            or ""
+        ),
+        normalize(
+            fields.get("address_city")
+            or "Paris"
+        )
     )
-
-    description = clean(row.get("comment"))
-
-    fields = {
-        "title": title,
-        "date_start": start,
-        "date_end": end,
-        "address_city": city,
-        "postalcode": postalcode,
-        "address_name": clean(row.get("street")),
-        "latitude": clean(row.get("latitude")),
-        "longitude": clean(row.get("longitude")),
-        "url": website,
-        "description": description,
-
-        "datatourisme_id": clean(row.get("id")),
-        "datatourisme_type": clean(row.get("type")),
-        "datatourisme_theme": clean(row.get("theme")),
-        "last_update": clean(row.get("lastupdate")),
-
-        "source": "datatourisme",
-        "source_name": "DATAtourisme",
-        "source_url": "https://www.datatourisme.fr/",
-    }
-
-    return {
-        "recordid": "datatourisme-" + clean(row.get("id")),
-        "fields": fields
-    }
 
 
 def load_paris():
     with open(
         "paris.json",
-        "r",
         encoding="utf-8"
     ) as f:
         data = json.load(f)
 
-    records = data.get("records", [])
-
     result = []
 
-    for record in records:
-        converted = convert_paris_record(record)
+    for record in data.get("records", []):
+        fields = record.get("fields", {})
 
-        if paris_event(converted):
-            result.append(converted)
+        city = (
+            fields.get("address_city")
+            or fields.get("ville")
+            or "Paris"
+        )
+
+        postalcode = (
+            fields.get("postalcode")
+            or fields.get("postcode")
+            or ""
+        )
+
+        if not is_paris(city, postalcode):
+            continue
+
+        fields["source"] = "paris-open-data"
+        fields["source_name"] = (
+            "Paris Open Data / Ville de Paris"
+        )
+        fields["source_url"] = (
+            "https://opendata.paris.fr/"
+        )
+
+        result.append({
+            "recordid": record.get("recordid"),
+            "fields": fields
+        })
 
     return result
 
@@ -188,97 +115,243 @@ def load_datatourisme():
 
     with open(
         "datatourisme-fma.csv",
-        "r",
         encoding="utf-8-sig",
         newline=""
     ) as f:
 
         reader = csv.DictReader(f)
+        columns = reader.fieldnames or []
+
+        title = find_column(
+            columns,
+            ["label", "title", "nom", "name"]
+        )
+
+        identifier = find_column(
+            columns,
+            ["id", "identifier"]
+        )
+
+        start = find_column(
+            columns,
+            [
+                "startdate",
+                "start_date",
+                "date_start",
+                "date_debut"
+            ]
+        )
+
+        end = find_column(
+            columns,
+            [
+                "enddate",
+                "end_date",
+                "date_end",
+                "date_fin"
+            ]
+        )
+
+        city = find_column(
+            columns,
+            ["city", "ville", "commune"]
+        )
+
+        postalcode = find_column(
+            columns,
+            [
+                "postalcode",
+                "postcode",
+                "codepostal",
+                "code_postal"
+            ]
+        )
+
+        street = find_column(
+            columns,
+            ["street", "adresse", "address"]
+        )
+
+        latitude = find_column(
+            columns,
+            ["latitude", "lat"]
+        )
+
+        longitude = find_column(
+            columns,
+            ["longitude", "lon", "lng"]
+        )
+
+        website = find_column(
+            columns,
+            [
+                "site web",
+                "siteweb",
+                "website",
+                "web",
+                "url"
+            ]
+        )
+
+        description = find_column(
+            columns,
+            [
+                "comment",
+                "description",
+                "lead_text"
+            ]
+        )
+
+        theme = find_column(
+            columns,
+            ["theme"]
+        )
+
+        dtype = find_column(
+            columns,
+            ["type"]
+        )
+
+        last_update = find_column(
+            columns,
+            [
+                "lastupdate",
+                "last_update"
+            ]
+        )
+
+        if not title:
+            raise RuntimeError(
+                "DATAtourisme: title/label column missing"
+            )
 
         for row in reader:
-            city = normalize(row.get("city"))
-            postcode = clean(row.get("postalcode"))
 
-            if city != "paris" and not PARIS_POSTCODE_RE.match(postcode):
+            row_title = get(row, title)
+
+            if not row_title:
                 continue
 
-            if not clean(row.get("label")):
+            row_city = get(row, city)
+            row_postalcode = get(row, postalcode)
+
+            if not is_paris(
+                row_city,
+                row_postalcode
+            ):
                 continue
 
-            record = convert_datatourisme_row(row)
+            row_id = get(row, identifier)
 
-            result.append(record)
+            fields = {
+                "title": row_title,
+                "date_start": get(row, start),
+                "date_end": get(row, end),
+                "address_city": (
+                    row_city or "Paris"
+                ),
+                "postalcode": row_postalcode,
+                "address_name": get(row, street),
+                "latitude": get(row, latitude),
+                "longitude": get(row, longitude),
+                "url": get(row, website),
+                "description": get(row, description),
+                "datatourisme_id": row_id,
+                "datatourisme_type": get(row, dtype),
+                "datatourisme_theme": get(row, theme),
+                "last_update": get(row, last_update),
+                "source": "datatourisme",
+                "source_name": "DATAtourisme",
+                "source_url": (
+                    "https://www.datatourisme.fr/"
+                )
+            }
+
+            record_id = (
+                "datatourisme-" + row_id
+                if row_id
+                else "datatourisme-"
+                + normalize(row_title)
+                + "-"
+                + normalize(
+                    get(row, start)
+                )
+            )
+
+            result.append({
+                "recordid": record_id,
+                "fields": fields
+            })
 
     return result
 
 
-def main():
-    paris_records = load_paris()
-    datatourisme_records = load_datatourisme()
+def merge(paris, datatourisme):
 
-    print(
-        f"Paris Open Data events: {len(paris_records)}"
-    )
-
-    print(
-        f"DATAtourisme Paris events: {len(datatourisme_records)}"
-    )
-
-    merged = []
-
+    result = []
     seen = set()
 
-    # Paris Open Data elsőbbséget kap
-    for record in paris_records:
-        key = paris_key(record)
+    for record in paris + datatourisme:
 
-        if key in seen:
-            continue
-
-        seen.add(key)
-        merged.append(record)
-
-    # DATAtourisme hozzáadása
-    added = 0
-    duplicates = 0
-
-    for record in datatourisme_records:
-        key = paris_key(record)
-
-        if key in seen:
-            duplicates += 1
-            continue
-
-        seen.add(key)
-        merged.append(record)
-        added += 1
-
-    # Dátum szerinti rendezés
-    def sort_key(record):
         fields = record.get("fields", {})
-        return (
-            fields.get("date_start")
-            or "9999-12-31"
-        )
+        key = event_key(fields)
 
-    merged.sort(key=sort_key)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        result.append(record)
+
+    return result
+
+
+def sort_key(record):
+    fields = record.get("fields", {})
+
+    return (
+        fields.get("date_start")
+        or "9999-12-31"
+    )
+
+
+def main():
+
+    paris = load_paris()
+    datatourisme = load_datatourisme()
+
+    events = merge(
+        paris,
+        datatourisme
+    )
+
+    events.sort(
+        key=sort_key
+    )
 
     output = {
-        "records": merged,
+        "records": events,
         "meta": {
-            "generated": datetime.utcnow().isoformat() + "Z",
+            "generated": datetime.now(
+                timezone.utc
+            ).isoformat(),
             "sources": [
                 {
-                    "id": "paris-open-data",
-                    "name": "Paris Open Data / Ville de Paris",
-                    "url": "https://opendata.paris.fr/"
+                    "name": (
+                        "Paris Open Data / "
+                        "Ville de Paris"
+                    ),
+                    "url": (
+                        "https://opendata.paris.fr/"
+                    )
                 },
                 {
-                    "id": "datatourisme",
                     "name": "DATAtourisme",
-                    "url": "https://www.datatourisme.fr/"
+                    "url": (
+                        "https://www.datatourisme.fr/"
+                    )
                 }
-            ]
+            ],
+            "event_count": len(events)
         }
     }
 
@@ -287,7 +360,6 @@ def main():
         "w",
         encoding="utf-8"
     ) as f:
-
         json.dump(
             output,
             f,
@@ -296,15 +368,15 @@ def main():
         )
 
     print(
-        f"DATAtourisme new events added: {added}"
+        f"Paris Open Data: {len(paris)}"
     )
 
     print(
-        f"Duplicates skipped: {duplicates}"
+        f"DATAtourisme: {len(datatourisme)}"
     )
 
     print(
-        f"Total events: {len(merged)}"
+        f"Total: {len(events)}"
     )
 
 
