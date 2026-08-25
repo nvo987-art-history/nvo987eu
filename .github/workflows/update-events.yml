@@ -22,6 +22,7 @@ jobs:
           python3 <<'PY'
           import json
           import time
+          import gzip
           import urllib.parse
           import urllib.request
           import urllib.error
@@ -40,6 +41,7 @@ jobs:
           offset = 0
 
           while True:
+
               params = {
                   "limit": LIMIT,
                   "offset": offset
@@ -53,11 +55,13 @@ jobs:
               )
 
               for attempt in range(MAX_RETRIES):
+
                   try:
                       request = urllib.request.Request(
                           url,
                           headers={
                               "Accept": "application/json",
+                              "Accept-Encoding": "gzip",
                               "User-Agent": "NVO987-events-updater/1.0"
                           }
                       )
@@ -66,22 +70,35 @@ jobs:
                           request,
                           timeout=60
                       ) as response:
-                          data = json.load(response)
+
+                          raw = response.read()
+
+                          # Detect gzip response
+                          if raw[:2] == b"\x1f\x8b":
+                              raw = gzip.decompress(raw)
+
+                          data = json.loads(
+                              raw.decode("utf-8")
+                          )
 
                       break
 
                   except urllib.error.HTTPError as error:
+
                       if error.code == 429:
+
                           print(
                               f"HTTP 429 received. "
                               f"Waiting {RETRY_DELAY} seconds..."
                           )
 
                           time.sleep(RETRY_DELAY)
+
                       else:
                           raise
 
               else:
+
                   raise RuntimeError(
                       f"Too many retries at offset {offset}"
                   )
@@ -100,6 +117,7 @@ jobs:
               )
 
               if len(records) < LIMIT:
+
                   print("Last page reached.")
                   break
 
@@ -121,6 +139,7 @@ jobs:
               "w",
               encoding="utf-8"
           ) as file:
+
               json.dump(
                   output,
                   file,
@@ -130,7 +149,8 @@ jobs:
 
           print(
               f"Finished. "
-              f"Total records downloaded: {len(all_records)}"
+              f"Total records downloaded: "
+              f"{len(all_records)}"
           )
           PY
 
@@ -148,6 +168,7 @@ jobs:
               "events.json",
               encoding="utf-8"
           ) as file:
+
               data = json.load(file)
 
           print(
