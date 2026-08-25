@@ -22,13 +22,13 @@ jobs:
             "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" \
             -o paris.json
 
-      - name: Download Île-de-France events
+      - name: Download Île-de-France Open Data
         run: |
           curl -fL \
-            "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/mon-ete-ma-region/records?limit=100" \
+            "https://opendata.iledefrance.fr/api/explore/v2.1/catalog/datasets/mon-ete-ma-region/records?limit=100&where=past%3Dfalse" \
             -o iledefrance.json
 
-      - name: Validate source JSON files
+      - name: Validate source files
         run: |
           python3 -m json.tool paris.json > /dev/null
           python3 -m json.tool iledefrance.json > /dev/null
@@ -37,7 +37,7 @@ jobs:
         run: |
           python3 scripts/merge_events.py
 
-      - name: Validate final JSON
+      - name: Validate final events JSON
         run: |
           python3 -m json.tool events.json > /dev/null
 
