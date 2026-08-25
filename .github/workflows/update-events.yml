@@ -22,11 +22,12 @@ jobs:
             "https://opendata.paris.fr/api/records/1.0/search/?dataset=que-faire-a-paris-&rows=50&sort=-date_start" \
             -o paris.json
 
-      - name: Find and download DATAtourisme FMA CSV
+      - name: Download DATAtourisme
         run: |
           python3 - <<'PY'
           import json
           import urllib.request
+          import sys
 
           api_url = (
               "https://www.data.gouv.fr/api/1/datasets/"
@@ -38,26 +39,40 @@ jobs:
 
           resources = data.get("resources", [])
 
-          candidates = []
+          selected = None
+
           for resource in resources:
               title = (resource.get("title") or "").lower()
-              url = resource.get("url") or ""
+              url = (resource.get("url") or "").lower()
               fmt = (resource.get("format") or "").lower()
 
-              if "datatourisme-fma" in title and fmt == "csv":
-                  candidates.append(resource)
+              text = title + " " + url
 
-          if not candidates:
-              raise RuntimeError("DATAtourisme FMA CSV resource not found.")
+              if fmt == "csv" and "fma" in text:
+                  selected = resource
+                  break
 
-          resource = candidates[0]
+          if selected is None:
+              print("DATAtourisme FMA CSV not found.")
+              print("Available resources:")
 
-          print("DATAtourisme resource:")
-          print(resource.get("title"))
-          print(resource.get("url"))
+              for resource in resources:
+                  print(
+                      resource.get("title"),
+                      "|",
+                      resource.get("format"),
+                      "|",
+                      resource.get("url")
+                  )
+
+              sys.exit(1)
+
+          print("DATAtourisme:")
+          print(selected.get("title"))
+          print(selected.get("url"))
 
           urllib.request.urlretrieve(
-              resource["url"],
+              selected["url"],
               "datatourisme-fma.csv"
           )
           PY
@@ -66,11 +81,15 @@ jobs:
         run: |
           python3 -m json.tool paris.json > /dev/null
 
-      - name: Merge event sources
+      - name: Validate DATAtourisme CSV
+        run: |
+          test -s datatourisme-fma.csv
+
+      - name: Merge events
         run: |
           python3 scripts/merge_events.py
 
-      - name: Validate final JSON
+      - name: Validate events JSON
         run: |
           python3 -m json.tool events.json > /dev/null
 
