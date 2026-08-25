@@ -3781,1390 +3781,1668 @@
       "record_timestamp": "2026-08-25T20:15:03.66Z"
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/8d9f0879-a446-39ed-9d9d-79fbff538ced:2026-01-01:2026-12-31",
+      "recordid": "idf:Installation Tree Hug par l'artiste Monsieur Plant||",
       "fields": {
-        "title": "Election du plus beau jardin",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75018",
-        "address_name": "63ter, rue de Riquet Jardin Rosa Luxemburg",
-        "description": "Et le gagnant est ... le Jardin Rosa Luxemburg !",
-        "lead_text": "Et le gagnant est ... le Jardin Rosa Luxemburg !",
-        "latitude": "48.88985",
-        "longitude": "2.363825",
-        "url": "http://equipement.paris.fr/jardins-rosa-luxemburg-17580",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/8d9f0879-a446-39ed-9d9d-79fbff538ced"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/8fc15f98-8fa7-3cc7-8177-a073300e15ef:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Marché couvert La Chapelle",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75018",
-        "address_name": "10 rue de l’Olive Marché couvert La Chapelle",
-        "description": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "lead_text": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "latitude": "48.891138",
-        "longitude": "2.361375",
-        "url": "http://next.paris.fr/pro/commercants-et-artisans/2d3es-marches/les-marches-alimentaires-par-arrondissement/rub_9592_stand_85004_port_23615",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/8fc15f98-8fa7-3cc7-8177-a073300e15ef"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/c3fad105-af06-3434-be10-26124d5e8364:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "How to become Parisian in one hour ?",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75009",
-        "address_name": "24 boulevard Poissonnière Théâtre des Nouveautés",
-        "description": "Continuellement enrichi depuis sa création et joué toute l'année au cœur de Paris, le spectacle est devenu incontournable à Paris, une expérience hilarante dans laquelle l'humoriste vous guide avec finesse à travers les subtilités de la vie parisienne.",
-        "lead_text": "Continuellement enrichi depuis sa création et joué toute l'année au cœur de Paris, le spectacle est devenu incontournable à Paris, une expérience hilarante dans laquelle l'humoriste vous guide avec finesse à travers les subtilités de la vie parisienne.",
-        "latitude": "48.871384",
-        "longitude": "2.344819",
-        "url": "https://oliviergiraud.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/c3fad105-af06-3434-be10-26124d5e8364"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/5196307f-19fd-36b9-ab8f-e220bbbef611:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Marché couvert de Passy",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "Place de Passy Marché couvert de Passy",
-        "description": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "lead_text": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "latitude": "48.857712",
-        "longitude": "2.277532",
-        "url": "http://next.paris.fr/pro/commercants-et-artisans/2d3es-marches/les-marches-alimentaires-par-arrondissement/rub_9592_stand_85004_port_23615",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/5196307f-19fd-36b9-ab8f-e220bbbef611"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/8b28264c-bf44-3a11-8e28-83f154fdfe04:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "La meilleure baguette de Paris",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 6e Arrondissement",
-        "address_postal_code": "75006",
-        "address_name": "48 rue Madame La Parisienne",
-        "description": "Ou est la meilleure baguette 2016 de Paris ?",
-        "lead_text": "Ou est la meilleure baguette 2016 de Paris ?",
-        "latitude": "48.848207",
-        "longitude": "2.331455",
-        "url": "http://www.boulangerielaparisienne.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/8b28264c-bf44-3a11-8e28-83f154fdfe04"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/0a3ff431-c5a8-30bb-9283-62c40de5175c:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Marché couvert Saint-Germain",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 6e Arrondissement",
-        "address_postal_code": "75006",
-        "address_name": "4/6 rue Lobineau Marché couvert Saint-Germain",
-        "description": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "lead_text": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "latitude": "48.851765",
-        "longitude": "2.336383",
-        "url": "http://next.paris.fr/pro/commercants-et-artisans/2d3es-marches/les-marches-alimentaires-par-arrondissement/rub_9592_stand_85004_port_23615",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/0a3ff431-c5a8-30bb-9283-62c40de5175c"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/11040f6c-8113-3671-86b3-3c8529943eb2:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Marché couvert des Ternes",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 17e Arrondissement",
-        "address_postal_code": "75017",
-        "address_name": "8 bis rue Lebon Marché couvert des Ternes",
-        "description": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "lead_text": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "latitude": "48.880877",
-        "longitude": "2.292383",
-        "url": "http://next.paris.fr/pro/commercants-et-artisans/2d3es-marches/les-marches-alimentaires-par-arrondissement/rub_9592_stand_85004_port_23615",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/11040f6c-8113-3671-86b3-3c8529943eb2"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cc44d178-6fe4-3869-9e9a-b3975bc45fb3:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Marché couvert Saint-Didier",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "Marché couvert Saint-Didier rue Mesnil",
-        "description": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "lead_text": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "latitude": "48.867372",
-        "longitude": "2.283785",
-        "url": "http://next.paris.fr/pro/commercants-et-artisans/2d3es-marches/les-marches-alimentaires-par-arrondissement/rub_9592_stand_85004_port_23615",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cc44d178-6fe4-3869-9e9a-b3975bc45fb3"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cc9fee54-9465-3298-ac9e-b8bbc79f9a11:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Visite de la Maison de la Radio",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "116 avenue du président Kennedy Radio France",
-        "description": "La \"Maison Ronde\" poursuit sa rénovation. A terme, librairie, restaurant... seront en accès libre. Mais dès à présent, retrouvez le plaisir des visites guidées, des concerts à l'auditorium ou des émissions dans les studios !",
-        "lead_text": "La \"Maison Ronde\" poursuit sa rénovation. A terme, librairie, restaurant... seront en accès libre. Mais dès à présent, retrouvez le plaisir des visites guidées, des concerts à l'auditorium ou des émissions dans les studios !",
-        "latitude": "48.852527",
-        "longitude": "2.278236",
-        "url": "http://www.maisondelaradio.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cc9fee54-9465-3298-ac9e-b8bbc79f9a11"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/dd6cd99f-4184-3944-b6af-ef445f496c04:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "L'enfance de l'Art",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 4e Arrondissement",
-        "address_postal_code": "75004",
-        "address_name": "135, rue Saint-Martin Cinémas Indépendants Parisiens",
-        "description": "L' Enfance de l'art vous propose des films cinématographique de qualité pour les jeunes spectateurs. Une ouverture sur le monde dans 20 salles parisiennes.",
-        "lead_text": "L' Enfance de l'art vous propose des films cinématographique de qualité pour les jeunes spectateurs. Une ouverture sur le monde dans 20 salles parisiennes.",
-        "latitude": "48.861272",
-        "longitude": "2.351111",
-        "url": "http://www.cinep.org/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/dd6cd99f-4184-3944-b6af-ef445f496c04"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/e4d6a8eb-dda4-3198-b4e9-d3df5a540b78:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Marché couvert Saint-Quentin",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75010",
-        "address_name": "85 bis boulevard Magenta Marché couvert Saint-Quentin",
-        "description": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "lead_text": "Visiter un marché couvert, c'est se balader dans un endroit authentique à Paris, au milieu des habitants du quartier, dans une atmosphère toujours bon enfant.",
-        "latitude": "48.876421",
-        "longitude": "2.355592",
-        "url": "http://next.paris.fr/pro/commercants-et-artisans/2d3es-marches/les-marches-alimentaires-par-arrondissement/rub_9592_stand_85004_port_23615",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/e4d6a8eb-dda4-3198-b4e9-d3df5a540b78"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/ebc7fd51-35b2-3e0d-a2ed-b75f5c48422b:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Theatre in Paris",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75010",
-        "address_name": "18 Boulevard Saint-Martin 4 Boulevard de Strasbourg, 75010 Paris 5 Rue des Vignes, 75016 Paris",
-        "description": "TheatreinParis.com est le premier site de ventes de billets de spectacles dédié au public étranger à Paris, ville la plus visitée d’Europe.",
-        "lead_text": "TheatreinParis.com est le premier site de ventes de billets de spectacles dédié au public étranger à Paris, ville la plus visitée d’Europe.",
-        "latitude": "48.856796",
-        "longitude": "2.352297",
-        "url": "https://www.theatreinparis.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/ebc7fd51-35b2-3e0d-a2ed-b75f5c48422b"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/3a291294-0e79-3779-80b9-70f0fd9b3fc8:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Nouvel accrochage à Dalí Paris",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75018",
-        "address_name": "11 rue Poulbot",
-        "description": "Au cœur de Montmartre, célèbre village d’artistes, Dalí Paris expose la plus grande collection d’œuvres de Salvador Dalí en France, dans une nouvelle scénographie thématisée",
-        "lead_text": "Au cœur de Montmartre, célèbre village d’artistes, Dalí Paris expose la plus grande collection d’œuvres de Salvador Dalí en France, dans une nouvelle scénographie thématisée",
-        "latitude": "48.88656",
-        "longitude": "2.339786",
-        "url": "http://daliparis.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/3a291294-0e79-3779-80b9-70f0fd9b3fc8"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cb77dc71-3b33-3410-aca4-23abed93ebf7:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Dîner-revue Moulin Rouge",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75018",
-        "address_name": "82 boulevard de Clichy",
-        "description": "Restaurant traditionnel",
-        "lead_text": "Restaurant traditionnel",
-        "latitude": "48.88413",
-        "longitude": "2.332464",
-        "url": "http://www.moulin-rouge.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cb77dc71-3b33-3410-aca4-23abed93ebf7"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/3e201d30-b334-3c63-aca9-850599160a3c:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Ateliers plastiques dans les collections \"Femme libérée !\" - Musée d'Art Moderne - adaptés au public en situation de handicap psychique et intellectuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "Ce sont des Ateliers plastiques dans les collections \"Femme libérée !\" du Musée d'Art Moderne - adaptés au public en situation de handicap psychique et intellectuel.",
-        "lead_text": "Ce sont des Ateliers plastiques dans les collections \"Femme libérée !\" du Musée d'Art Moderne - adaptés au public en situation de handicap psychique et intellectuel.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/3e201d30-b334-3c63-aca9-850599160a3c"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/44bdddcf-c9ec-384d-809c-f29737f1fbff:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Ateliers plastiques dans les collections \"Albers\" - Musée d'Art Moderne - adaptés au public en situation de handicap psychique et intellectuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "Ce sont des Ateliers plastiques dans les collections \"Albers\" su Musée d'Art Moderne - adaptés au public en situation de handicap psychique et intellectuel.",
-        "lead_text": "Ce sont des Ateliers plastiques dans les collections \"Albers\" su Musée d'Art Moderne - adaptés au public en situation de handicap psychique et intellectuel.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/44bdddcf-c9ec-384d-809c-f29737f1fbff"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/9cd465df-9879-3d11-8b71-6e28cabab44e:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Atelier de danse - Musée d'Art Moderne - adapté au public en situation de handicap psychique et intellectuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "C'est un Atelier de danse du Musée d'Art Moderne, adapté au public en situation de handicap psychique et intellectuel.",
-        "lead_text": "C'est un Atelier de danse du Musée d'Art Moderne, adapté au public en situation de handicap psychique et intellectuel.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/9cd465df-9879-3d11-8b71-6e28cabab44e"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cb0dc8d4-7a25-3392-98b6-61f100046ed5:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Atelier de création sonore - Musée d'Art Moderne - adaptée au public en situation de handicap visuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "Il existe un Atelier de création sonore au Musée d'Art Moderne adapté au public en situation de handicap visuel.",
-        "lead_text": "Il existe un Atelier de création sonore au Musée d'Art Moderne adapté au public en situation de handicap visuel.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cb0dc8d4-7a25-3392-98b6-61f100046ed5"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/96d02076-ad9e-3c66-8da5-c064cd6f8a67:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Atelier de création sonore - Musée d'Art Moderne - adapté au public en situation de handicap psychique et intellectuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "C'est un Atelier de création sonore du Musée d'Art Moderne adapté au public en situation de handicap psychique et intellectuel.",
-        "lead_text": "C'est un Atelier de création sonore du Musée d'Art Moderne adapté au public en situation de handicap psychique et intellectuel.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/96d02076-ad9e-3c66-8da5-c064cd6f8a67"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/08deaac6-3edd-3457-9bbc-f47ed1b20d53:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Visite tactile dans les collection d'Henri Matisse \"La Danse d’Henri Matisse\" - Musée d'Art Moderne - adaptée au public en situation de handicap visuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "Dans les collections, Visite tactile de La Danse d’Henri Matisse.",
-        "lead_text": "Dans les collections, Visite tactile de La Danse d’Henri Matisse.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/08deaac6-3edd-3457-9bbc-f47ed1b20d53"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/693ab71b-5350-3d52-8119-1f733d801fab:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Visites autonomes accessibles à tous - Musée d'Art Moderne",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "Ce sont des Visites autonomes accessibles à tous au Musée d'Art Moderne.",
-        "lead_text": "Ce sont des Visites autonomes accessibles à tous au Musée d'Art Moderne.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/693ab71b-5350-3d52-8119-1f733d801fab"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/9d6290ac-c75b-3a71-a8f4-0992bf7c1fe0:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Visite-atelier : dessin méditatif avec l’artiste Simon Pradinas - Musée d'Art Moderne - adaptée au public en situation de handicap psychique et intellectuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "C'est une Visite-atelier de dessin méditatif avec l’artiste Simon Pradinas au Musée d'Art Moderne. Elle est adaptée au public en situation de handicap psychique et intellectuel.",
-        "lead_text": "C'est une Visite-atelier de dessin méditatif avec l’artiste Simon Pradinas au Musée d'Art Moderne. Elle est adaptée au public en situation de handicap psychique et intellectuel.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/9d6290ac-c75b-3a71-a8f4-0992bf7c1fe0"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/acd0db3d-4125-3f03-8822-e7d2ad4935c0:2026-01-01:2026-01-01",
-      "fields": {
-        "title": "Visite tactile dans l'exposition \"L’Équipe de Cardiff de Robert Delaunay\"- Musée d'Art Moderne - adaptée au public en situation de handicap visuel",
-        "date_start": "2026-01-01",
-        "date_end": "2026-01-01",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 avenue du Président Wilson Musée d’Art moderne de la Ville de Paris",
-        "description": "Dans les collections, de L’Équipe de Cardiff de Robert Delaunay.",
-        "lead_text": "Dans les collections, de L’Équipe de Cardiff de Robert Delaunay.",
-        "latitude": "48.864654",
-        "longitude": "2.297714",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/acd0db3d-4125-3f03-8822-e7d2ad4935c0"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/267cf9e1-6ec1-3724-97e3-9035776dd565:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Les Dimanches Plaisirs à l’Hippodrome Paris-Vincennes",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75012",
-        "address_name": "2 route de la ferme Vincennes Hippodrome de Paris",
-        "description": "Vivez en famille \"Les Dimanches Plaisirs\" à l’Hippodrome Paris-Vincennes! Profitez d’une fête combinant loisirs et courses hippiques, dans un cadre familial inoubliable. Un événement pour toutes les générations!",
-        "lead_text": "Vivez en famille \"Les Dimanches Plaisirs\" à l’Hippodrome Paris-Vincennes! Profitez d’une fête combinant loisirs et courses hippiques, dans un cadre familial inoubliable. Un événement pour toutes les générations!",
-        "latitude": "48.820896",
-        "longitude": "2.452039",
-        "url": "https://www.vincennes-hippodrome.com/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/267cf9e1-6ec1-3724-97e3-9035776dd565"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/30e0de3f-5405-38cb-9446-c620a83b982e:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Éternelle Notre-Dame",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75007",
-        "address_name": "6 Rue de la Cité Sous le Parvis de Notre-Dame de Paris",
-        "description": "Sous le parvis de Notre-Dame se cache une incroyable machine à voyager dans le temps et l’espace. L’expérience d’immersion en réalité virtuelle Éternelle Notre-Dame vous ouvre les portes de cette figure emblématique du patrimoine culturel français.",
-        "lead_text": "Sous le parvis de Notre-Dame se cache une incroyable machine à voyager dans le temps et l’espace. L’expérience d’immersion en réalité virtuelle Éternelle Notre-Dame vous ouvre les portes de cette figure emblématique du patrimoine culturel français.",
-        "latitude": "48.853408",
-        "longitude": "2.321391",
-        "url": "https://www.eternellenotredame.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/30e0de3f-5405-38cb-9446-c620a83b982e"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/6921ccd5-6308-302e-bdb2-7d5358a9c30d:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "FrenchTrotters",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 3e Arrondissement",
-        "address_postal_code": "75003",
-        "address_name": "128 rue Vieille du Temple",
-        "description": "FrenchTrotters propose des produits tendance édités par des marques diversifiées et haut de gamme. Retrouvez les lignes épurées et élégantes des pièces choisies pour finir, qui sait, un jour, dans votre dressing.",
-        "lead_text": "FrenchTrotters propose des produits tendance édités par des marques diversifiées et haut de gamme. Retrouvez les lignes épurées et élégantes des pièces choisies pour finir, qui sait, un jour, dans votre dressing.",
-        "latitude": "48.861657",
-        "longitude": "2.364125",
-        "url": "https://www.frenchtrotters.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/6921ccd5-6308-302e-bdb2-7d5358a9c30d"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/e13eeac0-6d76-3a52-bba6-3ca0dec6cabb:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Aura Invalides",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75007",
-        "address_name": "2 place Vauban Dôme des Invalides",
-        "description": "Grâce à la magie de la lumière, de la musique orchestrale et du video mapping, redécouvrez la splendeur architecturale du Dôme des Invalides, dans ses éléments les plus grandioses comme ses motifs les plus délicats.. Une plongée artistique et historique.",
-        "lead_text": "Grâce à la magie de la lumière, de la musique orchestrale et du video mapping, redécouvrez la splendeur architecturale du Dôme des Invalides, dans ses éléments les plus grandioses comme ses motifs les plus délicats.. Une plongée artistique et historique.",
-        "latitude": "48.85819",
-        "longitude": "2.312894",
-        "url": "https://www.musee-armee.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/e13eeac0-6d76-3a52-bba6-3ca0dec6cabb"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/aab79984-02ac-3854-94ef-6dc135667cb2:2026-01-01:2026-12-31",
-      "fields": {
-        "title": "Les coulisses de Roland-Garros",
-        "date_start": "2026-01-01",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "2 avenue Gordon Bennett Stade Roland Garros",
-        "description": "Visitez le cœur du temple du tennis : ses coulisses ! Le stade Roland-Garros, mythique stade de tennis parisien, ouvre ses portes au public pour des visites guidées exceptionnelles.",
-        "lead_text": "Visitez le cœur du temple du tennis : ses coulisses ! Le stade Roland-Garros, mythique stade de tennis parisien, ouvre ses portes au public pour des visites guidées exceptionnelles.",
-        "latitude": "48.847432",
-        "longitude": "2.250901",
-        "url": "https://www.cultival.fr/fr_FR/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/aab79984-02ac-3854-94ef-6dc135667cb2"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/c158d477-a78e-38d8-8b4d-faacd0a50ddb:2026-01-14:2026-01-17",
-      "fields": {
-        "title": "Salon de la Plongée",
-        "date_start": "2026-01-14",
-        "date_end": "2026-01-17",
-        "address_city": "Paris 15e Arrondissement",
-        "address_postal_code": "75015",
-        "address_name": "1 place de la Porte de Versailles Parc des Expositions de la Porte de Versailles",
-        "description": "Le 28ème salon de la plongée sous-marine fait vivre depuis \"le Monde du silence\" de Cousteau, une passion bien française.",
-        "lead_text": "Le 28ème salon de la plongée sous-marine fait vivre depuis \"le Monde du silence\" de Cousteau, une passion bien française.",
-        "latitude": "48.832787",
-        "longitude": "2.286305",
-        "url": "https://www.salon-de-la-plongee.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/c158d477-a78e-38d8-8b4d-faacd0a50ddb"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/d4a1547c-2186-337a-970a-ee5db5a8cd2a:2026-01-29:2026-01-31",
-      "fields": {
-        "title": "Prix d'Amérique Festival 2027",
-        "date_start": "2026-01-29",
-        "date_end": "2026-01-31",
-        "address_city": "Paris",
-        "address_postal_code": "75012",
-        "address_name": "2 route de la Ferme Hippodrome Paris-Vincennes",
-        "description": "Trois jours de vibrations où le sport hippique et la musique entrent en fusion dans une ambiance 100% américaine, autour d'une célébration du trot à son sommet.",
-        "lead_text": "Trois jours de vibrations où le sport hippique et la musique entrent en fusion dans une ambiance 100% américaine, autour d'une célébration du trot à son sommet.",
-        "latitude": "48.822976",
-        "longitude": "2.456197",
-        "url": "https://www.prixdameriqueraces.com/lp-prix-damerique-festival/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/d4a1547c-2186-337a-970a-ee5db5a8cd2a"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/f3ce64a5-2c18-3eb2-a708-d0df97b4a29a:2026-02-18:2026-10-04",
-      "fields": {
-        "title": "Une journée au XVIIIe siècle, chronique d’un hôtel particulier",
-        "date_start": "2026-02-18",
-        "date_end": "2026-10-04",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "107 rue de Rivoli MAD - Musée des arts décoratifs",
-        "description": "Découvrez la vie raffinée des élites parisiennes à travers une exposition exceptionnelle au musée des Arts décoratifs, du 18 février au 4 octobre 2026. Une exposition immersive pour plonger dans l’élégance du XVIIIe siècle.",
-        "lead_text": "Découvrez la vie raffinée des élites parisiennes à travers une exposition exceptionnelle au musée des Arts décoratifs, du 18 février au 4 octobre 2026. Une exposition immersive pour plonger dans l’élégance du XVIIIe siècle.",
-        "latitude": "48.863214",
-        "longitude": "2.333316",
-        "url": "https://madparis.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/f3ce64a5-2c18-3eb2-a708-d0df97b4a29a"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/5788ca59-2628-39e8-a606-8539130903eb:2026-02-18:2026-12-20",
-      "fields": {
-        "title": "Robert Capa. Photographe de guerre",
-        "date_start": "2026-02-18",
-        "date_end": "2026-12-20",
-        "address_city": "Paris 14e Arrondissement",
-        "address_postal_code": "75014",
-        "address_name": "Musée de la Libération de Paris - musée du Général Leclerc - musée Jean Moulin 4, avenue du Général Rol Tanguy Place Denfert-Rochereau",
-        "description": "Une exposition immersive consacrée à Robert Capa dévoile, du 18 février au 20 décembre 2026, 160 photographies, archives et objets personnels pour retracer la naissance du photojournalisme moderne et l’engagement d’un témoin majeur du XXᵉ siècle.",
-        "lead_text": "Une exposition immersive consacrée à Robert Capa dévoile, du 18 février au 20 décembre 2026, 160 photographies, archives et objets personnels pour retracer la naissance du photojournalisme moderne et l’engagement d’un témoin majeur du XXᵉ siècle.",
-        "latitude": "48.83411",
-        "longitude": "2.331621",
-        "url": "https://www.museeliberation-leclerc-moulin.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/5788ca59-2628-39e8-a606-8539130903eb"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/2f138175-a541-3bbc-9481-3d1cf8e6532c:2026-02-21:2026-03-01",
-      "fields": {
-        "title": "Le Made in Essonne au Salon International de l’Agriculture 2026",
-        "date_start": "2026-02-21",
-        "date_end": "2026-03-01",
-        "address_city": "Paris 15e Arrondissement",
-        "address_postal_code": "75015",
-        "address_name": "Paris Expo Porte de Versailles - 1 Place de la Porte de Versailles",
-        "description": "Le Made in Essonne sera présent au Salon International de l'Agriculture 2026 à Paris. Venez découvrir les différentes spécialités essonniennes sur le pavillon de la Région Île-de-France.",
-        "lead_text": "Le Made in Essonne sera présent au Salon International de l'Agriculture 2026 à Paris. Venez découvrir les différentes spécialités essonniennes sur le pavillon de la Région Île-de-France.",
-        "latitude": "48.832679",
-        "longitude": "2.286644",
-        "url": "https://www.essonnetourisme.com/les-petites-histoires/le-made-in-essonne-au-salon-international-de-lagriculture-a-paris/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/2f138175-a541-3bbc-9481-3d1cf8e6532c"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/91883b10-1309-3a04-a922-4eff3e4b461d:2026-02-27:2026-03-07",
-      "fields": {
-        "title": "Salon International de l'Agriculture",
-        "date_start": "2026-02-27",
-        "date_end": "2026-03-07",
-        "address_city": "Paris 15e Arrondissement",
-        "address_postal_code": "75015",
-        "address_name": "1 place de la Porte de Versailles Parc des Expositions de la Porte de Versailles",
-        "description": "Dans la \"plus grande ferme de France\", découvrez l'espace \"Île de France\" avec ses produits du terroir, sa gastronomie et ses paysages !",
-        "lead_text": "Dans la \"plus grande ferme de France\", découvrez l'espace \"Île de France\" avec ses produits du terroir, sa gastronomie et ses paysages !",
-        "latitude": "48.832787",
-        "longitude": "2.286305",
-        "url": "https://www.salon-agriculture.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/91883b10-1309-3a04-a922-4eff3e4b461d"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/3de6a556-9196-385c-8486-f9ba324bb746:2026-03-04:2026-08-31",
-      "fields": {
-        "title": "Clair-obscur",
-        "date_start": "2026-03-04",
-        "date_end": "2026-08-31",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "2 rue de Viarmes Bourse de Commerce – Pinault Collection",
-        "description": "Une immersion sensorielle où lumière et ténèbres dialoguent : du 4 mars au 31 août 2026, la Bourse de Commerce – Pinault Collection dévoile un parcours contemporain qui réinvente le clair obscur et interroge notre regard sur le monde.",
-        "lead_text": "Une immersion sensorielle où lumière et ténèbres dialoguent : du 4 mars au 31 août 2026, la Bourse de Commerce – Pinault Collection dévoile un parcours contemporain qui réinvente le clair obscur et interroge notre regard sur le monde.",
-        "latitude": "48.862946",
-        "longitude": "2.3424",
-        "url": "https://boursedecommerce.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/3de6a556-9196-385c-8486-f9ba324bb746"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/69a90070-c636-3355-8ff9-0367e558d9c8:2026-03-11:2026-03-14",
-      "fields": {
-        "title": "Salon Destinations Nature",
-        "date_start": "2026-03-11",
-        "date_end": "2026-03-14",
-        "address_city": "Paris 15e Arrondissement",
-        "address_postal_code": "75015",
-        "address_name": "1 Place de la Porte de Versailles",
-        "description": "Ce salon est dédié aux activités en plein air, aux pratiques outdoor et aux voyages hors des sentiers battus. Il rassemble les passionnés de randonnée trail, de via ferrata, de marche nordique, de cyclotourisme et de trekking.",
-        "lead_text": "Ce salon est dédié aux activités en plein air, aux pratiques outdoor et aux voyages hors des sentiers battus. Il rassemble les passionnés de randonnée trail, de via ferrata, de marche nordique, de cyclotourisme et de trekking.",
-        "latitude": "48.832787",
-        "longitude": "2.286305",
-        "url": "https://www.destinations-nature.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/69a90070-c636-3355-8ff9-0367e558d9c8"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/1dbf4a41-2b36-3bcf-91a1-a7bd0be9a95e:2026-03-17:2026-09-20",
-      "fields": {
-        "title": "1913-1923 : L’Esprit du Temps",
-        "date_start": "2026-03-17",
-        "date_end": "2026-09-20",
-        "address_city": "Paris",
-        "address_postal_code": "75007",
-        "address_name": "37 quai Branly Musée du quai Branly - Jacques Chirac",
-        "description": "Le musée du quai Branly-Jacques Chrirac vous invite à plonger au cœur d’une décennie révolutionnaire où l’art, la guerre et les cultures du monde se croisent pour redessiner notre modernité. Une exposition immersive et inédite.",
-        "lead_text": "Le musée du quai Branly-Jacques Chrirac vous invite à plonger au cœur d’une décennie révolutionnaire où l’art, la guerre et les cultures du monde se croisent pour redessiner notre modernité. Une exposition immersive et inédite.",
-        "latitude": "48.8615",
-        "longitude": "2.297744",
-        "url": "https://www.quaibranly.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/1dbf4a41-2b36-3bcf-91a1-a7bd0be9a95e"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/831c2de7-c20c-3a79-b173-2cdcf1b793c4:2026-04-03:2026-01-10",
-      "fields": {
-        "title": "Video Games & Music",
-        "date_start": "2026-04-03",
-        "date_end": "2026-01-10",
-        "address_city": "Paris",
-        "address_postal_code": "75019",
-        "address_name": "221 avenue Jean-Jaurès Philharmonie de Paris",
-        "description": "Une odyssée sonore et interactive à la Philharmonie de Paris, du 3 avril 2026 au 10 janvier 2027, qui explore l’évolution musicale des jeux vidéo à travers plus de vingt installations immersives. Quand le son devient jeu !",
-        "lead_text": "Une odyssée sonore et interactive à la Philharmonie de Paris, du 3 avril 2026 au 10 janvier 2027, qui explore l’évolution musicale des jeux vidéo à travers plus de vingt installations immersives. Quand le son devient jeu !",
-        "latitude": "48.889311",
-        "longitude": "2.393824",
-        "url": "http://www.philharmoniedeparis.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/831c2de7-c20c-3a79-b173-2cdcf1b793c4"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/a98fe0b8-0b35-3cc2-842f-969981b89b50:2026-04-08:2026-01-03",
-      "fields": {
-        "title": "Les Grands Âges",
-        "date_start": "2026-04-08",
-        "date_end": "2026-01-03",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "17 place du Trocadéro Musée de l'Homme",
-        "description": "Au Musée de l’Homme, les portraits de Nikos Aliagas dialoguent avec les connaissances scientifiques sur le vieillissement. Une exposition émouvante qui questionne notre rapport à l’âge, à la transmission et à la place des aînés dans nos sociétés.",
-        "lead_text": "Au Musée de l’Homme, les portraits de Nikos Aliagas dialoguent avec les connaissances scientifiques sur le vieillissement. Une exposition émouvante qui questionne notre rapport à l’âge, à la transmission et à la place des aînés dans nos sociétés.",
-        "latitude": "48.862207",
-        "longitude": "2.287343",
-        "url": "https://www.museedelhomme.fr/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/a98fe0b8-0b35-3cc2-842f-969981b89b50"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/5fda9826-6e87-3172-a766-e30fbe68db6b:2026-04-08:2026-09-06",
-      "fields": {
-        "title": "Henry Taylor",
-        "date_start": "2026-04-08",
-        "date_end": "2026-09-06",
-        "address_city": "Paris 3e Arrondissement",
-        "address_postal_code": "75003",
-        "address_name": "5 rue de Thorigny Musée National Picasso-Paris",
-        "description": "Plongée inédite dans l’univers d’Henry Taylor : du 8 avril au 6 septembre 2026, le Musée Picasso-Paris dévoile une rétrospective majeure célébrant l’humanité, la mémoire collective et le dialogue vibrant entre l’artiste américain et l’héritage picassien.",
-        "lead_text": "Plongée inédite dans l’univers d’Henry Taylor : du 8 avril au 6 septembre 2026, le Musée Picasso-Paris dévoile une rétrospective majeure célébrant l’humanité, la mémoire collective et le dialogue vibrant entre l’artiste américain et l’héritage picassien.",
-        "latitude": "48.859604",
-        "longitude": "2.362517",
-        "url": "http://www.museepicassoparis.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/5fda9826-6e87-3172-a766-e30fbe68db6b"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/78639b2c-2738-39d1-9011-7ca571386821:2026-04-14:2026-09-06",
-      "fields": {
-        "title": "Kàroly Ferenczy  Modernité hongroise",
-        "date_start": "2026-04-14",
-        "date_end": "2026-09-06",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "avenue Winston Churchill",
-        "description": "Du 14 avril au 6 septembre 2026, le Petit Palais met à l’honneur Károly Ferenczy, figure majeure de l’art hongrois, à travers une rétrospective inédite mêlant couleurs vibrantes et audaces formelles. Un pionnier entre tradition et avant-garde.",
-        "lead_text": "Du 14 avril au 6 septembre 2026, le Petit Palais met à l’honneur Károly Ferenczy, figure majeure de l’art hongrois, à travers une rétrospective inédite mêlant couleurs vibrantes et audaces formelles. Un pionnier entre tradition et avant-garde.",
-        "latitude": "48.866105",
-        "longitude": "2.313804",
-        "url": "https://www.petitpalais.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/78639b2c-2738-39d1-9011-7ca571386821"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cc9afb3b-2ddf-3d19-b83f-96a015fd58bc:2026-04-14:2026-09-20",
-      "fields": {
-        "title": "Une hirondelle ne fait pas le printemps - Annette Messager",
-        "date_start": "2026-04-14",
-        "date_end": "2026-09-20",
-        "address_city": "Paris 3e Arrondissement",
-        "address_postal_code": "75003",
-        "address_name": "62, rue des Archives Musée de la Chasse et de la Nature",
-        "description": "Un parcours sensible et intrigant où l’artiste Annette Messager explore la figure animale sous toutes ses formes, mêlant installations emblématiques, détournements poétiques et hybridations surprenantes au cœur du musée de la Chasse et de la Nature.",
-        "lead_text": "Un parcours sensible et intrigant où l’artiste Annette Messager explore la figure animale sous toutes ses formes, mêlant installations emblématiques, détournements poétiques et hybridations surprenantes au cœur du musée de la Chasse et de la Nature.",
-        "latitude": "48.861498",
-        "longitude": "2.358616",
-        "url": "http://www.chassenature.org/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cc9afb3b-2ddf-3d19-b83f-96a015fd58bc"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/c6bda37d-cb0a-3560-93fc-272d87815166:2026-04-16:2026-12-31",
-      "fields": {
-        "title": "Admirez -les tous, une exposition hommage à Pokémon !",
-        "date_start": "2026-04-16",
-        "date_end": "2026-12-31",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "23 rue de l'Arbre-Sec Le Musée en Herbe",
-        "description": "Une exposition ludique et immersive au Musée en Herbe qui invite les familles à redécouvrir l’univers Pokémon à travers un parcours interactif, créatif et accessible aux enfants, mêlant art, jeu et imagination au cœur de Paris.",
-        "lead_text": "Une exposition ludique et immersive au Musée en Herbe qui invite les familles à redécouvrir l’univers Pokémon à travers un parcours interactif, créatif et accessible aux enfants, mêlant art, jeu et imagination au cœur de Paris.",
-        "latitude": "48.860227",
-        "longitude": "2.342229",
-        "url": "http://www.musee-en-herbe.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/c6bda37d-cb0a-3560-93fc-272d87815166"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/3ca1eb4d-a3bd-391f-961c-577764b056a1:2026-05-09:2026-09-07",
-      "fields": {
-        "title": "Matisse, L'Atelier rouge",
-        "date_start": "2026-05-09",
-        "date_end": "2026-09-07",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75116",
-        "address_name": "Bois de Boulogne 8 avenue Mahatma Gandhi Fondation Louis Vuitton",
-        "description": "Œuvre emblématique qui a influencé de nombreux artistes, elle est le point d'orgue de l'exposition à la Fondation Louis Vuitton du 7 mai au 9 septembre 2024. Une mise en lumière sur les mystères, le succès et le contexte artistique de cette peinture.",
-        "lead_text": "Œuvre emblématique qui a influencé de nombreux artistes, elle est le point d'orgue de l'exposition à la Fondation Louis Vuitton du 7 mai au 9 septembre 2024. Une mise en lumière sur les mystères, le succès et le contexte artistique de cette peinture.",
-        "latitude": "48.877011",
-        "longitude": "2.263715",
-        "url": "https://www.fondationlouisvuitton.fr/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/3ca1eb4d-a3bd-391f-961c-577764b056a1"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/b3ccdc27-f893-390c-8c13-f173f894eb12:2026-05-13:2026-11-01",
-      "fields": {
-        "title": "La mode en majesté : haute couture et tradition à la cour de Thaïlande",
-        "date_start": "2026-05-13",
-        "date_end": "2026-11-01",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "107 rue de Rivoli MAD - Musée des Arts décoratifs",
-        "description": "Du 13 mai au 1er novembre 2026, entre tradition et modernité, l’élégance royale thaïlandaise rencontre l’audace de la haute couture au musée des arts décoratifs. Une exposition somptueuse à ne pas manquer.",
-        "lead_text": "Du 13 mai au 1er novembre 2026, entre tradition et modernité, l’élégance royale thaïlandaise rencontre l’audace de la haute couture au musée des arts décoratifs. Une exposition somptueuse à ne pas manquer.",
-        "latitude": "48.863214",
-        "longitude": "2.333316",
-        "url": "https://madparis.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/b3ccdc27-f893-390c-8c13-f173f894eb12"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/7e61dca4-d562-386c-bc89-3a3f31f036d9:2026-05-20:2026-01-03",
-      "fields": {
-        "title": "Patrimoines en résistance. De Tombouctou à Odessa",
-        "date_start": "2026-05-20",
-        "date_end": "2026-01-03",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "1 place du Trocadéro et du 11 Novembre",
-        "description": "Plongez au cœur d’une exposition immersive à la Cité de l’architecture qui révèle, de Tombouctou à Odessa, comment les destructions du patrimoine exposent la fragilité humaine tout en mettant en lumière la force des gestes de résistance.",
-        "lead_text": "Plongez au cœur d’une exposition immersive à la Cité de l’architecture qui révèle, de Tombouctou à Odessa, comment les destructions du patrimoine exposent la fragilité humaine tout en mettant en lumière la force des gestes de résistance.",
-        "latitude": "48.862905",
-        "longitude": "2.288342",
-        "url": "https://www.citedelarchitecture.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/7e61dca4-d562-386c-bc89-3a3f31f036d9"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/edfa684d-80d0-363c-a7e5-a5a754382f44:2026-06-02:2026-09-06",
-      "fields": {
-        "title": "Grand Palais d'été",
-        "date_start": "2026-06-02",
-        "date_end": "2026-09-06",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "Grand Palais 1 avenue Winston Churchill Entrée Rotonde Clarence Dillon",
-        "description": "Un été vibrant au cœur du Grand Palais, où expositions immersives, performances monumentales et nuits festives se succèdent dans un écrin architectural unique. A savourer dès le 2 juin 2026.",
-        "lead_text": "Un été vibrant au cœur du Grand Palais, où expositions immersives, performances monumentales et nuits festives se succèdent dans un écrin architectural unique. A savourer dès le 2 juin 2026.",
-        "latitude": "48.86664",
-        "longitude": "2.31161",
-        "url": "https://www.grandpalais.fr/fr/programme/grand-palais-dete",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/edfa684d-80d0-363c-a7e5-a5a754382f44"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/46c479e8-2132-384e-a3cf-c84e8a67ec10:2026-06-05:2026-09-06",
-      "fields": {
-        "title": "Gianni Versace Retrospective",
-        "date_start": "2026-06-05",
-        "date_end": "2026-09-06",
-        "address_city": "Paris",
-        "address_postal_code": "75007",
-        "address_name": "59-61 rue de Grenelle Musée Maillol",
-        "description": "À partir du 5 juin, le musée Maillol accueille la première grande rétrospective française consacrée à Gianni Versace. Une plongée spectaculaire dans l’univers flamboyant du créateur italien, au cœur de Paris, capitale mondiale de la mode.",
-        "lead_text": "À partir du 5 juin, le musée Maillol accueille la première grande rétrospective française consacrée à Gianni Versace. Une plongée spectaculaire dans l’univers flamboyant du créateur italien, au cœur de Paris, capitale mondiale de la mode.",
-        "latitude": "48.854795",
-        "longitude": "2.324924",
-        "url": "https://museemaillol.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/46c479e8-2132-384e-a3cf-c84e8a67ec10"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/f2c99948-ac56-386d-ba7d-92cdb64cce10:2026-06-21:2026-09-14",
-      "fields": {
-        "title": "La Vasque de Paris 2024",
-        "date_start": "2026-06-21",
-        "date_end": "2026-09-14",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "113 rue de Rivoli Jardin des Tuileries",
-        "description": "Celle qui a illuminé le ciel de Paris pendant les Jeux Olympiques et Paralympiques 2024 est de retour au jardin des Tuileries. Pendant tout l’été, la vasque s'envolera à nouveau, chaque soir, pour un spectacle magique.",
-        "lead_text": "Celle qui a illuminé le ciel de Paris pendant les Jeux Olympiques et Paralympiques 2024 est de retour au jardin des Tuileries. Pendant tout l’été, la vasque s'envolera à nouveau, chaque soir, pour un spectacle magique.",
-        "latitude": "48.863086",
-        "longitude": "2.333734",
-        "url": "https://vasqueparis2024.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/f2c99948-ac56-386d-ba7d-92cdb64cce10"
-      }
-    },
-    {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/89a5e779-5cd8-3af1-9772-f6288529ed4f:2026-07-05:2026-09-13",
-      "fields": {
-        "title": "Le Petit Prince. L'odyssée immersive",
-        "date_start": "2026-07-05",
-        "date_end": "2026-09-13",
-        "address_city": "Paris 11e Arrondissement",
-        "address_postal_code": "75011",
+        "title": "Installation Tree Hug par l'artiste Monsieur Plant",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
         "address_name": "",
-        "description": "L'Atelier des Lumières à Paris vous invite à une aventure immersive inoubliable. Cette expérience unique promet de ravir petits et grands, en redonnant vie au chef-d’œuvre intemporel d’Antoine de Saint-Exupéry.",
-        "lead_text": "L'Atelier des Lumières à Paris vous invite à une aventure immersive inoubliable. Cette expérience unique promet de ravir petits et grands, en redonnant vie au chef-d’œuvre intemporel d’Antoine de Saint-Exupéry.",
-        "latitude": "48.860162",
-        "longitude": "2.381844",
-        "url": "http://www.atelier-lumieres.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/89a5e779-5cd8-3af1-9772-f6288529ed4f"
+        "description": "Venez admirer une installation végétale signée par l'artiste Monsieur Plant qui viendra habiller plusieurs arbres du parc de la Maison de Chateaubriand durant tout l'été !",
+        "lead_text": "Venez admirer une installation végétale signée par l'artiste Monsieur Plant qui viendra habiller plusieurs arbres du parc de la Maison de Chateaubriand durant tout l'été !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/516821be-dd80-3217-84d0-7fad3e115d98:2026-07-08:2026-09-13",
+      "recordid": "idf:Fête de la brouette à l'assiette||",
       "fields": {
-        "title": "Un été astronomique",
-        "date_start": "2026-07-08",
-        "date_end": "2026-09-13",
-        "address_city": "Paris",
-        "address_postal_code": "75019",
-        "address_name": "30 avenue Corentin Cariou Cité des sciences et de l'industrie",
-        "description": "Cet été, la tête se lève vers le ciel à Paris ! Entre éclipse spectaculaire, explorations lunaires, planétarium et animations familiales, la Cité des sciences invite petits et grands à embarquer pour un voyage fascinant dans l’Univers.",
-        "lead_text": "Cet été, la tête se lève vers le ciel à Paris ! Entre éclipse spectaculaire, explorations lunaires, planétarium et animations familiales, la Cité des sciences invite petits et grands à embarquer pour un voyage fascinant dans l’Univers.",
-        "latitude": "48.89724",
-        "longitude": "2.385575",
-        "url": "https://www.cite-sciences.fr/fr/accueil",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/516821be-dd80-3217-84d0-7fad3e115d98"
+        "title": "Fête de la brouette à l'assiette",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Venez découvrir un peu plus la nature !",
+        "lead_text": "Venez découvrir un peu plus la nature !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/c3b86b97-9329-3faf-9f9c-ae79d8d94701:2026-07-16:2026-12-31",
+      "recordid": "idf:Échappée Cirque||",
       "fields": {
-        "title": "Sur les traces des dinosaures",
-        "date_start": "2026-07-16",
-        "date_end": "2026-12-31",
-        "address_city": "Paris 5e Arrondissement",
-        "address_postal_code": "75005",
-        "address_name": "36 rue Geoffroy-Saint-Hilaire Grande Galerie de l'Evolution",
-        "description": "",
-        "lead_text": "",
-        "latitude": "48.841491",
-        "longitude": "2.355989",
-        "url": "https://www.mnhn.fr/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/c3b86b97-9329-3faf-9f9c-ae79d8d94701"
+        "title": "Échappée Cirque",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/725e7e19-4c72-3677-a055-1a04d38876fa:2026-09-03:2026-08-29",
+      "recordid": "idf:Chasse au trésor avec Monet||",
       "fields": {
-        "title": "Transparence",
-        "date_start": "2026-09-03",
-        "date_end": "2026-08-29",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "17 avenue du Général Eisenhower Entrée square Jean Perrin Le Palais des enfants",
-        "description": "Un voyage sensoriel et poétique pour les enfants de 2 à 10 ans, au cœur d’un univers lumineux mêlant art, science et imagination. Un monde enchanté à explorer jusqu’au 29 août 2027.",
-        "lead_text": "Un voyage sensoriel et poétique pour les enfants de 2 à 10 ans, au cœur d’un univers lumineux mêlant art, science et imagination. Un monde enchanté à explorer jusqu’au 29 août 2027.",
-        "latitude": "48.873707",
-        "longitude": "2.3116",
-        "url": "https://www.palais-decouverte.fr/le-palais/le-palais-des-enfants",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/725e7e19-4c72-3677-a055-1a04d38876fa"
+        "title": "Chasse au trésor avec Monet",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "La chasse aux Monet",
+        "lead_text": "La chasse aux Monet",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/97b28888-9021-3bc2-a77a-3012ba752dcf:2026-09-10:2026-09-19",
+      "recordid": "idf:Visite libre du musée (Jardin en accès libre)||",
       "fields": {
-        "title": "Paris Design Week",
-        "date_start": "2026-09-10",
-        "date_end": "2026-09-19",
-        "address_city": "Paris",
-        "address_postal_code": "75009",
-        "address_name": "8 rue Chaptal Maison et objet",
-        "description": "Du 10 au 19 septembre, Paris devient la capitale du design avec la Paris Design Week, le prolongement grand public, urbain et festif de l’incontournable salon professionnel Maison & Objet.",
-        "lead_text": "Du 10 au 19 septembre, Paris devient la capitale du design avec la Paris Design Week, le prolongement grand public, urbain et festif de l’incontournable salon professionnel Maison & Objet.",
-        "latitude": "48.880773",
-        "longitude": "2.334081",
-        "url": "https://www.maison-objet.com/paris-design-week",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/97b28888-9021-3bc2-a77a-3012ba752dcf"
+        "title": "Visite libre du musée (Jardin en accès libre)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Découvrez la collection du musée en Visite libre du (Jardin en accès libre)",
+        "lead_text": "Découvrez la collection du musée en Visite libre du (Jardin en accès libre)",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/0f74353b-fe9a-3ffe-918c-51bfc9e1628d:2026-09-11:2026-12-19",
+      "recordid": "idf:Atelier confection de balles de jonglage||",
       "fields": {
-        "title": "Festival d'Automne",
-        "date_start": "2026-09-11",
-        "date_end": "2026-12-19",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "Festival d'Automne",
-        "description": "De septembre à décembre, le Festival d’Automne 2026 transforme Paris et l’Île-de-France en immense scène artistique. Théâtre, danse, musique, arts visuels et performances vous invitent à un voyage créatif ouvert sur le monde.",
-        "lead_text": "De septembre à décembre, le Festival d’Automne 2026 transforme Paris et l’Île-de-France en immense scène artistique. Théâtre, danse, musique, arts visuels et performances vous invitent à un voyage créatif ouvert sur le monde.",
-        "latitude": "48.864049",
-        "longitude": "2.331053",
-        "url": "https://www.festival-automne.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/0f74353b-fe9a-3ffe-918c-51bfc9e1628d"
+        "title": "Atelier confection de balles de jonglage",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Dans le cadre des Sorties de Plage #3 avec la compagnie Le Grillon électrique",
+        "lead_text": "Dans le cadre des Sorties de Plage #3 avec la compagnie Le Grillon électrique",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/579b55e6-5f94-3e2f-91af-c63eb0005d1a:2026-09-11:2026-09-13",
+      "recordid": "idf:Nuit Internationale de la chauve-souris||",
       "fields": {
-        "title": "La Parisienne",
-        "date_start": "2026-09-11",
-        "date_end": "2026-09-13",
-        "address_city": "Paris",
-        "address_postal_code": "75007",
-        "address_name": "Champ de Mars /Place Jacques Rueff",
-        "description": "Les 11, 12 et 13 septembre 2026 les femmes se donnent rendez-vous pour participer à la course la parisienne, avec comme mission principale leur bien-être et le fun.",
-        "lead_text": "Les 11, 12 et 13 septembre 2026 les femmes se donnent rendez-vous pour participer à la course la parisienne, avec comme mission principale leur bien-être et le fun.",
-        "latitude": "48.826991",
-        "longitude": "2.331033",
-        "url": "https://la-parisienne.net/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/579b55e6-5f94-3e2f-91af-c63eb0005d1a"
+        "title": "Nuit Internationale de la chauve-souris",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Diaporama en plein air puis sortie de terrain avec Bad Box",
+        "lead_text": "Diaporama en plein air puis sortie de terrain avec Bad Box",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/145977e7-e3a5-39fe-8442-fee6d47da85f:2026-09-11:2026-01-24",
+      "recordid": "idf:Saint-Cloud - Cueillette sauvage : bien débuter avec une experte||",
       "fields": {
-        "title": "Eternel Tintoret",
-        "date_start": "2026-09-11",
-        "date_end": "2026-01-24",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "158 boulevard Haussmann Musée Jacquemart-André",
-        "description": "Du 11 septembre 2026 au 24 janvier 2027, l’exposition Éternel Tintoret au musée Jacquemart-André révèle toute la modernité du maître vénitien. Entre lumière, mouvement et puissance narrative, redécouvrez une œuvre qui traverse les siècles.",
-        "lead_text": "Du 11 septembre 2026 au 24 janvier 2027, l’exposition Éternel Tintoret au musée Jacquemart-André révèle toute la modernité du maître vénitien. Entre lumière, mouvement et puissance narrative, redécouvrez une œuvre qui traverse les siècles.",
-        "latitude": "48.875265",
-        "longitude": "2.310873",
-        "url": "http://www.musee-jacquemart-andre.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/145977e7-e3a5-39fe-8442-fee6d47da85f"
+        "title": "Saint-Cloud - Cueillette sauvage : bien débuter avec une experte",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Introduction aux plantes sauvages du parc de Saint-Cloud",
+        "lead_text": "Introduction aux plantes sauvages du parc de Saint-Cloud",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/83c186c3-0cd2-3001-bff6-d4ead7d002d8:2026-09-12:2026-09-14",
+      "recordid": "idf:Visite de la Maison de Retraite des Artistes||",
       "fields": {
-        "title": "Paris Coffee Show 2026",
-        "date_start": "2026-09-12",
-        "date_end": "2026-09-14",
-        "address_city": "Paris",
-        "address_postal_code": "75012",
-        "address_name": "Parc Floral de Paris Route de la Pyramide",
-        "description": "Le tout 1er événement français 100 % dédié au café et à son univers revient au mois de septembre au Parc Floral ! Une immersion unique dans la culture café, entre découvertes, rencontres et arômes d’exception.",
-        "lead_text": "Le tout 1er événement français 100 % dédié au café et à son univers revient au mois de septembre au Parc Floral ! Une immersion unique dans la culture café, entre découvertes, rencontres et arômes d’exception.",
-        "latitude": "48.839934",
-        "longitude": "2.438328",
-        "url": "https://pariscoffeeshow.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/83c186c3-0cd2-3001-bff6-d4ead7d002d8"
+        "title": "Visite de la Maison de Retraite des Artistes",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Visite guidée du parc de 4Ha et des extérieurs de la Maison de Retraite des Artistes",
+        "lead_text": "Visite guidée du parc de 4Ha et des extérieurs de la Maison de Retraite des Artistes",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/3bd18ea2-d9d8-30d9-9827-b1f917d0e88b:2026-09-16:2026-01-10",
+      "recordid": "idf:Goûter jeux de société||",
       "fields": {
-        "title": "Andy Warhol, la ligne et l’image",
-        "date_start": "2026-09-16",
-        "date_end": "2026-01-10",
-        "address_city": "Paris 6e Arrondissement",
-        "address_postal_code": "75006",
-        "address_name": "19 rue de Vaugirard Musée du Luxembourg",
-        "description": "Derrière l’icône du Pop Art, un dessinateur infatigable : au musée du Luxembourg, l’exposition Andy Warhol. La ligne et l’image révèle la place essentielle du dessin dans l’œuvre de l’artiste, de ses débuts à ses dernières séries.",
-        "lead_text": "Derrière l’icône du Pop Art, un dessinateur infatigable : au musée du Luxembourg, l’exposition Andy Warhol. La ligne et l’image révèle la place essentielle du dessin dans l’œuvre de l’artiste, de ses débuts à ses dernières séries.",
-        "latitude": "48.848891",
-        "longitude": "2.334074",
-        "url": "https://museeduluxembourg.fr/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/3bd18ea2-d9d8-30d9-9827-b1f917d0e88b"
+        "title": "Goûter jeux de société",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Profitez d'un goûter ludique avec la ludothèque La Boîte à jeux à la Maison Bernardin de Saint-Pierre ! Découvrez une sélection de jeux en plein air autour d'une collation gourmande.",
+        "lead_text": "Profitez d'un goûter ludique avec la ludothèque La Boîte à jeux à la Maison Bernardin de Saint-Pierre ! Découvrez une sélection de jeux en plein air autour d'une collation gourmande.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/1b46ee35-b194-3820-a8fb-901782714e25:2026-09-18:2026-01-24",
+      "recordid": "idf:Visite du rucher d'Éragny-sur-Oise et dégustation de miel||",
       "fields": {
-        "title": "Kerry James Marshall. The Histories",
-        "date_start": "2026-09-18",
-        "date_end": "2026-01-24",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "11 Avenue du Président Wilson",
-        "description": "Première exposition en France consacrée à l’artiste américain Kerry James Marshall, cette rétrospective exceptionnelle réunit 70 œuvres, dont huit inédites, et retrace plus de quarante ans de création au Musée d’Art Moderne de Paris.",
-        "lead_text": "Première exposition en France consacrée à l’artiste américain Kerry James Marshall, cette rétrospective exceptionnelle réunit 70 œuvres, dont huit inédites, et retrace plus de quarante ans de création au Musée d’Art Moderne de Paris.",
-        "latitude": "48.864615",
-        "longitude": "2.294571",
-        "url": "https://www.mam.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/1b46ee35-b194-3820-a8fb-901782714e25"
+        "title": "Visite du rucher d'Éragny-sur-Oise et dégustation de miel",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Cet événement proposé par Mathis Contassot, un jeune apiculteur passionné et fin connaisseur des écosystèmes locaux, nous invite à la découverte des abeilles et de leur environnement.",
+        "lead_text": "Cet événement proposé par Mathis Contassot, un jeune apiculteur passionné et fin connaisseur des écosystèmes locaux, nous invite à la découverte des abeilles et de leur environnement.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/c63c4e63-2f39-3a92-a4a0-cb5b067a73a9:2026-09-19:2026-09-20",
+      "recordid": "idf:Programmation Festival Rosa Bonheur - Flore Benguigui & The Sensible Notes||",
       "fields": {
-        "title": "Journées Européennes du Patrimoine",
-        "date_start": "2026-09-19",
-        "date_end": "2026-09-20",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "3 rue Valois Ministère de la Culture et de la Communication",
-        "description": "Populaires pour les portes-ouvertes de lieux habituellement inaccessibles, ou méconnus, les Journées du Patrimoine offrent un programme complet de découvertes et d'activités culturelles dans toute la région !",
-        "lead_text": "Populaires pour les portes-ouvertes de lieux habituellement inaccessibles, ou méconnus, les Journées du Patrimoine offrent un programme complet de découvertes et d'activités culturelles dans toute la région !",
-        "latitude": "48.863686",
-        "longitude": "2.337797",
-        "url": "http://journeesdupatrimoine.culturecommunication.gouv.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/c63c4e63-2f39-3a92-a4a0-cb5b067a73a9"
+        "title": "Programmation Festival Rosa Bonheur - Flore Benguigui & The Sensible Notes",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Jazz",
+        "lead_text": "Jazz",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/c235a05a-1f98-3cb8-a959-273cd27c1ab1:2026-09-22:2026-08-01",
+      "recordid": "idf:Visite commentée de l'exposition et balade libre dans le parc||",
       "fields": {
-        "title": "Lady Liberté. De la sueur, de l’audace, du génie",
-        "date_start": "2026-09-22",
-        "date_end": "2026-08-01",
-        "address_city": "Paris 3e Arrondissement",
-        "address_postal_code": "75003",
-        "address_name": "60 rue Réaumur Musée des Arts et Métiers",
-        "description": "Née dans les ateliers parisiens avant de rejoindre New York, la Statue de la Liberté se dévoile autrement. Cette exposition immersive du musée des Arts et Métiers vous plonge au cœur d’une aventure humaine, technique et artistique hors norme.",
-        "lead_text": "Née dans les ateliers parisiens avant de rejoindre New York, la Statue de la Liberté se dévoile autrement. Cette exposition immersive du musée des Arts et Métiers vous plonge au cœur d’une aventure humaine, technique et artistique hors norme.",
-        "latitude": "48.865711",
-        "longitude": "2.355422",
-        "url": "https://www.arts-et-metiers.net/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/c235a05a-1f98-3cb8-a959-273cd27c1ab1"
+        "title": "Visite commentée de l'exposition et balade libre dans le parc",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Découvrez l'exposition \"Victor Hugo et Les Misérables, de la réalité à l'idéal\" avec des conférenciers passionnés, qui vous expliquent l'histoire du roman, des personnages et les combats de Hugo.",
+        "lead_text": "Découvrez l'exposition \"Victor Hugo et Les Misérables, de la réalité à l'idéal\" avec des conférenciers passionnés, qui vous expliquent l'histoire du roman, des personnages et les combats de Hugo.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/6be1a6bd-bc1b-3dea-9c16-637636131f42:2026-09-23:2026-01-17",
+      "recordid": "idf:Balade contée avec un âne : la forêt enchantée||",
       "fields": {
-        "title": "Cezanne et nous",
-        "date_start": "2026-09-23",
-        "date_end": "2026-01-17",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "Grand Palais Square Jean Perrin - 17 Avenue du Général Eisenhower",
-        "description": "Une exposition majeure au Grand Palais qui explore l’héritage vibrant de Paul Cézanne, en révélant comment son œuvre visionnaire n’a cessé d’inspirer artistes, mouvements et regards contemporains. Votre rendez-vous de l’automne 2026 à Paris.",
-        "lead_text": "Une exposition majeure au Grand Palais qui explore l’héritage vibrant de Paul Cézanne, en révélant comment son œuvre visionnaire n’a cessé d’inspirer artistes, mouvements et regards contemporains. Votre rendez-vous de l’automne 2026 à Paris.",
-        "latitude": "48.867145",
-        "longitude": "2.312146",
-        "url": "https://www.grandpalais.fr/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/6be1a6bd-bc1b-3dea-9c16-637636131f42"
+        "title": "Balade contée avec un âne : la forêt enchantée",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sortie nature coorganisée par Île-de-France Nature",
+        "lead_text": "Sortie nature coorganisée par Île-de-France Nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/1d9d0cdb-fe3e-3daa-8377-9d681262aa90:2026-09-24:2026-01-31",
+      "recordid": "idf:Dessin & poésie au jardin||",
       "fields": {
-        "title": "Histoires de paysages. De Monet à Hockney  (1893-2026)",
-        "date_start": "2026-09-24",
-        "date_end": "2026-01-31",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "2 rue Louis Boilly Musée Marmottan Monet",
-        "description": "À l’occasion du centenaire de la disparition de Claude Monet, le Musée Marmottan Monet retrace deux siècles d’histoire du paysage, de l’impressionnisme aux explorations contemporaines de David Hockney.",
-        "lead_text": "À l’occasion du centenaire de la disparition de Claude Monet, le Musée Marmottan Monet retrace deux siècles d’histoire du paysage, de l’impressionnisme aux explorations contemporaines de David Hockney.",
-        "latitude": "48.85921",
-        "longitude": "2.267282",
-        "url": "http://www.marmottan.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/1d9d0cdb-fe3e-3daa-8377-9d681262aa90"
+        "title": "Dessin & poésie au jardin",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Jardin ouvert aux peintres et aux poètes d'un jour",
+        "lead_text": "Jardin ouvert aux peintres et aux poètes d'un jour",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/11b033f2-7fa3-3bf6-a97c-b9b6684c8247:2026-09-30:2026-01-25",
+      "recordid": "idf:Les Yourtes Dans Ma Ville à Corbeil-Essonnes / Montconseil||",
       "fields": {
-        "title": "Monet, peindre le temps",
-        "date_start": "2026-09-30",
-        "date_end": "2026-01-25",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "Jardin des Tuileries Musée de l'Orangerie",
-        "description": "À l’occasion du Centenaire Monet, le musée de l’Orangerie dévoile Monet, peindre le temps, une exposition exceptionnelle qui explore la manière dont le maître impressionniste a capturé l’instant, la lumière et la durée à travers ses séries emblématiques.",
-        "lead_text": "À l’occasion du Centenaire Monet, le musée de l’Orangerie dévoile Monet, peindre le temps, une exposition exceptionnelle qui explore la manière dont le maître impressionniste a capturé l’instant, la lumière et la durée à travers ses séries emblématiques.",
-        "latitude": "48.863173",
-        "longitude": "2.323505",
-        "url": "http://www.musee-orangerie.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/11b033f2-7fa3-3bf6-a97c-b9b6684c8247"
+        "title": "Les Yourtes Dans Ma Ville à Corbeil-Essonnes / Montconseil",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/6f5569ca-ea19-36ce-8a94-0e909e30505b:2026-09-30:2026-04-04",
+      "recordid": "idf:Ateliers création de marionnettes||",
       "fields": {
-        "title": "LOOK ! 40 ans de mode au musée",
-        "date_start": "2026-09-30",
-        "date_end": "2026-04-04",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "107 rue de Rivoli MAD - Musée des Arts Décoratifs",
-        "description": "Du 30 septembre 2026 au 4 avril 2027, le musée des Arts décoratifs dévoile les multiples vies du vêtement, de sa création à sa conservation. Une immersion dans les savoir-faire, les métiers d’art et la transmission d’un patrimoine vivant.",
-        "lead_text": "Du 30 septembre 2026 au 4 avril 2027, le musée des Arts décoratifs dévoile les multiples vies du vêtement, de sa création à sa conservation. Une immersion dans les savoir-faire, les métiers d’art et la transmission d’un patrimoine vivant.",
-        "latitude": "48.863214",
-        "longitude": "2.333316",
-        "url": "https://madparis.fr/musee-des-arts-decoratifs",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/6f5569ca-ea19-36ce-8a94-0e909e30505b"
+        "title": "Ateliers création de marionnettes",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "À l'occasion de la 10e édition des Jardins ouverts, retrouvez les ateliers création de marionnettes à la maison Bernardin de Saint-Pierre.",
+        "lead_text": "À l'occasion de la 10e édition des Jardins ouverts, retrouvez les ateliers création de marionnettes à la maison Bernardin de Saint-Pierre.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cc744f21-359c-3120-98b7-28336907e066:2026-10-03:2026-10-04",
+      "recordid": "idf:Nuit internationale de la chauve souris||",
       "fields": {
-        "title": "Qatar Prix de l'Arc de Triomphe",
-        "date_start": "2026-10-03",
-        "date_end": "2026-10-04",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "Hippodrome Paris Longchamp 2 route des tribunes",
-        "description": "Vivez l'intensité du Qatar Prix de l'Arc de Triomphe ! Cette compétition sportive de portée internationale vous attend à Paris 16ème pour un événement de sports exceptionnel. Un rendez-vous incontournable à ne pas manquer !",
-        "lead_text": "Vivez l'intensité du Qatar Prix de l'Arc de Triomphe ! Cette compétition sportive de portée internationale vous attend à Paris 16ème pour un événement de sports exceptionnel. Un rendez-vous incontournable à ne pas manquer !",
-        "latitude": "48.861596",
-        "longitude": "2.230694",
-        "url": "https://www.francegalop-live.com/evenement/qatar-prix-de-larc-de-triomphe/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cc744f21-359c-3120-98b7-28336907e066"
+        "title": "Nuit internationale de la chauve souris",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Balade au clair de lune avec Amélie Collignon, chargée de mission au Parc Naturel du Vexin",
+        "lead_text": "Balade au clair de lune avec Amélie Collignon, chargée de mission au Parc Naturel du Vexin",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/2991009e-1e1a-3e57-a05a-eea6118a4f9c:2026-10-06:2026-01-31",
+      "recordid": "idf:Visite guidée du domaine d'Ormesson||",
       "fields": {
-        "title": "Mary Cassatt - Le choix de l'indépendance",
-        "date_start": "2026-10-06",
-        "date_end": "2026-01-31",
-        "address_city": "Paris",
-        "address_postal_code": "75007",
-        "address_name": "1, rue de la Légion d’Honneur Musée d’Orsay",
-        "description": "Du 6 octobre 2026 au 31 janvier 2027, découvrez « Mary Cassatt : Le choix de l’indépendance » au musée d’Orsay, une rétrospective immersive de 80 œuvres retraçant le parcours audacieux de cette pionnière américaine de l’impressionnisme en France.",
-        "lead_text": "Du 6 octobre 2026 au 31 janvier 2027, découvrez « Mary Cassatt : Le choix de l’indépendance » au musée d’Orsay, une rétrospective immersive de 80 œuvres retraçant le parcours audacieux de cette pionnière américaine de l’impressionnisme en France.",
-        "latitude": "48.860379",
-        "longitude": "2.32513",
-        "url": "https://www.musee-orsay.fr/fr",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/2991009e-1e1a-3e57-a05a-eea6118a4f9c"
+        "title": "Visite guidée du domaine d'Ormesson",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Le château d'Ormesson vous ouvre ses portes en ces derniers jours d'été.",
+        "lead_text": "Le château d'Ormesson vous ouvre ses portes en ces derniers jours d'été.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/e013bc7e-4a57-3bee-bd1b-0c23c29c4c4b:2026-10-09:2026-10-11",
+      "recordid": "idf:Atelier jardinage||",
       "fields": {
-        "title": "Journées Grand Public du Forum International de la Météo et du Climat",
-        "date_start": "2026-10-09",
-        "date_end": "2026-10-11",
-        "address_city": "Paris 4e Arrondissement",
-        "address_postal_code": "75004",
-        "address_name": "Parvis de l'Hôtel de Ville",
-        "description": "Dans le cadre de la Semaine Européenne du Développement Durable rendez-vous sur le parvis de l’Hôtel de Ville de Paris pour participer aux journées grand public du Forum International de la Météo et du Climat, du 28 au 30 mai.",
-        "lead_text": "Dans le cadre de la Semaine Européenne du Développement Durable rendez-vous sur le parvis de l’Hôtel de Ville de Paris pour participer aux journées grand public du Forum International de la Météo et du Climat, du 28 au 30 mai.",
-        "latitude": "48.856703",
-        "longitude": "2.351498",
-        "url": "https://forumeteoclimat.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/e013bc7e-4a57-3bee-bd1b-0c23c29c4c4b"
+        "title": "Atelier jardinage",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Tous les samedis après-midi, nous vous donnons rendez-vous à la Ferme de la Cure pour jardiner ensemble au potager.",
+        "lead_text": "Tous les samedis après-midi, nous vous donnons rendez-vous à la Ferme de la Cure pour jardiner ensemble au potager.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/b3267351-91d5-31f1-b8cc-8c57cd584fbc:2026-10-15:2026-10-18",
+      "recordid": "idf:Découverte de l’apiculture||",
       "fields": {
-        "title": "Journées de l’architecture à Paris",
-        "date_start": "2026-10-15",
-        "date_end": "2026-10-18",
-        "address_city": "Paris",
-        "address_postal_code": "75001",
-        "address_name": "Évènement dans tout Paris Region",
-        "description": "Du 16 au 19 octobre se dérouleront dans toute la France les Journées de l’architecture, consacrées cette année à l'architecture du quotidien. L’occasion de découvrir les édifices et les projets d’urbanisme qui font la grandeur de Paris Region.",
-        "lead_text": "Du 16 au 19 octobre se dérouleront dans toute la France les Journées de l’architecture, consacrées cette année à l'architecture du quotidien. L’occasion de découvrir les édifices et les projets d’urbanisme qui font la grandeur de Paris Region.",
-        "latitude": "48.859588",
-        "longitude": "2.335607",
-        "url": "https://journeesarchitecture.culture.gouv.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/b3267351-91d5-31f1-b8cc-8c57cd584fbc"
+        "title": "Découverte de l’apiculture",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Pour tout savoir sur le miel, du butinage des abeilles à sa récolte, rendez-vous au rucher de Villarceaux les 13 et 27 juin puis les 22 et 29 août 2026 pour un atelier avec l'apiculteur du domaine.",
+        "lead_text": "Pour tout savoir sur le miel, du butinage des abeilles à sa récolte, rendez-vous au rucher de Villarceaux les 13 et 27 juin puis les 22 et 29 août 2026 pour un atelier avec l'apiculteur du domaine.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/cbe678aa-f5d3-3da7-8628-ae2899fad7f5:2026-10-17:2026-10-18",
+      "recordid": "idf:Lâcher de clowns par Le Samovar||",
       "fields": {
-        "title": "La Balade du Goût",
-        "date_start": "2026-10-17",
-        "date_end": "2026-10-18",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "19, Rue d'Anjou",
-        "description": "86 fermes et artisans vous ouvrent leur portes le weekend du 15 et 16 octobre 2022 ! Profitez des visites guidées et des dégustations au plus près des agriculteurs de Paris Region.",
-        "lead_text": "86 fermes et artisans vous ouvrent leur portes le weekend du 15 et 16 octobre 2022 ! Profitez des visites guidées et des dégustations au plus près des agriculteurs de Paris Region.",
-        "latitude": "48.870606",
-        "longitude": "2.321199",
-        "url": "http://www.balade-du-gout.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/cbe678aa-f5d3-3da7-8628-ae2899fad7f5"
+        "title": "Lâcher de clowns par Le Samovar",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Laissez-vous surprendre !",
+        "lead_text": "Laissez-vous surprendre !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/933770ef-dcff-395c-ba5a-cb701f32ddb1:2026-10-20:2026-10-25",
+      "recordid": "idf:Paris sous les étoiles - Parc Georges Brassens (Paris 15)||",
       "fields": {
-        "title": "Yonex Internationaux de France de badminton",
-        "date_start": "2026-10-20",
-        "date_end": "2026-10-25",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "82 Av. Georges Lafont,",
-        "description": "Du 25 au 30 octobre 2022 le badminton est à l’honneur à Paris Region avec les internationaux de France !",
-        "lead_text": "Du 25 au 30 octobre 2022 le badminton est à l’honneur à Paris Region avec les internationaux de France !",
-        "latitude": "48.8371",
-        "longitude": "2.256873",
-        "url": "https://www.yonexifb.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/933770ef-dcff-395c-ba5a-cb701f32ddb1"
+        "title": "Paris sous les étoiles - Parc Georges Brassens (Paris 15)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Paris sous les étoiles est de retour pour une 9ème édition exceptionnelle du 27 juin au 5 septembre 🔭  22 soirées gratuites se dérouleront dans 21 parcs partout dans Paris.",
+        "lead_text": "Paris sous les étoiles est de retour pour une 9ème édition exceptionnelle du 27 juin au 5 septembre 🔭  22 soirées gratuites se dérouleront dans 21 parcs partout dans Paris.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/79e2dfce-8d14-3325-a6b2-fc989a0705f1:2026-10-23:2026-10-25",
+      "recordid": "idf:La danse des chauves-souris||",
       "fields": {
-        "title": "Art Basel Paris",
-        "date_start": "2026-10-23",
-        "date_end": "2026-10-25",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "Grand Palais 7 avenue Winston Churchill",
-        "description": "Du 23 au 25 octobre, Paris devient le cœur battant de l’art contemporain avec plus de 200 galeries, des artistes visionnaires et une programmation audacieuse dans toute la ville. Le rendez-vous artistique de l’automne à Paris !",
-        "lead_text": "Du 23 au 25 octobre, Paris devient le cœur battant de l’art contemporain avec plus de 200 galeries, des artistes visionnaires et une programmation audacieuse dans toute la ville. Le rendez-vous artistique de l’automne à Paris !",
-        "latitude": "48.854396",
-        "longitude": "2.30477",
-        "url": "https://www.artbasel.com/paris",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/79e2dfce-8d14-3325-a6b2-fc989a0705f1"
+        "title": "La danse des chauves-souris",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sortie coorganisée par Île-de-France Nature",
+        "lead_text": "Sortie coorganisée par Île-de-France Nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/18d54621-51d0-32a4-9a59-3cd437aa56b9:2026-10-28:2026-11-01",
+      "recordid": "idf:STRUK.TURES||",
       "fields": {
-        "title": "Salon du chocolat",
-        "date_start": "2026-10-28",
-        "date_end": "2026-11-01",
-        "address_city": "Paris 15e Arrondissement",
-        "address_postal_code": "75015",
-        "address_name": "1 place de la Porte de Versailles Parc des Expositions de la Porte de Versailles",
-        "description": "Un salon incontournable pour tous, gourmands, gourmets comme amateurs éclairés de chocolat !",
-        "lead_text": "Un salon incontournable pour tous, gourmands, gourmets comme amateurs éclairés de chocolat !",
-        "latitude": "48.832787",
-        "longitude": "2.286305",
-        "url": "https://www.salon-du-chocolat.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/18d54621-51d0-32a4-9a59-3cd437aa56b9"
+        "title": "STRUK.TURES",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Installation Participative de Jonglage Asservi",
+        "lead_text": "Installation Participative de Jonglage Asservi",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/1f07bbf6-e52f-3cab-8f6b-22bfc86aa25f:2026-11-12:2026-11-15",
+      "recordid": "idf:Visite guidée des Murs à Pêches||",
       "fields": {
-        "title": "Paris Photo",
-        "date_start": "2026-11-12",
-        "date_end": "2026-11-15",
-        "address_city": "Paris",
-        "address_postal_code": "75008",
-        "address_name": "3 avenue du Général Eisenhower Grand Palais",
-        "description": "Paris Photo, première foire internationale dédiée au medium photographique, se tient chaque année sous la verrière du Grand Palais à Paris.",
-        "lead_text": "Paris Photo, première foire internationale dédiée au medium photographique, se tient chaque année sous la verrière du Grand Palais à Paris.",
-        "latitude": "48.855488",
-        "longitude": "2.298427",
-        "url": "https://www.parisphoto.com/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/1f07bbf6-e52f-3cab-8f6b-22bfc86aa25f"
+        "title": "Visite guidée des Murs à Pêches",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "À la découverte du patrimoine des Murs à Pêches",
+        "lead_text": "À la découverte du patrimoine des Murs à Pêches",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/5802f421-b8c1-3f16-bcf7-8ce30b4416e8:2026-11-13:2026-11-15",
+      "recordid": "idf:O quam suavis - Telemann, Purcell, Charpentier||",
       "fields": {
-        "title": "Les Rencontres du Ciel et de l’Espace",
-        "date_start": "2026-11-13",
-        "date_end": "2026-11-15",
-        "address_city": "Paris",
-        "address_postal_code": "75019",
-        "address_name": "30 avenue Corentin Cariou Cité des sciences et de l'industrie",
-        "description": "En novembre 2026, la Cité des sciences et de l’industrie accueille un événement exceptionnel dédié aux passionnés d’astronomie. Conférences, découvertes scientifiques et rencontres avec des experts vous plongent au cœur des mystères du cosmos.",
-        "lead_text": "En novembre 2026, la Cité des sciences et de l’industrie accueille un événement exceptionnel dédié aux passionnés d’astronomie. Conférences, découvertes scientifiques et rencontres avec des experts vous plongent au cœur des mystères du cosmos.",
-        "latitude": "48.895602",
-        "longitude": "2.388069",
-        "url": "https://www.afastronomie.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/5802f421-b8c1-3f16-bcf7-8ce30b4416e8"
+        "title": "O quam suavis - Telemann, Purcell, Charpentier",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Un voyage européen à travers la musique sacrée des XVIIe et XVIIIe siècles : l’expression de la spiritualité y prend des formes multiples, portées par l’éloquence de la voix.",
+        "lead_text": "Un voyage européen à travers la musique sacrée des XVIIe et XVIIIe siècles : l’expression de la spiritualité y prend des formes multiples, portées par l’éloquence de la voix.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     },
     {
-      "recordid": "datatourisme:https://data.datatourisme.fr/13/ef914643-eb2c-3837-ad9f-184e422dc164:2026-12-13:2026-10-18",
+      "recordid": "idf:Balades botaniques à Ménilmontant||",
       "fields": {
-        "title": "Tisser, broder, sublimer . Les savoir-faire de la mode",
-        "date_start": "2026-12-13",
-        "date_end": "2026-10-18",
-        "address_city": "Paris 16e Arrondissement",
-        "address_postal_code": "75016",
-        "address_name": "10 avenue Pierre 1er de Serbie Palais Galliera",
-        "description": "Une plongée poétique dans les savoir-faire d’exception qui façonnent la mode, du XVIIIe siècle à aujourd’hui, à découvrir du 13 décembre 2025 au 18 octobre 2026 au Palais Galliera.",
-        "lead_text": "Une plongée poétique dans les savoir-faire d’exception qui façonnent la mode, du XVIIIe siècle à aujourd’hui, à découvrir du 13 décembre 2025 au 18 octobre 2026 au Palais Galliera.",
-        "latitude": "48.861836",
-        "longitude": "2.288925",
-        "url": "https://www.palaisgalliera.paris.fr/",
-        "source": "DATAtourisme",
-        "source_id": "https://data.datatourisme.fr/13/ef914643-eb2c-3837-ad9f-184e422dc164"
+        "title": "Balades botaniques à Ménilmontant",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Apprenez à identifier les plantes sauvages des rue de Ménilmontant !",
+        "lead_text": "Apprenez à identifier les plantes sauvages des rue de Ménilmontant !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Haut Les Mains||",
+      "fields": {
+        "title": "Haut Les Mains",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visites du Potager conservatoire||",
+      "fields": {
+        "title": "Visites du Potager conservatoire",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Venez découvrir, chaque jour d'avril à novembre 2026, la richesse des fruits et légumes anciens d'Île-de-France dans un jardin exceptionnel, aménagé à l'accueil du domaine.",
+        "lead_text": "Venez découvrir, chaque jour d'avril à novembre 2026, la richesse des fruits et légumes anciens d'Île-de-France dans un jardin exceptionnel, aménagé à l'accueil du domaine.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite du jardin de sculptures du MAC VAL||",
+      "fields": {
+        "title": "Visite du jardin de sculptures du MAC VAL",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Visite libre du jardin agrémenté de sculptures de la collection du musée",
+        "lead_text": "Visite libre du jardin agrémenté de sculptures de la collection du musée",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Spectacle Quelques Unes de la Cie Eau ID A||",
+      "fields": {
+        "title": "Spectacle Quelques Unes de la Cie Eau ID A",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Dans le cadre du projet Sorties de Plage #3, avec la compagnie Eau ID A",
+        "lead_text": "Dans le cadre du projet Sorties de Plage #3, avec la compagnie Eau ID A",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Concert dessinée \"Le petit chien qui voulait devenir chaman\" avec la revue Rita||",
+      "fields": {
+        "title": "Concert dessinée \"Le petit chien qui voulait devenir chaman\" avec la revue Rita",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de Sorties de Plage #3 en partenariat avec Rita, la revue illustrée",
+        "lead_text": "dans le cadre de Sorties de Plage #3 en partenariat avec Rita, la revue illustrée",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier : Conservation des produits du jardin||",
+      "fields": {
+        "title": "Atelier : Conservation des produits du jardin",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "🥒🍅🫑 La SEVE vous propose un temps de conservation des produits du jardin potager. Recettes de cuisine simples, techniques de conservation et bonne humeur au rendez-vous !",
+        "lead_text": "🥒🍅🫑 La SEVE vous propose un temps de conservation des produits du jardin potager. Recettes de cuisine simples, techniques de conservation et bonne humeur au rendez-vous !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visites commentées du domaine||",
+      "fields": {
+        "title": "Visites commentées du domaine",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Tous les samedis et dimanches, d'avril à novembre 2026, des guides vous invitent à une promenade à travers l’histoire, à la découverte du domaine, de son manoir, de ses jardins, de ses pièces d'eau...",
+        "lead_text": "Tous les samedis et dimanches, d'avril à novembre 2026, des guides vous invitent à une promenade à travers l’histoire, à la découverte du domaine, de son manoir, de ses jardins, de ses pièces d'eau...",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Escape game||",
+      "fields": {
+        "title": "Escape game",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Explorez le jardin Terre de Vert à l'occasion d'un escape game de plein-air : Terra Verdae,..",
+        "lead_text": "Explorez le jardin Terre de Vert à l'occasion d'un escape game de plein-air : Terra Verdae,..",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Lecture poétique par Sofía Karámpali Farhat||",
+      "fields": {
+        "title": "Lecture poétique par Sofía Karámpali Farhat",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "À l’occasion d’une rencontre avec Sofía Karámpali Farhat, poétesse et artiste, venez découvrir un extrait de son livre Zaatar au cœur du jardin de la Maison.",
+        "lead_text": "À l’occasion d’une rencontre avec Sofía Karámpali Farhat, poétesse et artiste, venez découvrir un extrait de son livre Zaatar au cœur du jardin de la Maison.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Les voix humaines – Les Samedis musicaux chez Jean Cocteau||",
+      "fields": {
+        "title": "Les voix humaines – Les Samedis musicaux chez Jean Cocteau",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Chœur Les Discours",
+        "lead_text": "Chœur Les Discours",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite guidée du jardin à la française||",
+      "fields": {
+        "title": "Visite guidée du jardin à la française",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Les dimanches 28 juin et 30 août, le jardin du Château de Vaux-le-Vicomte ouvre gratuitement ses portes au public pour des visites guidées du jardin à la française, dans le cadre des Jardins Ouverts.",
+        "lead_text": "Les dimanches 28 juin et 30 août, le jardin du Château de Vaux-le-Vicomte ouvre gratuitement ses portes au public pour des visites guidées du jardin à la française, dans le cadre des Jardins Ouverts.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Expositions photographiques – Ru Gobêtue & Archives du musée de l'Histoire vivante||",
+      "fields": {
+        "title": "Expositions photographiques – Ru Gobêtue & Archives du musée de l'Histoire vivante",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "2 expositions photographiques au cœur des Murs à Pêches",
+        "lead_text": "2 expositions photographiques au cœur des Murs à Pêches",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Conférence historique sur les vergers de Port-Royal des Champs||",
+      "fields": {
+        "title": "Conférence historique sur les vergers de Port-Royal des Champs",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Conférence historique",
+        "lead_text": "Conférence historique",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Yog'art||",
+      "fields": {
+        "title": "Yog'art",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Initiation au yoga",
+        "lead_text": "Initiation au yoga",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Journées européennes du patrimoine - Visites thématiques||",
+      "fields": {
+        "title": "Journées européennes du patrimoine - Visites thématiques",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Du manoir de Ninon au château du Haut, tout le domaine est à découvrir à l'occasion de visites exceptionnelles, les 19 et 20 septembre 2026, dans le cadre des Journées européennes du patrimoine.",
+        "lead_text": "Du manoir de Ninon au château du Haut, tout le domaine est à découvrir à l'occasion de visites exceptionnelles, les 19 et 20 septembre 2026, dans le cadre des Journées européennes du patrimoine.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Sillages||",
+      "fields": {
+        "title": "Sillages",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite du jardin de l'église Saint-Serge||",
+      "fields": {
+        "title": "Visite du jardin de l'église Saint-Serge",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Affichage botanique",
+        "lead_text": "Affichage botanique",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Nature insolite||",
+      "fields": {
+        "title": "Nature insolite",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Exposition extérieure de photographies de nature",
+        "lead_text": "Exposition extérieure de photographies de nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Installation artistique par Ilona Mikneviciute||",
+      "fields": {
+        "title": "Installation artistique par Ilona Mikneviciute",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "L’artiste lituanienne Ilona Mikneviciute présente Albédo 85%, accumulation de nuages blancs suspendus dans le paysage, comme un fragment de ciel tombé dans le parc du Hangar Y.",
+        "lead_text": "L’artiste lituanienne Ilona Mikneviciute présente Albédo 85%, accumulation de nuages blancs suspendus dans le paysage, comme un fragment de ciel tombé dans le parc du Hangar Y.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Paris sous les étoiles - Jardin Shakespeare (Paris 16)||",
+      "fields": {
+        "title": "Paris sous les étoiles - Jardin Shakespeare (Paris 16)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Paris sous les étoiles est de retour pour une 9ème édition exceptionnelle du 27 juin au 5 septembre 🔭  22 soirées gratuites se dérouleront dans 21 parcs partout dans Paris.",
+        "lead_text": "Paris sous les étoiles est de retour pour une 9ème édition exceptionnelle du 27 juin au 5 septembre 🔭  22 soirées gratuites se dérouleront dans 21 parcs partout dans Paris.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Ateliers autour du spectacle Quelques Unes de la Cie Eau ID A||",
+      "fields": {
+        "title": "Ateliers autour du spectacle Quelques Unes de la Cie Eau ID A",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Dans le cadre du projet Sorties de Plage #3, avec la compagnie Eau ID A",
+        "lead_text": "Dans le cadre du projet Sorties de Plage #3, avec la compagnie Eau ID A",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Petit Déjeuner Lecture||",
+      "fields": {
+        "title": "Petit Déjeuner Lecture",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Petit Déjeuner Lecture dans le jardin de la Maison Bernardin de Saint-Pierre",
+        "lead_text": "Petit Déjeuner Lecture dans le jardin de la Maison Bernardin de Saint-Pierre",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Au Bon Coin Festival||",
+      "fields": {
+        "title": "Au Bon Coin Festival",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite libre du parc de la Maison Littéraire de Victor Hugo||",
+      "fields": {
+        "title": "Visite libre du parc de la Maison Littéraire de Victor Hugo",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Découvrez le parc romantique du Château des Roches, qui a inspiré ces vers à Victor Hugo : \"Ici durent longtemps les fleurs qui durent peu, Ici l'âme contemple, écoute, adore, aspire (...)\"",
+        "lead_text": "Découvrez le parc romantique du Château des Roches, qui a inspiré ces vers à Victor Hugo : \"Ici durent longtemps les fleurs qui durent peu, Ici l'âme contemple, écoute, adore, aspire (...)\"",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Spectacle jeune public \"teNir\" avec la CIE A K Entrepôt||",
+      "fields": {
+        "title": "Spectacle jeune public \"teNir\" avec la CIE A K Entrepôt",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "teNir est un dialogue entre un cube évidé, une danseuse et des fils.",
+        "lead_text": "teNir est un dialogue entre un cube évidé, une danseuse et des fils.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier culinaire \"Apéro-jardinatoire\" avec Karine Fallot||",
+      "fields": {
+        "title": "Atelier culinaire \"Apéro-jardinatoire\" avec Karine Fallot",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "À partir de plantes sauvages comestibles et d’aromatiques issues de la cueillette, cet atelier propose de réaliser des amuse-bouches et des boissons originales.",
+        "lead_text": "À partir de plantes sauvages comestibles et d’aromatiques issues de la cueillette, cet atelier propose de réaliser des amuse-bouches et des boissons originales.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Chauve-souriez : vous êtes filmé(s) !||",
+      "fields": {
+        "title": "Chauve-souriez : vous êtes filmé(s) !",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sortie coorganisée par Île-de-France Nature",
+        "lead_text": "Sortie coorganisée par Île-de-France Nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Douceur de fin d’été : atelier méditation en plein air au Jardin d’Agronomie Tropicale||",
+      "fields": {
+        "title": "Douceur de fin d’été : atelier méditation en plein air au Jardin d’Agronomie Tropicale",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Été au vert : Cycle de 4 rendez-vous de deux heures en plein air au Bois de Vincennes + une boisson maison offerte pour partager l'expérience à la fin de chaque séance",
+        "lead_text": "Été au vert : Cycle de 4 rendez-vous de deux heures en plein air au Bois de Vincennes + une boisson maison offerte pour partager l'expérience à la fin de chaque séance",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Dissimulée(s)||",
+      "fields": {
+        "title": "Dissimulée(s)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Dissimulé dans le jardin du Moulin Jaune, découvrez un quatuor anatomique où têtes – bras – jambes – buste, exposent leur expressivité et leur plasticité en laissant place à l’étrange et au mystère.",
+        "lead_text": "Dissimulé dans le jardin du Moulin Jaune, découvrez un quatuor anatomique où têtes – bras – jambes – buste, exposent leur expressivité et leur plasticité en laissant place à l’étrange et au mystère.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Chut, écoutons les chauve-souris et autres animaux nocturnes||",
+      "fields": {
+        "title": "Chut, écoutons les chauve-souris et autres animaux nocturnes",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sortie coorganisée par Île-de-France Nature",
+        "lead_text": "Sortie coorganisée par Île-de-France Nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Ils l'ont appelé Starmania||",
+      "fields": {
+        "title": "Ils l'ont appelé Starmania",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:L'histoire de Gargantua||",
+      "fields": {
+        "title": "L'histoire de Gargantua",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Les Samedis à la campagne||",
+      "fields": {
+        "title": "Les Samedis à la campagne",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Journée à la programmation très variée à Villarceaux, le 10 octobre 2026 : après un pique-nique dans les jardins, une expo d'art contemporain l'après-midi et un concert d'Emily Loizeau le soir.",
+        "lead_text": "Journée à la programmation très variée à Villarceaux, le 10 octobre 2026 : après un pique-nique dans les jardins, une expo d'art contemporain l'après-midi et un concert d'Emily Loizeau le soir.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite du Jardin d'Augustin||",
+      "fields": {
+        "title": "Visite du Jardin d'Augustin",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Visite de la zone de culture et du jardin d'agrément.",
+        "lead_text": "Visite de la zone de culture et du jardin d'agrément.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Sinon on te mange !||",
+      "fields": {
+        "title": "Sinon on te mange !",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sinon on te mange ! raconte une famille d’ogres. Père, mère, fils et fille ont décidé de ne plus se cacher et de vivre au milieu des humains.",
+        "lead_text": "Sinon on te mange ! raconte une famille d’ogres. Père, mère, fils et fille ont décidé de ne plus se cacher et de vivre au milieu des humains.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier musical : fabrication d'instruments et chorale||",
+      "fields": {
+        "title": "Atelier musical : fabrication d'instruments et chorale",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Dans le cadre du projet Sorties de Plage #3, en partenariat avec le groupe Calire et la Calamity Jam",
+        "lead_text": "Dans le cadre du projet Sorties de Plage #3, en partenariat avec le groupe Calire et la Calamity Jam",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite guidée des Murs à Pêches (durée 2h)||",
+      "fields": {
+        "title": "Visite guidée des Murs à Pêches (durée 2h)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "En partenariat avec l'antenne de quartier Marcel Cachin, dans le cadre du projet Sorties de Plage #3",
+        "lead_text": "En partenariat avec l'antenne de quartier Marcel Cachin, dans le cadre du projet Sorties de Plage #3",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Animation chauves-souris||",
+      "fields": {
+        "title": "Animation chauves-souris",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Histoire, quizz dans une grotte immersive puis fabrication de gîtes",
+        "lead_text": "Histoire, quizz dans une grotte immersive puis fabrication de gîtes",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite de La Villette au canal Saint-Denis||",
+      "fields": {
+        "title": "Visite de La Villette au canal Saint-Denis",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Découvrir le parc de la Villette et ses alentours",
+        "lead_text": "Découvrir le parc de la Villette et ses alentours",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier et Projection Visophare||",
+      "fields": {
+        "title": "Atelier et Projection Visophare",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "La Ville d'Éragny-sur-Oise vous invite à découvrir le Visiophare, un dispositif de projection inspiré des vieux rétroprojecteurs d'école. Atelier ouvert à tous et projection mapping le soir.",
+        "lead_text": "La Ville d'Éragny-sur-Oise vous invite à découvrir le Visiophare, un dispositif de projection inspiré des vieux rétroprojecteurs d'école. Atelier ouvert à tous et projection mapping le soir.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Les esprits de la forêt : confection de créatures en terre et éléments naturels avec Fabienne Teyssier-Monot||",
+      "fields": {
+        "title": "Les esprits de la forêt : confection de créatures en terre et éléments naturels avec Fabienne Teyssier-Monot",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Venez confectionner votre créature surnaturelle",
+        "lead_text": "Venez confectionner votre créature surnaturelle",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Et si vous poussiez les portes du merveilleux ?||",
+      "fields": {
+        "title": "Et si vous poussiez les portes du merveilleux ?",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sortie coorganisée par Île-de-France Nature",
+        "lead_text": "Sortie coorganisée par Île-de-France Nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier Kokedama – les jardins suspendus||",
+      "fields": {
+        "title": "Atelier Kokedama – les jardins suspendus",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Sortie coorganisée par Île-de-France Nature",
+        "lead_text": "Sortie coorganisée par Île-de-France Nature",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Indigo Musique - Jazz||",
+      "fields": {
+        "title": "Indigo Musique - Jazz",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Trio flute, clarinette et un piano",
+        "lead_text": "Trio flute, clarinette et un piano",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Murs A Pêches||",
+      "fields": {
+        "title": "Murs A Pêches",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Chant et musique traditionnels kurde et turque par Elif Cevik Cahson",
+        "lead_text": "Chant et musique traditionnels kurde et turque par Elif Cevik Cahson",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Compagnie Ɛntheos Ño far||",
+      "fields": {
+        "title": "Compagnie Ɛntheos Ño far",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Théâtre jeune public",
+        "lead_text": "Théâtre jeune public",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Randonnée-théâtre « Que ma joie demeure »||",
+      "fields": {
+        "title": "Randonnée-théâtre « Que ma joie demeure »",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Découvrez une adaptation théâtrale immersive exceptionnelle du roman de Giono, dans le cadre d'une randonnée dans le Parc naturel régional du Vexin français, le 13 septembre 2026. Suivi d'un déjeuner.",
+        "lead_text": "Découvrez une adaptation théâtrale immersive exceptionnelle du roman de Giono, dans le cadre d'une randonnée dans le Parc naturel régional du Vexin français, le 13 septembre 2026. Suivi d'un déjeuner.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Découverte de l'apiculture à Nanterre||",
+      "fields": {
+        "title": "Découverte de l'apiculture à Nanterre",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Plongez au cœur de l'univers des abeilles et initiez-vous à l'apiculture 🐝 !",
+        "lead_text": "Plongez au cœur de l'univers des abeilles et initiez-vous à l'apiculture 🐝 !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Terrarium : une seconde vie pour mon bocal||",
+      "fields": {
+        "title": "Terrarium : une seconde vie pour mon bocal",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Apprendre à créer une mini-serre quasi autonome",
+        "lead_text": "Apprendre à créer une mini-serre quasi autonome",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Fête des Plantes d'Automne de Saint-Jean de Beauregard||",
+      "fields": {
+        "title": "Fête des Plantes d'Automne de Saint-Jean de Beauregard",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite libre du jardin pédagogique de l'Île de la Jatte||",
+      "fields": {
+        "title": "Visite libre du jardin pédagogique de l'Île de la Jatte",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Cet été, partez à la découverte du jardin pédagogique de l'Île de la Jatte à Levallois ! Explorez ce jardin vivant et inspirant mêlant aromatiques, médicinales, potagers et biodiversité urbaine.",
+        "lead_text": "Cet été, partez à la découverte du jardin pédagogique de l'Île de la Jatte à Levallois ! Explorez ce jardin vivant et inspirant mêlant aromatiques, médicinales, potagers et biodiversité urbaine.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Le CinéMo à Meaux||",
+      "fields": {
+        "title": "Le CinéMo à Meaux",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Shakespeare Love||",
+      "fields": {
+        "title": "Shakespeare Love",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Carmen, une jeune comédienne, débarque dans un cercle de parole avec une urgence : raconter son parcours semé de désillusions, tant amoureuses que théâtrales.",
+        "lead_text": "Carmen, une jeune comédienne, débarque dans un cercle de parole avec une urgence : raconter son parcours semé de désillusions, tant amoureuses que théâtrales.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier slam||",
+      "fields": {
+        "title": "Atelier slam",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Dans le cadre de Sorties de Plage #3 et en partenariat avec le collectif La Calamity",
+        "lead_text": "Dans le cadre de Sorties de Plage #3 et en partenariat avec le collectif La Calamity",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite libre du domaine départemental de Méréville||",
+      "fields": {
+        "title": "Visite libre du domaine départemental de Méréville",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Visite libre du domaine départemental de Méréville",
+        "lead_text": "Visite libre du domaine départemental de Méréville",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Exposition Lucie Linder||",
+      "fields": {
+        "title": "Exposition Lucie Linder",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Exposition de Lucie Linder à la Maison Bernardin de Saint-Pierre à Eragny-sur-Oise",
+        "lead_text": "Exposition de Lucie Linder à la Maison Bernardin de Saint-Pierre à Eragny-sur-Oise",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier cuisine avec l'Association Culture(s) en Herbe(s)||",
+      "fields": {
+        "title": "Atelier cuisine avec l'Association Culture(s) en Herbe(s)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Venez cuisiner avec nous grâce aux récoltes du jardin dans les Murs à Pêches",
+        "lead_text": "Venez cuisiner avec nous grâce aux récoltes du jardin dans les Murs à Pêches",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Concert StellaKovski (jazz-électro)||",
+      "fields": {
+        "title": "Concert StellaKovski (jazz-électro)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Concert StellaKovski (jazz-électro) dans le cadre des Sorties de Plage #3",
+        "lead_text": "Concert StellaKovski (jazz-électro) dans le cadre des Sorties de Plage #3",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Les herbes folles mi-urbaines mi-rurales - SAINT REMY LES CHEVREUSE||",
+      "fields": {
+        "title": "Les herbes folles mi-urbaines mi-rurales - SAINT REMY LES CHEVREUSE",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "La flore urbaine, une épreuve de résistance",
+        "lead_text": "La flore urbaine, une épreuve de résistance",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Fantastiques insectes !||",
+      "fields": {
+        "title": "Fantastiques insectes !",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Exposition de photographies d'insectes grand format",
+        "lead_text": "Exposition de photographies d'insectes grand format",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Guinguette de rentrée||",
+      "fields": {
+        "title": "Guinguette de rentrée",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Pour célébrer la fin de l’été, LILO vous ouvre ses portes le temps d’une journée festive, familiale et engagée au Nord de L'Ile-Saint-Denis.",
+        "lead_text": "Pour célébrer la fin de l’été, LILO vous ouvre ses portes le temps d’une journée festive, familiale et engagée au Nord de L'Ile-Saint-Denis.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Découverte de l’apiculture avec un apiculteur agréé||",
+      "fields": {
+        "title": "Découverte de l’apiculture avec un apiculteur agréé",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Découvrez le monde extraordinaire des abeilles !",
+        "lead_text": "Découvrez le monde extraordinaire des abeilles !",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite guidée 𝑺𝒑𝒆́𝒄𝒊𝒂𝒍𝒆 𝑱𝒂𝒓𝒅𝒊𝒏 chez le docteur Gachet||",
+      "fields": {
+        "title": "Visite guidée 𝑺𝒑𝒆́𝒄𝒊𝒂𝒍𝒆 𝑱𝒂𝒓𝒅𝒊𝒏 chez le docteur Gachet",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "La visite guidée 𝑺𝒑𝒆́𝒄𝒊𝒂𝒍𝒆 𝑱𝒂𝒓𝒅𝒊𝒏 vous dévoilera les vertus des plantes du jardin du docteur Gachet mais aussi leurs liens avec ce lieu unique.",
+        "lead_text": "La visite guidée 𝑺𝒑𝒆́𝒄𝒊𝒂𝒍𝒆 𝑱𝒂𝒓𝒅𝒊𝒏 vous dévoilera les vertus des plantes du jardin du docteur Gachet mais aussi leurs liens avec ce lieu unique.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Visite guidée historique \"Chronologie de Maubuisson : huit siècles dévoilés\"||",
+      "fields": {
+        "title": "Visite guidée historique \"Chronologie de Maubuisson : huit siècles dévoilés\"",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "L’Abbaye de Maubuisson est un patrimoine exceptionnel à mi-chemin entre la sobriété de l’architecture cistercienne et le faste d’une nécropole royale.",
+        "lead_text": "L’Abbaye de Maubuisson est un patrimoine exceptionnel à mi-chemin entre la sobriété de l’architecture cistercienne et le faste d’une nécropole royale.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Atelier moulage au plâtre : les formes fruitières en espalier||",
+      "fields": {
+        "title": "Atelier moulage au plâtre : les formes fruitières en espalier",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "ATELIER MOULAGE AU PLÂTRE : LES FORMES FRUITIÈRES EN ESPALIER",
+        "lead_text": "ATELIER MOULAGE AU PLÂTRE : LES FORMES FRUITIÈRES EN ESPALIER",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Jardin sonore||",
+      "fields": {
+        "title": "Jardin sonore",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "Plongez dans l’univers sonore du bio-rythme. À partir de sons préenregistrés ou captés en direct, Fred et Martin vous invitent a l’écoute des sonorités du jardin du Picardeau.",
+        "lead_text": "Plongez dans l’univers sonore du bio-rythme. À partir de sons préenregistrés ou captés en direct, Fred et Martin vous invitent a l’écoute des sonorités du jardin du Picardeau.",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Festival Plastique Danse Flore||",
+      "fields": {
+        "title": "Festival Plastique Danse Flore",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Découverte de l'apiculture et des abeilles à Suresnes (92)||",
+      "fields": {
+        "title": "Découverte de l'apiculture et des abeilles à Suresnes (92)",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "La magie des abeilles",
+        "lead_text": "La magie des abeilles",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
+      }
+    },
+    {
+      "recordid": "idf:Sieste acoustique & littéraire\nPar Bastien Lallemant & ses invités||",
+      "fields": {
+        "title": "Sieste acoustique & littéraire\nPar Bastien Lallemant & ses invités",
+        "date_start": "",
+        "date_end": "",
+        "address_city": "",
+        "address_name": "",
+        "description": "dans le cadre de l'opération mon été ma région",
+        "lead_text": "dans le cadre de l'opération mon été ma région",
+        "url": "",
+        "source": "region-ile-de-france",
+        "source_name": "Région Île-de-France",
+        "source_url": "https://opendata.iledefrance.fr/",
+        "license": "Licence Ouverte / Open Licence 2.0"
       }
     }
-  ]
+  ],
+  "meta": {
+    "generated": "2026-08-25T21:10:15.809754Z",
+    "sources": [
+      {
+        "name": "Paris Open Data / Ville de Paris",
+        "url": "https://opendata.paris.fr/"
+      },
+      {
+        "name": "Région Île-de-France",
+        "url": "https://opendata.iledefrance.fr/",
+        "dataset": "Mon été, ma région"
+      }
+    ],
+    "event_count": 147
+  }
 }
