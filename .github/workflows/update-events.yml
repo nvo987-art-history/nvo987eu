@@ -109,7 +109,16 @@ jobs:
                   print("No more records.")
                   break
 
-              all_records.extend(records)
+              for record in records:
+                  all_records.append({
+                      "title": record.get("title"),
+                      "date_start": record.get("date_start"),
+                      "date_end": record.get("date_end"),
+                      "address_city": record.get("address_city"),
+                      "address_name": record.get("address_name"),
+                      "lead_text": record.get("lead_text"),
+                      "url": record.get("url")
+                  })
 
               print(
                   f"Received {len(records)} records. "
