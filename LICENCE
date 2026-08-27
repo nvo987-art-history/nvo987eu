@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 NVO987
+Copyright (c) 2026 NVO987 – Culture Visuelle Moderne et Contemporaine
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -18,4 +18,23 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. 
+SOFTWARE.
+
+Third-party data notice:
+
+The MIT License applies only to the original source code and other original
+material created by NVO987.
+
+It does not apply to third-party data, including data originating from the
+Paris Open Data dataset "Que faire à Paris ? – Évènements et activités".
+
+Such third-party data remains subject to the license and conditions applicable
+to its original source, including the Open Database License (ODbL) where
+applicable.
+
+Source:
+Paris Open Data / Ville de Paris
+https://opendata.paris.fr/
+
+ODbL:
+https://opendatacommons.org/licenses/odbl/
