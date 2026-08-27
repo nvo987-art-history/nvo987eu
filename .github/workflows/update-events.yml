@@ -116,7 +116,6 @@ jobs:
                       "date_end": record.get("date_end"),
                       "address_city": record.get("address_city"),
                       "address_name": record.get("address_name"),
-                      "lead_text": record.get("lead_text"),
                       "url": record.get("url")
                   })
 
