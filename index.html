@@ -428,491 +428,1213 @@
 
 <body>
 
-  <!-- 
-        <
-    <p>
-      Les informations affichées sur ce site proviennent exclusivement de sources publiques officielles
-      mises à disposition via la plateforme <strong>Paris Open Data (Ville de Paris)</strong>.
-      Ce site présente uniquement une <strong>synthèse</strong> destinée à la consultation.
-    </p>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
 
-    <ul>
-      <li>
-        <strong>Source officielle :</strong>
-        <a href="https://opendata.paris.fr/" target="_blank" rel="noopener noreferrer">
-          Paris Open Data (Ville de Paris)
-        </a>
-      </li>
+        <div class="brand">
+          <span class="brand-name">NVO987.eu</span>
+          <span class="brand-tag">Agenda Culturel</span>
+        </div>
 
-      <li>
-        <strong>Jeu de données (dataset) :</strong>
-        Que faire à Paris ? – Événements et activités
-      </li>
+        <nav class="nav">
+          <a href="#events">Événements</a>
+          <a href="https://nvo987.fr/mentions-legales.html">
+            Mentions légales
+          </a>
+          <a href="#sources">Sources</a>
+          <a href="https://nvo987.fr/contact.html">
+            Contact
+          </a>
+        </nav>
 
-      <li>
-        <strong>Licence Open Data :</strong>
-        <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener noreferrer">
-          Open Database License (ODbL) v1.0
-        </a>
-      </li>
-
-      <li>
-        <strong>Attribution obligatoire (ODbL) :</strong>
-        Données issues de <strong>Paris Open Data / Ville de Paris</strong>, réutilisées conformément à la licence ODbL.
-      </li>
-
-      <li>
-        <strong>Crédit licence (ODbL) :</strong>
-        © Ville de Paris / Paris Open Data
-      </li>
-
-      <li>
-        <strong>Mentions légales officielles de l’association éditrice :</strong>
-        <a href="https://nvo987.fr/mentions-legales.html" target="_blank" rel="noopener noreferrer">
-          www.nvo987.fr/mentions-legales.html
-        </a>
-      </li>
-    </ul>
-
-    <p class="small-note">
-  <strong>Réutilisation des données :</strong>
-  ce site présente une mise en forme et une synthèse des informations issues du jeu de données
-  source, conformément aux conditions de réutilisation applicables. L’accès aux données
-  originales, complètes et à jour demeure disponible sur la plateforme officielle Paris Open Data.
-	</p> 
-
-    <p class="small-note">
-      <strong>Absence de redistribution de base de données :</strong>
-      ce site ne fournit pas d’export complet, d’API publique ou de téléchargement visant à redistribuer
-      une partie substantielle de la base de données source. Les utilisateurs souhaitant obtenir l’intégralité
-      des données doivent se référer directement à la source officielle.
-    </p>
-
-    <p class="small-note">
-      <strong>Absence d’hébergement de contenus tiers :</strong>
-      ce site ne copie pas, n’héberge pas et n’archive pas de contenus tiers complets (images, vidéos,
-      documents ou textes intégraux). Il affiche uniquement des métadonnées et extraits limités
-      (titre, dates, lieu, résumé court) accompagnés d’un lien vers la source officielle.
-    </p>
-
-    <p class="small-note">
-      <strong>Obligations de réutilisation :</strong>
-      toute réutilisation ou redistribution d’une partie substantielle des données issues du dataset
-      doit respecter les obligations prévues par la licence ODbL (attribution, maintien de la licence
-      applicable, et partage à l’identique lorsque requis).
-    </p>
-
-    <p class="small-note">
-      <strong>Non affiliation :</strong>
-      ce site constitue une interface indépendante de consultation et de synthèse et ne constitue pas
-      un service officiel de la Ville de Paris.
-    </p>
-
-    <p class="small-note">
-      <strong>Source officielle prioritaire :</strong>
-      les informations sont fournies à titre indicatif. En cas de divergence, modification, annulation
-      ou mise à jour, <strong>la source officielle fait foi</strong>.
-    </p>
+      </div>
+    </div>
   </div>
+
+
+  <!-- HERO -->
+  <div class="container">
+
+    <header class="hero">
+
+      <div class="hero-text">
+
+        <h1>Agenda Culturel</h1>
+
+      </div>
+
+    </header>
+
+  </div>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="container">
+
+
+      <!-- EVENTS -->
+      <section id="events" class="section">
+
+        <div class="section-header">
+
+          <h2>Événements récents</h2>
+
+          <p>
+            Données mises à jour automatiquement depuis la plateforme
+            officielle Paris Open Data.
+          </p>
+
+        </div>
+
+
+        <!-- SEARCH / LIMIT -->
+        <div class="controls">
+
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Rechercher (ex: exposition, musée, concert)..."
+          >
+
+          <select id="limitSelect">
+
+            <option value="10">
+              10 résultats
+            </option>
+
+            <option value="20" selected>
+              20 résultats
+            </option>
+
+            <option value="30">
+              30 résultats
+            </option>
+
+            <option value="50">
+              50 résultats
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- STATUS -->
+        <div
+          id="statusBox"
+          class="status info"
+        >
+          Chargement des événements…
+        </div>
+
+
+        <!-- EVENTS GRID -->
+        <div
+          id="eventsGrid"
+          class="grid"
+        ></div>
 
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section">
+
+
+      <!-- MENTIONS -->
+      <section
+        id="mentions"
+        class="section"
+      >
 
         <div class="section-header">
-          <h2>Contact</h2>
-          <p>Contact officiel et identité DID.</p>
+
+          <h2>
+            Mentions légales / conformité
+          </h2>
+
+          <p>
+            Conformité RGPD, absence de cookies,
+            limitation de responsabilité,
+            droits et licences.
+          </p>
+
         </div>
 
-        <div class="sources-card">
+
+        <div class="legal-card">
+
+
+          <h3>1. Éditeur du site</h3>
+
           <p>
-            Email officiel :
-            <a href="mailto:contact@nvo987.fr">contact@nvo987.fr</a>
+            Le site <strong>NVO987.eu</strong> est édité
+            par l’association culturelle
+            <strong>NVO987</strong>.
+
+            Les mentions légales officielles complètes
+            sont disponibles sur :
+
+            <a
+              href="https://nvo987.fr/mentions-legales.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://nvo987.fr/mentions-legales.html
+            </a>.
+          </p>
+
+
+          <h3>2. Objet du site</h3>
+
+          <p>
+            Ce site propose une interface indépendante
+            de consultation et de synthèse d’événements
+            culturels publics à Paris, à partir de données
+            publiées légalement via la plateforme officielle
+            Open Data.
+          </p>
+
+
+          <h3>3. Données affichées</h3>
+
+          <p>
+            Le site affiche une sélection limitée
+            d'informations nécessaires à l'identification
+            pratique des événements : titre, dates,
+            ville, lieu et lien vers la source officielle.
           </p>
 
           <p>
-            Identité DID :
-            <a href="https://identity.nvo987.us">did:web:identity.nvo987.us</a>
+            Les descriptions et textes éditoriaux détaillés
+            de la source ne sont pas reproduits dans
+            l'interface.
           </p>
+
+
+          <h3>4. Données personnelles / RGPD</h3>
+
+          <p>
+            <strong>
+              Le site ne collecte ni n’exploite volontairement
+              de données personnelles à des fins de profilage,
+              de publicité ou de revente.
+            </strong>
+          </p>
+
+          <p>
+            Aucun compte utilisateur, aucune inscription,
+            aucun identifiant permanent et aucune base
+            de données utilisateur ne sont mis en place
+            par le site.
+          </p>
+
+          <p>
+            Si une source publique contient accidentellement
+            des informations personnelles, celles-ci ne sont
+            pas intentionnellement exploitées.
+          </p>
+
+          <p>
+            Toute demande de retrait peut être envoyée à :
+            <a href="mailto:contact@nvo987.fr">
+              contact@nvo987.fr
+            </a>.
+          </p>
+
+
+          <h3>5. Cookies / tracking</h3>
+
+          <p>
+            Aucun cookie publicitaire, aucun pixel marketing,
+            aucun outil de tracking et aucun outil d’analyse
+            n’est utilisé sur ce site.
+          </p>
+
+
+          <h3>6. Limitation de responsabilité</h3>
+
+          <p>
+            Les données affichées sont fournies à titre
+            informatif. Les événements peuvent être modifiés,
+            annulés ou supprimés par la source officielle.
+            <strong>La source officielle fait foi.</strong>
+          </p>
+
+          <p>
+            L’éditeur décline toute responsabilité en cas
+            d’erreur, d’omission, de lien indisponible,
+            ou de dommage direct ou indirect résultant
+            de l’utilisation du site.
+          </p>
+
+
+          <h3>7. Liens externes</h3>
+
+          <p>
+            Ce site contient des liens vers des sites tiers.
+            L’éditeur n’exerce aucun contrôle sur ces contenus
+            et décline toute responsabilité concernant leur
+            disponibilité, leur politique de confidentialité
+            ou leur contenu.
+          </p>
+
+
+          <h3>8. Propriété intellectuelle</h3>
+
+          <p>
+            Les marques, noms, logos et contenus présents
+            sur les plateformes officielles restent la propriété
+            de leurs détenteurs respectifs.
+          </p>
+
+          <p>
+            Le code source, la structure et la présentation
+            de ce site sont protégés par le droit applicable.
+          </p>
+
+
+          <h3>9. Licence / réutilisation des données</h3>
+
+          <p>
+            Les données affichées proviennent de Paris Open Data
+            (Ville de Paris) et sont réutilisées conformément
+            à la licence indiquée par la source.
+            L’attribution est détaillée dans la section
+            « Sources & licences ».
+          </p>
+
+
+          <h3>10. Droit applicable</h3>
+
+          <p>
+            L’utilisation du site implique l’acceptation
+            pleine et entière des présentes mentions.
+            Toute contestation devra être interprétée selon
+            les règles juridiques applicables.
+          </p>
+
+
+          <p class="small-note">
+            Dernière mise à jour : 2026.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- SOURCES -->
+      <section
+        id="sources"
+        class="section">
+
+        <div class="section-header">
+
+          <h2>
+            Sources & licences
+          </h2>
+
+          <p>
+            Attribution et informations sur les données utilisées.
+          </p>
+
+        </div>
+
+
+        <div class="sources-card">
+
+          <p>
+            Les informations affichées sur ce site proviennent
+            de sources publiques officielles mises à disposition
+            via la plateforme
+            <strong>
+              Paris Open Data (Ville de Paris)
+            </strong>.
+          </p>
+
+
+          <ul>
+
+            <li>
+
+              <strong>
+                Source officielle :
+              </strong>
+
+              <a
+                href="https://opendata.paris.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paris Open Data (Ville de Paris)
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <strong>
+                Jeu de données :
+              </strong>
+
+              Que faire à Paris ? – Événements et activités
+
+            </li>
+
+
+            <li>
+
+              <strong>
+                Licence :
+              </strong>
+
+              <a
+                href="https://opendatacommons.org/licenses/odbl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Database License (ODbL) v1.0
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <strong>
+                Attribution :
+              </strong>
+
+              Données issues de
+              <strong>
+                Paris Open Data / Ville de Paris
+              </strong>,
+              réutilisées conformément aux conditions
+              de la licence applicable.
+
+            </li>
+
+
+            <li>
+
+              <strong>
+                Mentions légales officielles :
+              </strong>
+
+              <a
+                href="https://nvo987.fr/mentions-legales.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.nvo987.fr/mentions-legales.html
+              </a>
+
+            </li>
+
+          </ul>
+
+
+          <p class="small-note">
+
+            <strong>
+              Réutilisation des données :
+            </strong>
+
+            ce site présente une sélection et une mise
+            en forme des informations issues du jeu de données
+            source. L’accès aux données originales, complètes
+            et à jour demeure disponible sur la plateforme
+            officielle Paris Open Data.
+
+          </p>
+
+
+          <p class="small-note">
+
+            <strong>
+              Données non reproduites intégralement :
+            </strong>
+
+            le site ne fournit pas d’export complet du jeu
+            de données et ne propose pas de téléchargement
+            de la base source.
+
+          </p>
+
+
+          <p class="small-note">
+
+            <strong>
+              Contenus éditoriaux :
+            </strong>
+
+            les descriptions et textes éditoriaux détaillés
+            de la source ne sont pas reproduits sur ce site.
+            Les visiteurs sont renvoyés vers la source officielle
+            pour les informations complètes.
+
+          </p>
+
+
+          <p class="small-note">
+
+            <strong>
+              Non affiliation :
+            </strong>
+
+            ce site constitue une interface indépendante
+            de consultation et ne constitue pas un service
+            officiel de la Ville de Paris.
+
+          </p>
+
+
+          <p class="small-note">
+
+            <strong>
+              Source officielle prioritaire :
+            </strong>
+
+            les informations sont fournies à titre indicatif.
+            En cas de divergence, modification, annulation
+            ou mise à jour,
+            <strong>
+              la source officielle fait foi.
+            </strong>
+
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="section"
+      >
+
+        <div class="section-header">
+
+          <h2>
+            Contact
+          </h2>
+
+          <p>
+            Contact officiel et identité DID.
+          </p>
+
+        </div>
+
+
+        <div class="sources-card">
+
+          <p>
+
+            Email officiel :
+
+            <a href="mailto:contact@nvo987.fr">
+              contact@nvo987.fr
+            </a>
+
+          </p>
+
+
+          <p>
+
+            Identité DID :
+
+            <a href="https://identity.nvo987.us">
+
+              did:web:identity.nvo987.us
+
+            </a>
+
+          </p>
+
         </div>
 
       </section>
 
     </div>
+
   </main>
+
+
 
   <!-- FOOTER -->
   <footer class="footer">
+
     <div class="container footer-inner">
 
-      <p>© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine</p>
+      <p>
+        © 2026 NVO987 – Culture Visuelle Moderne et Contemporaine
+      </p>
+
 
       <p class="muted">
+
         Aucun cookie • Aucun suivi • Données publiques uniquement
+
       </p>
 
+
       <p>
+
         Contact :
-        <a href="mailto:contact@nvo987.eu">contact@nvo987.eu</a>
+
+        <a href="mailto:contact@nvo987.eu">
+          contact@nvo987.eu
+        </a>
+
       </p>
 
+
       <p>
+
         Mentions légales officielles :
-        <a href="https://www.nvo987.fr" target="_blank" rel="noopener noreferrer">
+
+        <a
+          href="https://www.nvo987.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           www.nvo987.fr
         </a>
+
       </p>
 
+
       <p>
+
         Identité :
-        <a href="https://identity.nvo987.us">did:web:identity.nvo987.us</a>
+
+        <a href="https://identity.nvo987.us">
+          did:web:identity.nvo987.us
+        </a>
+
       </p>
 
     </div>
+
   </footer>
 
+
+
+  <!-- JAVASCRIPT -->
   <script>
-  const statusBox = document.getElementById("statusBox");
-  const eventsGrid = document.getElementById("eventsGrid");
-  const searchInput = document.getElementById("searchInput");
-  const limitSelect = document.getElementById("limitSelect");
 
-  let allEvents = [];
+    const statusBox =
+      document.getElementById("statusBox");
 
-  function escapeHTML(value) {
-    if (value === null || value === undefined) return "";
+    const eventsGrid =
+      document.getElementById("eventsGrid");
 
-    return String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
+    const searchInput =
+      document.getElementById("searchInput");
 
-  function formatDate(dateValue) {
-    if (!dateValue) return "";
+    const limitSelect =
+      document.getElementById("limitSelect");
 
-    const date = new Date(dateValue);
 
-    if (Number.isNaN(date.getTime())) {
-      return escapeHTML(dateValue);
-    }
+    let allEvents = [];
 
-    return date.toLocaleDateString("fr-FR", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
-  }
 
-  function getFields(event) {
+
     /*
-     * Support both:
-     *
-     * 1. New Paris Open Data v2.1:
-     *    event.title
-     *
-     * 2. Old structure:
-     *    event.fields.title
-     *
-     * This keeps the frontend compatible.
+     * HTML escape
      */
-    return event?.fields || event || {};
-  }
-
-  function getValue(object, keys) {
-    for (const key of keys) {
-      const value = object?.[key];
+    function escapeHTML(value) {
 
       if (
-        value !== undefined &&
-        value !== null &&
-        String(value).trim() !== ""
+        value === null ||
+        value === undefined
       ) {
-        return value;
-      }
-    }
-
-    return "";
-  }
-
-  function buildCard(event) {
-    const f = getFields(event);
-
-    const title = escapeHTML(
-      getValue(f, [
-        "title",
-        "nom",
-        "name"
-      ]) || "Événement"
-    );
-
-    const start = formatDate(
-      getValue(f, [
-        "date_start",
-        "date_debut",
-        "date"
-      ])
-    );
-
-    const end = formatDate(
-      getValue(f, [
-        "date_end",
-        "date_fin"
-      ])
-    );
-
-    const city = escapeHTML(
-      getValue(f, [
-        "address_city",
-        "ville",
-        "city"
-      ]) || "Paris"
-    );
-
-    const location = escapeHTML(
-      getValue(f, [
-        "address_name",
-        "lieu",
-        "location_name",
-        "name"
-      ])
-    );
-
-    const url = escapeHTML(
-      getValue(f, [
-        "url",
-        "link",
-        "access_link"
-      ])
-    );
-
-    let description = escapeHTML(
-      getValue(f, [
-        "lead_text",
-        "description",
-        "description_short",
-        "excerpt"
-      ])
-    );
-
-    if (description.length > 240) {
-      description =
-        description.substring(0, 240) + "...";
-    }
-
-    const dateLine =
-      start && end && end !== start
-        ? `${start} → ${end}`
-        : start || "Date inconnue";
-
-    const card = document.createElement("article");
-
-    card.className = "event-card";
-
-    card.innerHTML = `
-      <h3>${title}</h3>
-
-      <div class="event-meta">
-        <span>${dateLine}</span>
-        <span>•</span>
-        <span>${city}</span>
-      </div>
-
-      ${
-        location
-          ? `
-            <div class="event-location">
-              Lieu : ${location}
-            </div>
-          `
-          : ""
+        return "";
       }
 
-      <div class="event-desc">
-        ${
-          description
-            ? description
-            : `
-              <span class="muted">
-                Aucune description disponible.
-              </span>
-            `
-        }
-      </div>
+      return String(value)
 
-      <div>
-        ${
-          url
-            ? `
-              <a
-                class="btn"
-                href="${url}"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                Voir la source officielle
-              </a>
-            `
-            : `
-              <span class="muted">
-                Lien officiel indisponible
-              </span>
-            `
-        }
-      </div>
-    `;
+        .replace(/&/g, "&amp;")
 
-    return card;
-  }
+        .replace(/</g, "&lt;")
 
-  function renderEvents() {
-    const query =
-      searchInput.value
-        .trim()
-        .toLowerCase();
+        .replace(/>/g, "&gt;")
 
-    const limit =
-      parseInt(
-        limitSelect.value,
-        10
-      );
+        .replace(/"/g, "&quot;")
 
-    eventsGrid.innerHTML = "";
+        .replace(/'/g, "&#039;");
 
-    let filtered = allEvents;
+    }
+
+
 
     /*
-     * Search through the complete record.
+     * Format date
      */
-    if (query.length > 0) {
-      filtered = allEvents.filter(event => {
+    function formatDate(dateValue) {
 
-        const f = getFields(event);
-
-        const searchableText =
-          JSON.stringify(f)
-            .toLowerCase();
-
-        return searchableText.includes(query);
-      });
-    }
-
-    filtered =
-      filtered.slice(0, limit);
-
-    if (filtered.length === 0) {
-
-      statusBox.className =
-        "status warn";
-
-      statusBox.textContent =
-        "Aucun événement disponible.";
-
-      return;
-    }
-
-    statusBox.className =
-      "status success";
-
-    statusBox.textContent =
-      `${filtered.length} événement(s) affiché(s).`;
-
-    filtered.forEach(event => {
-      eventsGrid.appendChild(
-        buildCard(event)
-      );
-    });
-  }
-
-  async function loadEvents() {
-
-    try {
-
-      statusBox.className =
-        "status info";
-
-      statusBox.textContent =
-        "Chargement des événements…";
-
-      /*
-       * Cache-busting:
-       * always request the newest events.json.
-       */
-      const response =
-        await fetch(
-          "events.json?v=" +
-          Date.now(),
-          {
-            cache: "no-store"
-          }
-        );
-
-      if (!response.ok) {
-        throw new Error(
-          "HTTP error " +
-          response.status
-        );
+      if (!dateValue) {
+        return "";
       }
 
-      const data =
-        await response.json();
 
-      /*
-       * Expected structure:
-       *
-       * {
-       *   "records": [...]
-       * }
-       */
+      const date =
+        new Date(dateValue);
+
+
       if (
-        !data ||
-        !Array.isArray(
-          data.records
+        Number.isNaN(
+          date.getTime()
         )
       ) {
-        throw new Error(
-          "Invalid JSON structure: records missing"
+
+        return escapeHTML(
+          dateValue
         );
+
       }
 
-      allEvents =
-        data.records;
 
-      console.log(
-        "Events loaded:",
-        allEvents.length
+      return date.toLocaleDateString(
+        "fr-FR",
+        {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        }
       );
 
-      renderEvents();
+    }
 
-    } catch (error) {
 
-      console.error(
-        "Unable to load events:",
-        error
-      );
 
+    /*
+     * Get event fields
+     *
+     * Current events.json:
+     *
+     * {
+     *   "title": "...",
+     *   "date_start": "...",
+     *   "date_end": "...",
+     *   "address_city": "...",
+     *   "address_name": "...",
+     *   "url": "..."
+     * }
+     */
+    function getFields(event) {
+
+      return event?.fields || event || {};
+
+    }
+
+
+
+    /*
+     * Get first available value
+     */
+    function getValue(
+      object,
+      keys
+    ) {
+
+      for (
+        const key of keys
+      ) {
+
+        const value =
+          object?.[key];
+
+
+        if (
+
+          value !== undefined &&
+
+          value !== null &&
+
+          String(value).trim() !== ""
+
+        ) {
+
+          return value;
+
+        }
+
+      }
+
+
+      return "";
+
+    }
+
+
+
+    /*
+     * Build event card
+     *
+     * IMPORTANT:
+     * No description / lead_text
+     * is displayed.
+     */
+    function buildCard(event) {
+
+      const f =
+        getFields(event);
+
+
+      const title =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "title",
+              "nom",
+              "name"
+            ]
+          )
+
+          ||
+
+          "Événement"
+
+        );
+
+
+      const start =
+        formatDate(
+
+          getValue(
+            f,
+            [
+              "date_start",
+              "date_debut",
+              "date"
+            ]
+          )
+
+        );
+
+
+      const end =
+        formatDate(
+
+          getValue(
+            f,
+            [
+              "date_end",
+              "date_fin"
+            ]
+          )
+
+        );
+
+
+      const city =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "address_city",
+              "ville",
+              "city"
+            ]
+          )
+
+          ||
+
+          "Paris"
+
+        );
+
+
+      const location =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "address_name",
+              "lieu",
+              "location_name"
+            ]
+          )
+
+        );
+
+
+      const url =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "url",
+              "link",
+              "access_link"
+            ]
+          )
+
+        );
+
+
+      const dateLine =
+
+        start &&
+        end &&
+        end !== start
+
+          ?
+
+          `${start} → ${end}`
+
+          :
+
+          start ||
+
+          "Date inconnue";
+
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "event-card";
+
+
+      card.innerHTML = `
+
+        <h3>
+          ${title}
+        </h3>
+
+
+        <div class="event-meta">
+
+          <span>
+            ${dateLine}
+          </span>
+
+          <span>
+            •
+          </span>
+
+          <span>
+            ${city}
+          </span>
+
+        </div>
+
+
+        ${
+          location
+
+            ?
+
+            `
+              <div class="event-location">
+                Lieu : ${location}
+              </div>
+            `
+
+            :
+
+            ""
+        }
+
+
+        <div>
+
+          ${
+            url
+
+              ?
+
+              `
+                <a
+                  class="btn"
+                  href="${url}"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Voir la source officielle
+                </a>
+              `
+
+              :
+
+              `
+                <span class="muted">
+                  Lien officiel indisponible
+                </span>
+              `
+          }
+
+        </div>
+
+      `;
+
+
+      return card;
+
+    }
+
+
+
+    /*
+     * Render events
+     */
+    function renderEvents() {
+
+      const query =
+
+        searchInput.value
+          .trim()
+          .toLowerCase();
+
+
+      const limit =
+
+        parseInt(
+          limitSelect.value,
+          10
+        );
+
+
+      eventsGrid.innerHTML = "";
+
+
+      let filtered =
+        allEvents;
+
+
+      /*
+       * Search through the
+       * available event metadata.
+       */
+      if (
+        query.length > 0
+      ) {
+
+        filtered =
+          allEvents.filter(
+            event => {
+
+              const f =
+                getFields(event);
+
+
+              const searchableText =
+
+                JSON.stringify(f)
+                  .toLowerCase();
+
+
+              return searchableText
+                .includes(query);
+
+            }
+          );
+
+      }
+
+
+      /*
+       * Limit displayed results
+       */
+      filtered =
+        filtered.slice(
+          0,
+          limit
+        );
+
+
+      /*
+       * No results
+       */
+      if (
+        filtered.length === 0
+      ) {
+
+        statusBox.className =
+          "status warn";
+
+
+        statusBox.textContent =
+          "Aucun événement disponible.";
+
+
+        return;
+
+      }
+
+
+      /*
+       * Results available
+       */
       statusBox.className =
-        "status error";
+        "status success";
+
 
       statusBox.textContent =
-        "Erreur : impossible de charger events.json.";
+
+        `${filtered.length} événement(s) affiché(s).`;
+
+
+      /*
+       * Render cards
+       */
+      filtered.forEach(
+        event => {
+
+          eventsGrid.appendChild(
+            buildCard(event)
+          );
+
+        }
+      );
+
     }
-  }
 
-  searchInput.addEventListener(
-    "input",
-    renderEvents
-  );
 
-  limitSelect.addEventListener(
-    "change",
-    renderEvents
-  );
 
-  loadEvents();
-		  </script>
+    /*
+     * Load events.json
+     */
+    async function loadEvents() {
+
+      try {
+
+        statusBox.className =
+          "status info";
+
+
+        statusBox.textContent =
+          "Chargement des événements…";
+
+
+        /*
+         * Cache busting
+         */
+        const response =
+
+          await fetch(
+
+            "events.json?v=" +
+            Date.now(),
+
+            {
+              cache: "no-store"
+            }
+
+          );
+
+
+        if (
+          !response.ok
+        ) {
+
+          throw new Error(
+            "HTTP error " +
+            response.status
+          );
+
+        }
+
+
+        const data =
+          await response.json();
+
+
+        /*
+         * Validate JSON
+         */
+        if (
+
+          !data ||
+
+          !Array.isArray(
+            data.records
+          )
+
+        ) {
+
+          throw new Error(
+            "Invalid JSON structure: records missing"
+          );
+
+        }
+
+
+        allEvents =
+          data.records;
+
+
+        console.log(
+          "Events loaded:",
+          allEvents.length
+        );
+
+
+        renderEvents();
+
+
+      } catch (error) {
+
+        console.error(
+          "Unable to load events:",
+          error
+        );
+
+
+        statusBox.className =
+          "status error";
+
+
+        statusBox.textContent =
+          "Erreur : impossible de charger events.json.";
+
+      }
+
+    }
+
+
+
+    /*
+     * Search listener
+     */
+    searchInput.addEventListener(
+      "input",
+      renderEvents
+    );
+
+
+    /*
+     * Limit listener
+     */
+    limitSelect.addEventListener(
+      "change",
+      renderEvents
+    );
+
+
+    /*
+     * Start
+     */
+    loadEvents();
+
+  </script>
+
+	</body>
 </html>
