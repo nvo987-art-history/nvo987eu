@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- BASIC -->
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NVO987 | Agenda Culturel</title>
+
+  <!-- SEO -->
+  <meta name="description" content="NVO987 is a multidisciplinary artistic and cultural initiative exploring the intersections of visual culture and art history.NVO987.eu – Agenda culturel à Paris basé sur des données publiques officielles (Paris Open Data / Ville de Paris). Aucun cookie, aucun tracking, aucune collecte de données personnelles.">
+  <meta name="keywords" content="agenda culturel Paris, événements Paris, expositions Paris, concerts Paris, musées Paris, Paris Open Data, Ville de Paris, open data, NVO987">
+  <meta name="author" content="NVO987">
+  <meta name="publisher" content="NVO987">
+  <meta name="language" content="fr">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+
+  <!-- PRIVACY -->
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="color-scheme" content="light">
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://nvo987.eu/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:site_name" content="NVO987.eu">
+  <meta property="og:title" content="Agenda Culturel">
+  <meta property="og:description" content="Agenda culturel à Paris basé sur des données publiques officielles (Paris Open Data / Ville de Paris). Aucun cookie, aucun tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nvo987.eu/">
+  <meta property="og:image" content="https://nvo987.eu/banner.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agenda Culturel">
+  <meta name="twitter:description" content="Agenda culturel à Paris basé sur des données publiques officielles (Paris Open Data / Ville de Paris). Aucun cookie, aucun tracking.">
+  <meta name="twitter:image" content="https://nvo987.eu/banner.jpg">
+  <meta name="twitter:dnt" content="on">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#f5f2ec">
+
+  <!-- PERFORMANCE -->
+  <link rel="preconnect" href="https://opendata.paris.fr">
+  <link rel="dns-prefetch" href="//opendata.paris.fr">
+
+  <!-- DID -->
+  <link rel="alternate" type="application/did+json" href="https://identity.nvo987.us/.well-known/did.json">
+  <link rel="alternate" type="application/did+ld+json" href="https://identity.nvo987.us/.well-known/did-configuration.json">
+  <meta name="did" content="did:web:identity.nvo987.us">
+  <link rel="me" href="https://identity.nvo987.us">
+
+  <!-- PREMIUM TYPOGRAPHY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- =========================================================
+       NVO987 — COMPLETE PREMIUM CSS
+       ========================================================= -->
+  <style>
+    :root {
+      --ink: #17191c;
+      --ink-soft: #363a40;
+      --muted: #72767c;
+
+      --cream: #f5f2ec;
+      --paper: #fbfaf7;
+      --white: #ffffff;
+
+      --line: rgba(23, 25, 28, 0.11);
+      --line-strong: rgba(23, 25, 28, 0.19);
+
+      --accent: #9b8061;
+      --accent-dark: #735c44;
+      --accent-soft: #d8c9b6;
+
+      --success: #55715f;
+      --warning: #9b7545;
+      --danger: #925b59;
+      --info: #5f6d79;
+
+      --shadow-sm:
+        0 1px 2px rgba(20, 21, 23, 0.03),
+        0 8px 24px rgba(20, 21, 23, 0.04);
+
+      --shadow-lg:
+        0 24px 70px rgba(20, 21, 23, 0.09);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+
+      --container: 1240px;
+
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --mono: "DM Mono", monospace;
+
+      --ease: cubic-bezier(.22, .61, .36, 1);
+    }
+
+
+    /* ---------------------------------------------------------
+       RESET
+       --------------------------------------------------------- */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--cream);
+    }
+
+
+    body {
+      margin: 0;
+      min-width: 320px;
+
+      background:
+        radial-gradient(
+          circle at 80% 0%,
+          rgba(216, 201, 182, 0.22),
+          transparent 32rem
+        ),
+        var(--cream);
+
+      color: var(--ink);
+
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+
+    a {
+      color: inherit;
+    }
+
+
+    ::selection {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+
+    /* ---------------------------------------------------------
+       GLOBAL CONTAINER
+       --------------------------------------------------------- */
+
+    .container {
+      width: min(
+        calc(100% - 48px),
+        var(--container)
+      );
+
+      margin-inline: auto;
+    }
+
+
+    /* ---------------------------------------------------------
+       TOPBAR
+       --------------------------------------------------------- */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background:
+        rgba(245, 242, 236, 0.88);
+
+      border-bottom: 1px solid var(--line);
+
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+
+    .topbar-inner {
+      min-height: 82px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 40px;
+    }
+
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 15px;
+
+      flex-shrink: 0;
+    }
+
+
+    .brand-name {
+      color: var(--ink);
+
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+    }
+
+
+    .brand-tag {
+      color: var(--muted);
+
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 32px;
+    }
+
+
+    .nav a {
+      position: relative;
+
+      color: var(--ink-soft);
+
+      font-size: 12px;
+      font-weight: 600;
+
+      letter-spacing: 0.06em;
+      text-decoration: none;
+
+      transition:
+        color 250ms var(--ease);
+    }
+
+
+    .nav a::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: -8px;
+
+      height: 1px;
+
+      background: var(--accent);
+
+      transition:
+        right 300ms var(--ease);
+    }
+
+
+    .nav a:hover {
+      color: var(--accent-dark);
+    }
+
+
+    .nav a:hover::after,
+    .nav a:focus-visible::after {
+      right: 0;
+    }
+
+
+    /* ---------------------------------------------------------
+       HERO
+       --------------------------------------------------------- */
+
+    .hero {
+      position: relative;
+
+      min-height: 430px;
+
+      display: flex;
+      align-items: flex-end;
+
+      padding:
+        90px
+        0
+        88px;
+
+      overflow: hidden;
+    }
+
+
+    .hero::before {
+      content: "NVO987";
+
+      position: absolute;
+
+      right: -10px;
+      top: 35px;
+
+      color: transparent;
+
+      font-family: var(--serif);
+      font-size: clamp(100px, 19vw, 270px);
+      font-weight: 600;
+
+      line-height: 0.8;
+
+      -webkit-text-stroke:
+        1px rgba(23, 25, 28, 0.075);
+
+      pointer-events: none;
+      user-select: none;
+    }
+
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: 0;
+
+      width: 110px;
+      height: 1px;
+
+      background: var(--accent);
+    }
+
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+
+      max-width: 850px;
+    }
+
+
+    .hero h1 {
+      margin: 0;
+
+      color: var(--ink);
+
+      font-family: var(--serif);
+      font-size: clamp(56px, 8vw, 112px);
+      font-weight: 600;
+
+      letter-spacing: -0.055em;
+      line-height: 0.95;
+    }
+
+
+    /* ---------------------------------------------------------
+       MAIN
+       --------------------------------------------------------- */
+
+    .main {
+      position: relative;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(251, 250, 247, 0.76),
+          rgba(245, 242, 236, 0.98)
+        );
+
+      border-top: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+
+    .section {
+      padding: 110px 0;
+      scroll-margin-top: 100px;
+    }
+
+
+    .section + .section {
+      border-top: 1px solid var(--line);
+    }
+
+
+    .section-header {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(260px, 0.85fr);
+
+      gap: 70px;
+
+      align-items: end;
+
+      margin-bottom: 42px;
+    }
+
+
+    .section-header h2 {
+      margin: 0;
+
+      color: var(--ink);
+
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 62px);
+      font-weight: 600;
+
+      letter-spacing: -0.04em;
+      line-height: 1.04;
+    }
+
+
+    .section-header p {
+      max-width: 440px;
+
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+
+    /* ---------------------------------------------------------
+       CONTROLS
+       --------------------------------------------------------- */
+
+    .controls {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1fr)
+        190px;
+
+      gap: 12px;
+
+      margin-bottom: 18px;
+    }
+
+
+    .controls input,
+    .controls select {
+      min-height: 58px;
+
+      padding:
+        0 18px;
+
+      color: var(--ink);
+
+      background: rgba(255, 255, 255, 0.66);
+
+      border:
+        1px solid var(--line-strong);
+
+      border-radius: var(--radius-sm);
+
+      outline: none;
+
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+
+      transition:
+        border-color 220ms var(--ease),
+        box-shadow 220ms var(--ease),
+        background 220ms var(--ease);
+    }
+
+
+    .controls input::placeholder {
+      color: #999b9e;
+    }
+
+
+    .controls input:focus,
+    .controls select:focus {
+      background: var(--white);
+
+      border-color: var(--accent);
+
+      box-shadow:
+        0 0 0 4px rgba(155, 128, 97, 0.10);
+    }
+
+
+    .controls select {
+      cursor: pointer;
+    }
+
+
+    /* ---------------------------------------------------------
+       STATUS
+       --------------------------------------------------------- */
+
+    .status {
+      position: relative;
+
+      min-height: 52px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 12px 18px 12px 48px;
+
+      margin-bottom: 28px;
+
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+
+      background: rgba(255,255,255,.55);
+
+      color: var(--muted);
+
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .02em;
+    }
+
+
+    .status::before {
+      content: "";
+
+      position: absolute;
+      left: 20px;
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: currentColor;
+
+      box-shadow:
+        0 0 0 5px rgba(114, 118, 124, 0.09);
+    }
+
+
+    .status.info {
+      color: var(--info);
+    }
+
+
+    .status.success {
+      color: var(--success);
+    }
+
+
+    .status.warn {
+      color: var(--warning);
+    }
+
+
+    .status.error {
+      color: var(--danger);
+    }
+
+
+    /* ---------------------------------------------------------
+       EVENTS GRID
+       --------------------------------------------------------- */
+
+    .grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+
+    .event-card {
+      position: relative;
+
+      min-height: 300px;
+
+      display: flex;
+      flex-direction: column;
+
+      padding: 30px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.91),
+          rgba(248,246,241,.74)
+        );
+
+      border:
+        1px solid rgba(23, 25, 28, 0.10);
+
+      border-radius: var(--radius-md);
+
+      box-shadow: var(--shadow-sm);
+
+      overflow: hidden;
+
+      transition:
+        transform 350ms var(--ease),
+        box-shadow 350ms var(--ease),
+        border-color 350ms var(--ease);
+    }
+
+
+    .event-card::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--accent),
+          transparent 75%
+        );
+
+      opacity: .7;
+    }
+
+
+    .event-card::after {
+      content: "";
+
+      position: absolute;
+
+      width: 130px;
+      height: 130px;
+
+      right: -70px;
+      bottom: -70px;
+
+      border:
+        1px solid rgba(155,128,97,.18);
+
+      border-radius: 50%;
+
+      transition:
+        transform 500ms var(--ease);
+    }
+
+
+    .event-card:hover {
+      transform: translateY(-5px);
+
+      border-color:
+        rgba(155,128,97,.30);
+
+      box-shadow: var(--shadow-lg);
+    }
+
+
+    .event-card:hover::after {
+      transform: scale(1.35);
+    }
+
+
+    .event-card h3 {
+      position: relative;
+      z-index: 1;
+
+      margin:
+        10px
+        0
+        22px;
+
+      max-width: 92%;
+
+      color: var(--ink);
+
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 600;
+
+      letter-spacing: -0.025em;
+      line-height: 1.22;
+    }
+
+
+    .event-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+
+      margin-bottom: 18px;
+
+      color: var(--accent-dark);
+
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+
+      letter-spacing: .04em;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+
+
+    .event-location {
+      position: relative;
+      z-index: 1;
+
+      margin-bottom: auto;
+      padding-bottom: 28px;
+
+      color: var(--muted);
+
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+
+    /* ---------------------------------------------------------
+       BUTTON
+       --------------------------------------------------------- */
+
+    .btn {
+      position: relative;
+      z-index: 2;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 44px;
+
+      padding:
+        0 18px;
+
+      color: var(--white);
+
+      background: var(--ink);
+
+      border: 1px solid var(--ink);
+      border-radius: 5px;
+
+      font-size: 11px;
+      font-weight: 600;
+
+      letter-spacing: .06em;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      transition:
+        background 250ms var(--ease),
+        color 250ms var(--ease),
+        border-color 250ms var(--ease),
+        transform 250ms var(--ease);
+    }
+
+
+    .btn::after {
+      content: "↗";
+
+      margin-left: 10px;
+
+      font-size: 14px;
+
+      transition:
+        transform 250ms var(--ease);
+    }
+
+
+    .btn:hover {
+      color: var(--ink);
+
+      background: transparent;
+
+      border-color: var(--ink);
+
+      transform: translateY(-1px);
+    }
+
+
+    .btn:hover::after {
+      transform: translate(2px, -2px);
+    }
+
+
+    /* ---------------------------------------------------------
+       LEGAL / SOURCE CARDS
+       --------------------------------------------------------- */
+
+    .legal-card,
+    .sources-card {
+      position: relative;
+
+      max-width: 1000px;
+
+      padding: clamp(28px, 5vw, 58px);
+
+      background:
+        rgba(255, 255, 255, 0.68);
+
+      border:
+        1px solid var(--line);
+
+      border-radius: var(--radius-lg);
+
+      box-shadow:
+        0 18px 55px rgba(20,21,23,.045);
+    }
+
+
+    .legal-card::before,
+    .sources-card::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: clamp(28px, 5vw, 58px);
+
+      width: 60px;
+      height: 2px;
+
+      background: var(--accent);
+    }
+
+
+    .legal-card h3 {
+      margin:
+        34px
+        0
+        10px;
+
+      color: var(--ink);
+
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 600;
+
+      letter-spacing: -.015em;
+    }
+
+
+    .legal-card h3:first-child {
+      margin-top: 0;
+    }
+
+
+    .legal-card p,
+    .sources-card p,
+    .sources-card li {
+      color: var(--ink-soft);
+
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+
+    .legal-card strong,
+    .sources-card strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+
+    .legal-card a,
+    .sources-card a {
+      color: var(--accent-dark);
+
+      text-decoration:
+        underline;
+
+      text-decoration-color:
+        rgba(115,92,68,.30);
+
+      text-underline-offset: 3px;
+
+      transition:
+        color 200ms ease,
+        text-decoration-color 200ms ease;
+    }
+
+
+    .legal-card a:hover,
+    .sources-card a:hover {
+      color: var(--ink);
+
+      text-decoration-color:
+        var(--ink);
+    }
+
+
+    .sources-card ul {
+      margin:
+        28px
+        0;
+
+      padding-left: 20px;
+    }
+
+
+    .sources-card li {
+      padding:
+        10px
+        0;
+
+      border-bottom:
+        1px solid var(--line);
+    }
+
+
+    .sources-card li:last-child {
+      border-bottom: 0;
+    }
+
+
+    .small-note {
+      color: var(--muted) !important;
+
+      font-family: var(--sans);
+      font-size: 11px !important;
+
+      line-height: 1.8 !important;
+    }
+
+
+    /* ---------------------------------------------------------
+       FOOTER
+       --------------------------------------------------------- */
+
+    .footer {
+      position: relative;
+
+      color: rgba(255,255,255,.75);
+
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(155,128,97,.17),
+          transparent 24rem
+        ),
+        #17191c;
+
+      overflow: hidden;
+    }
+
+
+    .footer::before {
+      content: "NVO987";
+
+      position: absolute;
+
+      right: -10px;
+      bottom: -70px;
+
+      color: transparent;
+
+      font-family: var(--serif);
+      font-size: 230px;
+      font-weight: 600;
+
+      line-height: 1;
+
+      -webkit-text-stroke:
+        1px rgba(255,255,255,.055);
+
+      pointer-events: none;
+    }
+
+
+    .footer-inner {
+      position: relative;
+      z-index: 1;
+
+      display: grid;
+
+      grid-template-columns:
+        1.4fr
+        1fr
+        1fr;
+
+      gap: 18px 50px;
+
+      padding:
+        70px
+        0
+        62px;
+    }
+
+
+    .footer p {
+      margin: 0;
+
+      color: rgba(255,255,255,.62);
+
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+
+    .footer p:first-child {
+      grid-column: 1 / -1;
+
+      padding-bottom: 30px;
+
+      color: var(--white);
+
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 500;
+
+      letter-spacing: -.015em;
+
+      border-bottom:
+        1px solid rgba(255,255,255,.10);
+    }
+
+
+    .footer p:nth-child(2) {
+      color: rgba(255,255,255,.42);
+
+      font-family: var(--mono);
+      font-size: 9px;
+
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+
+    .footer a {
+      color: rgba(255,255,255,.90);
+
+      text-decoration: none;
+
+      border-bottom:
+        1px solid rgba(255,255,255,.20);
+
+      transition:
+        color 220ms ease,
+        border-color 220ms ease;
+    }
+
+
+    .footer a:hover {
+      color: var(--accent-soft);
+
+      border-color: var(--accent);
+    }
+
+
+    .footer::after {
+      content: "Nicholas Van-Orton";
+
+      position: absolute;
+
+      left: max(
+        24px,
+        calc((100vw - var(--container)) / 2)
+      );
+
+      bottom: 20px;
+
+      color: rgba(255,255,255,.22);
+
+      font-family: var(--mono);
+      font-size: 9px;
+
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+
+    /* ---------------------------------------------------------
+       ACCESSIBILITY
+       --------------------------------------------------------- */
+
+    :focus-visible {
+      outline:
+        2px solid var(--accent);
+
+      outline-offset: 4px;
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+
+
+    /* ---------------------------------------------------------
+       TABLET
+       --------------------------------------------------------- */
+
+    @media (max-width: 980px) {
+
+      .grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+
+      .section-header {
+        grid-template-columns:
+          1fr;
+
+        gap: 20px;
+      }
+
+
+      .footer-inner {
+        grid-template-columns:
+          1fr 1fr;
+      }
+
+    }
+
+
+    /* ---------------------------------------------------------
+       MOBILE
+       --------------------------------------------------------- */
+
+    @media (max-width: 680px) {
+
+      .container {
+        width: min(
+          calc(100% - 32px),
+          var(--container)
+        );
+      }
+
+
+      .topbar {
+        position: relative;
+      }
+
+
+      .topbar-inner {
+        min-height: auto;
+
+        padding:
+          20px 0;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+      }
+
+
+      .brand {
+        width: 100%;
+
+        justify-content: space-between;
+      }
+
+
+      .brand-tag {
+        font-size: 9px;
+      }
+
+
+      .nav {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+
+        gap:
+          10px 20px;
+      }
+
+
+      .nav a {
+        font-size: 10px;
+      }
+
+
+      .hero {
+        min-height: 350px;
+
+        padding:
+          80px
+          0
+          62px;
+      }
+
+
+      .hero::before {
+        top: 90px;
+        right: -20px;
+
+        font-size: 110px;
+      }
+
+
+      .hero h1 {
+        font-size:
+          clamp(50px, 16vw, 78px);
+      }
+
+
+      .section {
+        padding:
+          76px
+          0;
+      }
+
+
+      .section-header h2 {
+        font-size: 42px;
+      }
+
+
+      .controls {
+        grid-template-columns:
+          1fr;
+      }
+
+
+      .controls input,
+      .controls select {
+        min-height: 54px;
+      }
+
+
+      .grid {
+        grid-template-columns:
+          1fr;
+
+        gap: 14px;
+      }
+
+
+      .event-card {
+        min-height: 270px;
+
+        padding: 26px;
+      }
+
+
+      .event-card h3 {
+        font-size: 23px;
+      }
+
+
+      .legal-card,
+      .sources-card {
+        padding: 28px 22px;
+
+        border-radius: 16px;
+      }
+
+
+      .legal-card::before,
+      .sources-card::before {
+        left: 22px;
+      }
+
+
+      .sources-card ul {
+        padding-left: 17px;
+      }
+
+
+      .footer-inner {
+        grid-template-columns:
+          1fr;
+
+        padding:
+          55px
+          0
+          72px;
+
+        gap: 18px;
+      }
+
+
+      .footer p:first-child {
+        font-size: 23px;
+      }
+
+
+      .footer::before {
+        font-size: 130px;
+        bottom: -25px;
+      }
+
+
+      .footer::after {
+        left: 16px;
+        bottom: 20px;
+      }
+
+    }
+
+
+    /* ---------------------------------------------------------
+       VERY SMALL SCREENS
+       --------------------------------------------------------- */
+
+    @media (max-width: 420px) {
+
+      .brand {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+
+      .nav {
+        gap:
+          8px 16px;
+      }
+
+
+      .hero {
+        min-height: 300px;
+      }
+
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+
+      .section-header h2 {
+        font-size: 36px;
+      }
+
+
+      .event-card {
+        padding: 23px;
+      }
+
+    }
+  </style>
+
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://nvo987.fr/#organization",
+    "name": "NVO987 – Culture Visuelle Moderne et Contemporaine",
+    "url": "https://nvo987.fr/",
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q141086020",
+      "https://www.openstreetmap.org/node/1409757849"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "44 Rue Pasquier",
+      "postalCode": "75008",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.8748353,
+      "longitude": 2.3240104
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://nvo987.us/#person",
+        "name": "Nicholas Van-Orton",
+        "jobTitle": "Independent researcher, founder of NVO987 Association",
+        "url": "https://nvo987.us",
+        "memberOf": {
+          "@id": "https://nvo987.fr/#organization"
+        },
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DID Document",
+          "value": "https://identity.nvo987.us/.well-known/did.json"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://nvo987.fr/#organization",
+        "name": "NVO987 – Culture Visuelle Moderne et Contemporaine",
+        "alternateName": [
+          "NVO987 Association",
+          "NVO987 – Culture Visuelle Moderne et Contemporaine"
+        ],
+        "url": "https://nvo987.fr",
+        "foundingDate": "2026",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "44 Rue Pasquier",
+          "postalCode": "75008",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        },
+        "founder": {
+          "@id": "https://nvo987.us/#person"
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+
+        <div class="brand">
+          <span class="brand-name">NVO987.eu</span>
+          <span class="brand-tag">Agenda Culturel</span>
+        </div>
+
+        <nav class="nav">
+          <a href="#events">Événements</a>
+
+          <a href="https://nvo987.fr/mentions-legales.html">
+            Mentions légales
+          </a>
+
+          <a href="#sources">
+            Sources
+          </a>
+
+          <a href="https://nvo987.fr/contact.html">
+            Contact
+          </a>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+  <div class="container">
+
+    <header class="hero">
+
+      <div class="hero-text">
+
+        <h1>
+          Agenda Culturel
+        </h1>
+
+      </div>
+
+    </header>
+
+  </div>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="container">
+
+      <!-- EVENTS -->
+      <section id="events" class="section">
+
+        <div class="section-header">
+
+          <h2>
+            Événements récents
+          </h2>
+
+          <p>
+            Données mises à jour automatiquement depuis la plateforme
+            officielle Paris Open Data.
+          </p>
+
+        </div>
+
+
+        <!-- SEARCH / LIMIT -->
+        <div class="controls">
+
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Rechercher (ex: exposition, musée, concert)..."
+          >
+
+          <select id="limitSelect">
+
+            <option value="10">
+              10 résultats
+            </option>
+
+            <option value="20" selected>
+              20 résultats
+            </option>
+
+            <option value="30">
+              30 résultats
+            </option>
+
+            <option value="50">
+              50 résultats
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- STATUS -->
+        <div id="statusBox" class="status info">
+          Chargement des événements…
+        </div>
+
+
+        <!-- EVENTS GRID -->
+        <div id="eventsGrid" class="grid"></div>
+
+      </section>
+
+
+      <!-- MENTIONS -->
+      <section id="mentions" class="section">
+
+        <div class="section-header">
+
+          <h2>
+            Mentions légales / conformité
+          </h2>
+
+          <p>
+            Conformité RGPD, absence de cookies,
+            limitation de responsabilité,
+            droits et licences.
+          </p>
+
+        </div>
+
+
+        <div class="legal-card">
+
+          <h3>1. Éditeur du site</h3>
+
+          <p>
+            Le site <strong>NVO987.eu</strong> est édité
+            par l’association culturelle
+            <strong>NVO987</strong>.
+
+            Les mentions légales officielles complètes
+            sont disponibles sur :
+
+            <a
+              href="https://nvo987.fr/mentions-legales.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://nvo987.fr/mentions-legales.html
+            </a>.
+          </p>
+
+
+          <h3>2. Objet du site</h3>
+
+          <p>
+            Ce site propose une interface indépendante
+            de consultation et de synthèse d’événements
+            culturels publics à Paris, à partir de données
+            publiées légalement via la plateforme officielle
+            Open Data.
+          </p>
+
+
+          <h3>3. Données affichées</h3>
+
+          <p>
+            Le site affiche une sélection limitée
+            d'informations nécessaires à l'identification
+            pratique des événements : titre, dates,
+            ville, lieu et lien vers la source officielle.
+          </p>
+
+          <p>
+            Les descriptions et textes éditoriaux détaillés
+            de la source ne sont pas reproduits dans
+            l'interface.
+          </p>
+
+
+          <h3>4. Limitation de responsabilité</h3>
+
+          <p>
+            Les données affichées sont fournies à titre
+            informatif. Les événements peuvent être modifiés,
+            annulés ou supprimés par la source officielle.
+            <strong>La source officielle fait foi.</strong>
+          </p>
+
+          <p>
+            L’éditeur décline toute responsabilité en cas
+            d’erreur, d’omission, de lien indisponible,
+            ou de dommage direct ou indirect résultant
+            de l’utilisation du site.
+          </p>
+
+
+          <h3>5. Liens externes</h3>
+
+          <p>
+            Ce site contient des liens vers des sites tiers.
+            L’éditeur n’exerce aucun contrôle sur ces contenus
+            et décline toute responsabilité concernant leur
+            disponibilité, leur politique de confidentialité
+            ou leur contenu.
+          </p>
+
+
+          <h3>6. Propriété intellectuelle</h3>
+
+          <p>
+            Les marques, noms, logos et contenus présents
+            sur les plateformes officielles restent la propriété
+            de leurs détenteurs respectifs.
+          </p>
+
+          <p>
+            Le code source, la structure et la présentation
+            de ce site sont protégés par le droit applicable.
+          </p>
+
+
+          <h3>7. Licence / réutilisation des données</h3>
+
+          <p>
+            Les données affichées proviennent de Paris Open Data
+            (Ville de Paris) et sont réutilisées conformément
+            à la licence indiquée par la source.
+            L’attribution est détaillée dans la section
+            « Sources & licences ».
+          </p>
+
+
+          <h3>8. Droit applicable</h3>
+
+          <p>
+            L’utilisation du site implique l’acceptation
+            pleine et entière des présentes mentions.
+            Toute contestation devra être interprétée selon
+            les règles juridiques applicables.
+          </p>
+
+
+          <p class="small-note">
+            Dernière mise à jour : 2026.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- SOURCES -->
+      <section id="sources" class="section">
+
+        <div class="section-header">
+
+          <h2>
+            Sources & licences
+          </h2>
+
+          <p>
+            Attribution et informations sur les données utilisées.
+          </p>
+
+        </div>
+
+
+        <div class="sources-card">
+
+          <p>
+            Les informations affichées sur ce site proviennent
+            de sources publiques officielles mises à disposition
+            via la plateforme
+            <strong>
+              Paris Open Data (Ville de Paris)
+            </strong>.
+          </p>
+
+
+          <ul>
+
+            <li>
+              <strong>Source officielle :</strong>
+
+              <a
+                href="https://opendata.paris.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paris Open Data (Ville de Paris)
+              </a>
+            </li>
+
+
+            <li>
+              <strong>Jeu de données :</strong>
+
+              Que faire à Paris ? – Événements et activités
+            </li>
+
+
+            <li>
+              <strong>Licence :</strong>
+
+              <a
+                href="https://opendatacommons.org/licenses/odbl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Database License (ODbL) v1.0
+              </a>
+            </li>
+
+
+            <li>
+              <strong>Attribution :</strong>
+
+              Données issues de
+              <strong>
+                Paris Open Data / Ville de Paris
+              </strong>,
+              réutilisées conformément aux conditions
+              de la licence applicable.
+            </li>
+
+
+            <li>
+              <strong>Mentions légales officielles :</strong>
+
+              <a
+                href="https://nvo987.fr/mentions-legales.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.nvo987.fr/mentions-legales.html
+              </a>
+            </li>
+
+          </ul>
+
+
+          <p class="small-note">
+            <strong>
+              Réutilisation des données :
+            </strong>
+
+            ce site présente une sélection et une mise
+            en forme des informations issues du jeu de données
+            source. L’accès aux données originales, complètes
+            et à jour demeure disponible sur la plateforme
+            officielle Paris Open Data.
+          </p>
+
+
+          <p class="small-note">
+            <strong>
+              Contenus éditoriaux :
+            </strong>
+
+            les descriptions et textes éditoriaux détaillés
+            de la source ne sont pas reproduits sur ce site.
+            Les visiteurs sont renvoyés vers la source officielle
+            pour les informations complètes.
+          </p>
+
+
+          <p class="small-note">
+            <strong>
+              Non affiliation :
+            </strong>
+
+            ce site constitue une interface indépendante
+            de consultation et ne constitue pas un service
+            officiel de la Ville de Paris.
+          </p>
+
+
+          <p class="small-note">
+            <strong>
+              Source officielle prioritaire :
+            </strong>
+
+            les informations sont fournies à titre indicatif.
+            En cas de divergence, modification, annulation
+            ou mise à jour,
+            <strong>
+              la source officielle fait foi.
+            </strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+
+        <div class="section-header">
+
+          <h2>
+            Contact
+          </h2>
+
+          <p>
+            Contact officiel et identité DID.
+          </p>
+
+        </div>
+
+
+        <div class="sources-card">
+
+          <p>
+            Email officiel :
+
+            <a href="mailto:contact@nvo987.fr">
+              contact@nvo987.fr
+            </a>
+          </p>
+
+
+          <p>
+            Email européen :
+
+            <a href="mailto:contact@nvo987.eu">
+              contact@nvo987.eu
+            </a>
+          </p>
+
+
+          <p>
+            Identité DID :
+
+            <a
+              href="https://identity.nvo987.us"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              did:web:identity.nvo987.us
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================================================
+       PREMIUM FOOTER
+       ========================================================= -->
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 NVO987 – Culture Visuelle Moderne et Contemporaine
+      </p>
+
+
+      <p class="muted">
+        Aucun cookie • Aucun suivi • Données publiques uniquement
+      </p>
+
+
+      <p>
+        Nicholas Van-Orton
+      </p>
+
+
+      <p>
+        Contact :
+
+        <a href="mailto:contact@nvo987.fr">
+          contact@nvo987.fr
+        </a>
+      </p>
+
+
+      <p>
+        Contact européen :
+
+        <a href="mailto:contact@nvo987.eu">
+          contact@nvo987.eu
+        </a>
+      </p>
+
+
+      <p>
+        Identité :
+
+        <a
+          href="https://identity.nvo987.us"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          did:web:identity.nvo987.us
+        </a>
+      </p>
+
+
+      <p>
+        Site officiel :
+
+        <a
+          href="https://www.nvo987.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          www.nvo987.fr
+        </a>
+      </p>
+
+
+      <p>
+        Mentions légales :
+
+        <a
+          href="https://nvo987.fr/mentions-legales.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mentions légales officielles
+        </a>
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       JAVASCRIPT — ORIGINAL FUNCTIONALITY
+       ========================================================= -->
+  <script>
+
+    const statusBox =
+      document.getElementById("statusBox");
+
+    const eventsGrid =
+      document.getElementById("eventsGrid");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const limitSelect =
+      document.getElementById("limitSelect");
+
+
+    let allEvents = [];
+
+
+    /*
+     * HTML escape
+     */
+    function escapeHTML(value) {
+
+      if (
+        value === null ||
+        value === undefined
+      ) {
+        return "";
+      }
+
+      return String(value)
+
+        .replace(/&/g, "&amp;")
+
+        .replace(/</g, "&lt;")
+
+        .replace(/>/g, "&gt;")
+
+        .replace(/"/g, "&quot;")
+
+        .replace(/'/g, "&#039;");
+
+    }
+
+
+    /*
+     * Format date
+     */
+    function formatDate(dateValue) {
+
+      if (!dateValue) {
+        return "";
+      }
+
+
+      const date =
+        new Date(dateValue);
+
+
+      if (
+        Number.isNaN(
+          date.getTime()
+        )
+      ) {
+
+        return escapeHTML(
+          dateValue
+        );
+
+      }
+
+
+      return date.toLocaleDateString(
+        "fr-FR",
+        {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        }
+      );
+
+    }
+
+
+    /*
+     * Get event fields
+     */
+    function getFields(event) {
+
+      return event?.fields || event || {};
+
+    }
+
+
+    /*
+     * Get first available value
+     */
+    function getValue(
+      object,
+      keys
+    ) {
+
+      for (
+        const key of keys
+      ) {
+
+        const value =
+          object?.[key];
+
+
+        if (
+
+          value !== undefined &&
+
+          value !== null &&
+
+          String(value).trim() !== ""
+
+        ) {
+
+          return value;
+
+        }
+
+      }
+
+
+      return "";
+
+    }
+
+
+    /*
+     * Build event card
+     */
+    function buildCard(event) {
+
+      const f =
+        getFields(event);
+
+
+      const title =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "title",
+              "nom",
+              "name"
+            ]
+          )
+
+          ||
+
+          "Événement"
+
+        );
+
+
+      const start =
+        formatDate(
+
+          getValue(
+            f,
+            [
+              "date_start",
+              "date_debut",
+              "date"
+            ]
+          )
+
+        );
+
+
+      const end =
+        formatDate(
+
+          getValue(
+            f,
+            [
+              "date_end",
+              "date_fin"
+            ]
+          )
+
+        );
+
+
+      const city =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "address_city",
+              "ville",
+              "city"
+            ]
+          )
+
+          ||
+
+          "Paris"
+
+        );
+
+
+      const location =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "address_name",
+              "lieu",
+              "location_name"
+            ]
+          )
+
+        );
+
+
+      const url =
+        escapeHTML(
+
+          getValue(
+            f,
+            [
+              "url",
+              "link",
+              "access_link"
+            ]
+          )
+
+        );
+
+
+      const dateLine =
+
+        start &&
+        end &&
+        end !== start
+
+          ?
+
+          `${start} → ${end}`
+
+          :
+
+          start ||
+
+          "Date inconnue";
+
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "event-card";
+
+
+      card.innerHTML = `
+
+        <h3>
+          ${title}
+        </h3>
+
+
+        <div class="event-meta">
+
+          <span>
+            ${dateLine}
+          </span>
+
+          <span>
+            •
+          </span>
+
+          <span>
+            ${city}
+          </span>
+
+        </div>
+
+
+        ${
+          location
+
+            ?
+
+            `
+              <div class="event-location">
+                Lieu : ${location}
+              </div>
+            `
+
+            :
+
+            ""
+        }
+
+
+        <div>
+
+          ${
+            url
+
+              ?
+
+              `
+                <a
+                  class="btn"
+                  href="${url}"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Voir la source officielle
+                </a>
+              `
+
+              :
+
+              `
+                <span class="muted">
+                  Lien officiel indisponible
+                </span>
+              `
+          }
+
+        </div>
+
+      `;
+
+
+      return card;
+
+    }
+
+
+    /*
+     * Render events
+     */
+    function renderEvents() {
+
+      const query =
+
+        searchInput.value
+          .trim()
+          .toLowerCase();
+
+
+      const limit =
+
+        parseInt(
+          limitSelect.value,
+          10
+        );
+
+
+      eventsGrid.innerHTML = "";
+
+
+      let filtered =
+        allEvents;
+
+
+      if (
+        query.length > 0
+      ) {
+
+        filtered =
+          allEvents.filter(
+            event => {
+
+              const f =
+                getFields(event);
+
+
+              const searchableText =
+
+                JSON.stringify(f)
+                  .toLowerCase();
+
+
+              return searchableText
+                .includes(query);
+
+            }
+          );
+
+      }
+
+
+      filtered =
+        filtered.slice(
+          0,
+          limit
+        );
+
+
+      if (
+        filtered.length === 0
+      ) {
+
+        statusBox.className =
+          "status warn";
+
+
+        statusBox.textContent =
+          "Aucun événement disponible.";
+
+
+        return;
+
+      }
+
+
+      statusBox.className =
+        "status success";
+
+
+      statusBox.textContent =
+
+        `${filtered.length} événement(s) affiché(s).`;
+
+
+      filtered.forEach(
+        event => {
+
+          eventsGrid.appendChild(
+            buildCard(event)
+          );
+
+        }
+      );
+
+    }
+
+
+    /*
+     * Load events.json
+     */
+    async function loadEvents() {
+
+      try {
+
+        statusBox.className =
+          "status info";
+
+
+        statusBox.textContent =
+          "Chargement des événements…";
+
+
+        const response =
+
+          await fetch(
+
+            "events.json?v=" +
+            Date.now(),
+
+            {
+              cache: "no-store"
+            }
+
+          );
+
+
+        if (
+          !response.ok
+        ) {
+
+          throw new Error(
+            "HTTP error " +
+            response.status
+          );
+
+        }
+
+
+        const data =
+          await response.json();
+
+
+        if (
+
+          !data ||
+
+          !Array.isArray(
+            data.records
+          )
+
+        ) {
+
+          throw new Error(
+            "Invalid JSON structure: records missing"
+          );
+
+        }
+
+
+        allEvents =
+          data.records;
+
+
+        console.log(
+          "Events loaded:",
+          allEvents.length
+        );
+
+
+        renderEvents();
+
+
+      } catch (error) {
+
+        console.error(
+          "Unable to load events:",
+          error
+        );
+
+
+        statusBox.className =
+          "status error";
+
+
+        statusBox.textContent =
+          "Erreur : impossible de charger events.json.";
+
+      }
+
+    }
+
+
+    /*
+     * Search listener
+     */
+    searchInput.addEventListener(
+      "input",
+      renderEvents
+    );
+
+
+    /*
+     * Limit listener
+     */
+    limitSelect.addEventListener(
+      "change",
+      renderEvents
+    );
+
+
+    /*
+     * Start
+     */
+    loadEvents();
+
+  </script>
+
+</body>
+    </html>
