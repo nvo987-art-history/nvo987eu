@@ -1,0 +1,102 @@
+# NVO987.eu
+
+> Independent cultural agenda for public cultural events in Paris.
+
+## Website
+
+https://nvo987.eu/
+
+NVO987.eu is an independent interface for discovering and consulting
+cultural events in Paris.
+
+The interface uses publicly available information from Paris Open Data /
+Ville de Paris.
+
+## Primary data source
+
+Paris Open Data:
+https://opendata.paris.fr/
+
+Dataset:
+Que faire à Paris ? – Événements et activités
+
+The official source is authoritative when information differs from the
+information presented by NVO987.eu.
+
+## Identity
+
+Organization:
+NVO987
+
+Author:
+Nicholas Van-Orton
+
+DID:
+did:web:identity.nvo987.us
+
+DID document:
+https://identity.nvo987.us/.well-known/did.json
+
+DID configuration:
+https://identity.nvo987.us/.well-known/did-configuration.json
+
+## Privacy
+
+The website is designed without:
+
+- cookies;
+- behavioural tracking;
+- analytics;
+- intentional collection of personal data.
+
+## Content
+
+NVO987.eu presents a limited selection of practical event information,
+including:
+
+- event title;
+- dates;
+- city;
+- venue;
+- official source URL.
+
+Detailed editorial descriptions from third-party sources are not intentionally
+reproduced.
+
+## Attribution
+
+Data attribution:
+
+Paris Open Data / Ville de Paris
+
+Applicable database licensing information:
+https://opendatacommons.org/licenses/odbl/
+
+## Legal
+
+Official legal information:
+https://nvo987.fr/mentions-legales.html
+
+## Machine-readable resources
+
+Sitemap:
+https://nvo987.eu/sitemap.xml
+
+RSS:
+https://nvo987.eu/rss.xml
+
+Atom:
+https://nvo987.eu/atom.xml
+
+Security:
+https://nvo987.eu/security.txt
+
+Citation:
+https://nvo987.eu/CITATION.cff
+
+Code metadata:
+https://nvo987.eu/codemeta.json
+
+## Contact
+
+contact@nvo987.eu
