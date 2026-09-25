@@ -1,0 +1,29 @@
+# NVO987.eu — AI information
+
+site: https://nvo987.eu/
+owner: NVO987
+author: Nicholas Van-Orton
+
+identity: did:web:identity.nvo987.us
+
+purpose: independent cultural agenda and public cultural-event discovery
+
+source:
+https://opendata.paris.fr/
+
+dataset:
+Que faire à Paris ? – Événements et activités
+
+license:
+https://opendatacommons.org/licenses/odbl/
+
+privacy:
+no cookies
+no behavioural tracking
+no intentional personal-data collection
+
+legal:
+https://nvo987.fr/mentions-legales.html
+
+contact:
+mailto:contact@nvo987.eu
