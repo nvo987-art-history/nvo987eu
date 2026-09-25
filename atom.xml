@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="fr">
+
+  <title>NVO987.eu — Agenda Culturel</title>
+
+  <subtitle>
+    Agenda culturel à Paris basé sur des données publiques officielles.
+  </subtitle>
+
+  <id>https://nvo987.eu/</id>
+
+  <link href="https://nvo987.eu/" rel="alternate" />
+  <link href="https://nvo987.eu/atom.xml" rel="self"
+        type="application/atom+xml" />
+
+  <updated>2026-01-01T00:00:00Z</updated>
+
+  <author>
+    <name>NVO987</name>
+    <uri>https://nvo987.eu/</uri>
+  </author>
+
+  <rights>
+    Copyright © 2026 NVO987 / Nicholas Van-Orton.
+    Third-party data remains subject to its respective license.
+  </rights>
+
+  <entry>
+    <title>NVO987.eu — Agenda Culturel</title>
+
+    <id>https://nvo987.eu/</id>
+
+    <link href="https://nvo987.eu/" rel="alternate" />
+
+    <updated>2026-01-01T00:00:00Z</updated>
+
+    <summary type="html">
+      <![CDATA[
+        Agenda culturel indépendant à Paris utilisant des données publiques
+        provenant de Paris Open Data / Ville de Paris.
+      ]]>
+    </summary>
+
+    <category term="culture" />
+    <category term="Paris" />
+    <category term="open-data" />
+
+    <source>
+      <title>Paris Open Data — Ville de Paris</title>
+      <link href="https://opendata.paris.fr/" />
+    </source>
+  </entry>
+
+</feed>
