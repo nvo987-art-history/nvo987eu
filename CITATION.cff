@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use NVO987.eu or its software, please cite this project."
+type: software
+
+title: "NVO987.eu — Agenda Culturel"
+version: "1.0.0"
+date-released: 2026-01-01
+
+abstract: >
+  NVO987.eu is an independent cultural agenda interface focused on
+  public cultural events in Paris, using publicly available data
+  from Paris Open Data / Ville de Paris.
+
+authors:
+  - family-names: "Van-Orton"
+    given-names: "Nicholas"
+    name-suffix: ""
+    website: "https://www.nvo987.fr"
+
+contact:
+  - family-names: "Van-Orton"
+    given-names: "Nicholas"
+    email: "contact@nvo987.eu"
+
+repository-code: "https://nvo987.eu/"
+url: "https://nvo987.eu/"
+
+keywords:
+  - culture
+  - cultural-agenda
+  - Paris
+  - events
+  - open-data
+  - Paris-Open-Data
+  - cultural-events
+  - NVO987
+
+license: "NOASSERTION"
+
+identifiers:
+  - type: url
+    value: "https://nvo987.eu/"
+
+references:
+  - type: dataset
+    title: "Que faire à Paris ? – Événements et activités"
+    url: "https://opendata.paris.fr/"
+
+  - type: webpage
+    title: "Paris Open Data"
+    url: "https://opendata.paris.fr/"
