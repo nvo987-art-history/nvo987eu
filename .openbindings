@@ -1,0 +1,46 @@
+# NVO987.eu — Open Bindings
+# Project: NVO987
+# Website: https://nvo987.eu/
+
+[project]
+name = "NVO987"
+website = "https://nvo987.eu/"
+canonical = "https://nvo987.eu/"
+language = "fr"
+author = "Nicholas Van-Orton"
+publisher = "NVO987"
+
+[identity]
+did = "did:web:identity.nvo987.us"
+identity_url = "https://identity.nvo987.us"
+did_document = "https://identity.nvo987.us/.well-known/did.json"
+did_configuration = "https://identity.nvo987.us/.well-known/did-configuration.json"
+
+[data]
+primary_source = "https://opendata.paris.fr/"
+dataset = "Que faire à Paris ? – Événements et activités"
+license = "ODbL-1.0"
+local_data = "/events.json"
+
+[privacy]
+cookies = false
+tracking = false
+personal_data_collection = false
+
+[feeds]
+rss = "https://nvo987.eu/rss.xml"
+atom = "https://nvo987.eu/atom.xml"
+
+[discovery]
+robots = "https://nvo987.eu/robots.txt"
+sitemap = "https://nvo987.eu/sitemap.xml"
+llms = "https://nvo987.eu/llms.txt"
+ai = "https://nvo987.eu/ai.txt"
+
+[security]
+policy = "https://nvo987.eu/security.txt"
+security_contact = "mailto:contact@nvo987.eu"
+
+[legal]
+legal_notice = "https://nvo987.fr/mentions-legales.html"
+official_site = "https://www.nvo987.fr"
