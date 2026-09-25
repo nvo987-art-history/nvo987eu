@@ -1,0 +1,42 @@
+/* TEAM */
+
+Name: Nicholas Van-Orton
+Role: Founder / Author
+Organization: NVO987
+Website: https://www.nvo987.fr
+Contact: contact@nvo987.eu
+
+/* SITE */
+
+Site: NVO987.eu
+URL: https://nvo987.eu/
+Project: NVO987 — Culture Visuelle Moderne et Contemporaine
+Language: French
+Location: Paris, France
+
+/* DATA */
+
+Primary source: Paris Open Data / Ville de Paris
+Source URL: https://opendata.paris.fr/
+Dataset: Que faire à Paris ? – Événements et activités
+
+/* PRIVACY */
+
+Cookies: None
+Tracking: None
+Intentional personal-data collection: None
+
+/* IDENTITY */
+
+DID: did:web:identity.nvo987.us
+Identity: https://identity.nvo987.us
+
+/* LEGAL */
+
+Legal information:
+https://nvo987.fr/mentions-legales.html
+
+/* CONTACT */
+
+contact@nvo987.eu
+contact@nvo987.fr
