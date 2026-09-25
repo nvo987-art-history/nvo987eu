@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/">
+
+  <foaf:Person rdf:about="https://identity.nvo987.us/#nicholas-van-orton">
+
+    <foaf:name>Nicholas Van-Orton</foaf:name>
+
+    <foaf:givenName>Nicholas</foaf:givenName>
+
+    <foaf:familyName>Van-Orton</foaf:familyName>
+
+    <foaf:homepage rdf:resource="https://www.nvo987.fr"/>
+
+    <foaf:mbox rdf:resource="mailto:contact@nvo987.eu"/>
+
+    <foaf:account>
+      <foaf:OnlineAccount>
+        <foaf:accountServiceHomepage
+          rdf:resource="https://nvo987.eu/"/>
+        <foaf:accountName>NVO987</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+  </foaf:Person>
+
+
+  <foaf:Organization rdf:about="https://nvo987.eu/#organization">
+
+    <foaf:name>NVO987</foaf:name>
+
+    <foaf:homepage rdf:resource="https://nvo987.eu/"/>
+
+    <foaf:mbox rdf:resource="mailto:contact@nvo987.eu"/>
+
+    <foaf:member rdf:resource="https://identity.nvo987.us/#nicholas-van-orton"/>
+
+  </foaf:Organization>
+
+</rdf:RDF>
