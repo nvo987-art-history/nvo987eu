@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nvo987.eu/sitemap.xml
-
-Host: https://nvo987.eu/
